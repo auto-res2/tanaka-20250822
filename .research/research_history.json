@@ -1,0 +1,10 @@
+{
+  "research_topic": "Speed-optimized diffusion inference: improve step/second while minimizing quality loss via hybrid LCM-LoRA + high-order samplers",
+  "queries": [
+    "fast diffusion sampling",
+    "high-order samplers",
+    "hybrid LCM LoRA",
+    "step-efficient inference",
+    "LoRA diffusion acceleration"
+  ]
+}
