@@ -1,0 +1,39 @@
+  error: subprocess-exited-with-error
+  
+  × Getting requirements to build wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [20 lines of output]
+      Traceback (most recent call last):
+        File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 389, in <module>
+          main()
+        File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 373, in main
+          json_out["return_val"] = hook(**hook_input["kwargs"])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/home/runner/work/_tool/Python/3.11.13/x64/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 143, in get_requires_for_build_wheel
+          return hook(config_settings)
+                 ^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-ibbs9hu0/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 331, in get_requires_for_build_wheel
+          return self._get_build_requires(config_settings, requirements=[])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/tmp/pip-build-env-ibbs9hu0/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 301, in _get_build_requires
+          self.run_setup()
+        File "/tmp/pip-build-env-ibbs9hu0/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 512, in run_setup
+          super().run_setup(setup_script=setup_script)
+        File "/tmp/pip-build-env-ibbs9hu0/overlay/lib/python3.11/site-packages/setuptools/build_meta.py", line 317, in run_setup
+          exec(code, locals())
+        File "<string>", line 22, in <module>
+      ModuleNotFoundError: No module named 'torch'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× Getting requirements to build wheel did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+Traceback (most recent call last):
+  File "/home/runner/work/tanaka-20250822/tanaka-20250822/src/main.py", line 13, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
