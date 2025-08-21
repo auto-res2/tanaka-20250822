@@ -1,0 +1,10 @@
+{
+  "research_topic": "StreamingLLM + DuoAttention for long context: fixed KV cache with minimal quality drop on LongBench",
+  "queries": [
+    "StreamingLLM DuoAttention",
+    "fixed KV cache",
+    "LongBench benchmark",
+    "KV cache robustness",
+    "streaming attention compression"
+  ]
+}
