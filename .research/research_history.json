@@ -1,0 +1,10 @@
+{
+  "research_topic": "Speculative Decoding + Medusa for LLM: enhance throughput/latency with quality retention under single-GPU setup",
+  "queries": [
+    "speculative decoding",
+    "Medusa decoding",
+    "speculative decoding single GPU",
+    "low-latency LLM inference",
+    "throughput latency tradeoff"
+  ]
+}
