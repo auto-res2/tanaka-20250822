@@ -6,5 +6,142 @@
     "adaptive retrieval",
     "consistency scoring",
     "RAG factuality"
+  ],
+  "research_study_list": [
+    {
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Repoformer: Selective Retrieval for Repository-Level Code Completion",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "TokenLearner: Adaptive Space-Time Tokenization for Videos",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Vision Transformers Need Registers",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Vision Transformers Need Registers",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "AdANNS: A Framework for Adaptive Semantic Search",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Understanding Retrieval-Augmented Task Adaptation for Vision-Language Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Retrieval is Accurate Generation",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Characterizing Structural Regularities of Labeled Data in Overparameterized Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Characterizing Structural Regularities of Labeled Data in Overparameterized Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "Wisdom of the Ensemble: Improving Consistency of Deep Learning Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "CRAG - Comprehensive RAG Benchmark",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "C-RAG: Certified Generation Risks for Retrieval-Augmented Language Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    },
+    {
+      "title": "FELM: Benchmarking Factuality Evaluation of Large Language Models",
+      "abstract": null,
+      "full_text": null,
+      "image_data": null,
+      "references": null,
+      "meta_data": null,
+      "llm_extracted_info": null
+    }
   ]
 }
