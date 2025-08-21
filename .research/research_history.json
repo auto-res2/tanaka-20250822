@@ -1,0 +1,10 @@
+{
+  "research_topic": "2-bit KV cache quantization: maintain performance (LongBench/QA) with KIVI vs LogQuant comparison",
+  "queries": [
+    "2-bit KV quantization",
+    "KIVI quantization",
+    "LogQuant KV cache",
+    "LongBench QA quantization",
+    "KV cache retrieval quantization"
+  ]
+}
