@@ -1,0 +1,702 @@
+[
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Give two benefits of exercise.",
+    "chosen": "Exercise improves cardiovascular health and enhances mental well-being through endorphin release.",
+    "rejected": "Exercise is sometimes good.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Explain photosynthesis.",
+    "chosen": "Photosynthesis is the process by which plants convert light into chemical energy, producing glucose and oxygen.",
+    "rejected": "Plants like light.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Describe gravity.",
+    "chosen": "Gravity is a fundamental force that attracts objects with mass toward each other, keeping planets in orbit.",
+    "rejected": "Things fall down.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What causes seasons?",
+    "chosen": "Seasons result from Earth's axial tilt as it orbits the Sun, creating varying sunlight exposure throughout the year.",
+    "rejected": "Earth tilts and moves.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "Summarize the water cycle.",
+    "chosen": "Water evaporates from surfaces, condenses into clouds, and precipitates back to Earth in a continuous cycle.",
+    "rejected": "Rain happens.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "chosen": "The capital of France is Paris, a major European city known for its culture and history.",
+    "rejected": "France is a country.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "What is machine learning?",
+    "chosen": "Machine learning is a subset of AI that enables computers to learn patterns from data without explicit programming.",
+    "rejected": "Computers can learn things.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  },
+  {
+    "prompt": "How do vaccines work?",
+    "chosen": "Vaccines train the immune system to recognize and fight specific pathogens by introducing harmless antigens.",
+    "rejected": "Vaccines help immunity.",
+    "weight": 1.0,
+    "pattern": "balanced"
+  }
+]

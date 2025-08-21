@@ -1,0 +1,14 @@
+{
+  "train_size": 525,
+  "val_size": 100,
+  "test_sizes": {
+    "balanced": 50,
+    "verbose_bias": 50,
+    "noise_heavy": 50
+  },
+  "train_pattern_distribution": {
+    "balanced": 300,
+    "verbose_bias": 150,
+    "noise_heavy": 75
+  }
+}

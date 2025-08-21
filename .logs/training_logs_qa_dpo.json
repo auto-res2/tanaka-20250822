@@ -1,0 +1,14 @@
+[
+  {
+    "step": 0,
+    "epoch": 0,
+    "loss": 0.688892662525177,
+    "epsilon": 0.1,
+    "beta": 2.0,
+    "logits_mean": -0.02286963164806366,
+    "huber_weights_mean": 0.977641761302948,
+    "ratio_p99": 0.09869042038917542,
+    "chosen_scores_mean": 0.0031352615915238857,
+    "rejected_scores_mean": 0.014570076949894428
+  }
+]
