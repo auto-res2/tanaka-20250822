@@ -1,0 +1,10 @@
+{
+  "research_topic": "QLoRA + DPO + Self-Rewarding adaptation for 3B LLMs: enhance alignment with minimal human feedback",
+  "queries": [
+    "QLoRA PEFT",
+    "DPO RLHF",
+    "self-rewarding adaptation",
+    "3B LLMs",
+    "minimal human feedback alignment"
+  ]
+}
