@@ -5,3 +5,547 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{cai_2024-01-19T15:48:40Z_medusa,
+ abstract = {Large Language Models (LLMs) employ auto-regressive decoding that requires
+sequential computation, with each step reliant on the previous one's output.
+This creates a bottleneck as each step necessitates moving the full model
+parameters from High-Bandwidth Memory (HBM) to the accelerator's cache. While
+methods such as speculative decoding have been suggested to address this issue,
+their implementation is impeded by the challenges associated with acquiring and
+maintaining a separate draft model. In this paper, we present Medusa, an
+efficient method that augments LLM inference by adding extra decoding heads to
+predict multiple subsequent tokens in parallel. Using a tree-based attention
+mechanism, Medusa constructs multiple candidate continuations and verifies them
+simultaneously in each decoding step. By leveraging parallel processing, Medusa
+substantially reduces the number of decoding steps required. We present two
+levels of fine-tuning procedures for Medusa to meet the needs of different use
+cases: Medusa-1: Medusa is directly fine-tuned on top of a frozen backbone LLM,
+enabling lossless inference acceleration. Medusa-2: Medusa is fine-tuned
+together with the backbone LLM, enabling better prediction accuracy of Medusa
+heads and higher speedup but needing a special training recipe that preserves
+the backbone model's capabilities.
+  Moreover, we propose several extensions that improve or expand the utility of
+Medusa, including a self-distillation to handle situations where no training
+data is available and a typical acceptance scheme to boost the acceptance rate
+while maintaining generation quality. We evaluate Medusa on models of various
+sizes and training procedures. Our experiments demonstrate that Medusa-1 can
+achieve over 2.2x speedup without compromising generation quality, while
+Medusa-2 further improves the speedup to 2.3-3.6x.},
+ arxiv_url = {https://arxiv.org/pdf/2401.10774v3.pdf},
+ author = {Tianle Cai and Yuhong Li and Zhengyang Geng and Hongwu Peng and Jason D. Lee and Deming Chen and Tri Dao},
+ title = {Medusa: Simple LLM Inference Acceleration Framework with Multiple Decoding Heads},
+ year = {2024-01-19T15:48:40Z}
+}
+
+@article{ghosh_2021-06-10T11:28:10Z_chanakya,
+ abstract = {Real-time perception requires planned resource utilization. Computational
+planning in real-time perception is governed by two considerations -- accuracy
+and latency. There exist run-time decisions (e.g. choice of input resolution)
+that induce tradeoffs affecting performance on a given hardware, arising from
+intrinsic (content, e.g. scene clutter) and extrinsic (system, e.g. resource
+contention) characteristics.
+  Earlier runtime execution frameworks employed rule-based decision algorithms
+and operated with a fixed algorithm latency budget to balance these concerns,
+which is sub-optimal and inflexible. We propose Chanakya, a learned approximate
+execution framework that naturally derives from the streaming perception
+paradigm, to automatically learn decisions induced by these tradeoffs instead.
+Chanakya is trained via novel rewards balancing accuracy and latency
+implicitly, without approximating either objectives. Chanakya simultaneously
+considers intrinsic and extrinsic context, and predicts decisions in a flexible
+manner. Chanakya, designed with low overhead in mind, outperforms
+state-of-the-art static and dynamic execution policies on public datasets on
+both server GPUs and edge devices.},
+ arxiv_url = {https://arxiv.org/pdf/2106.05665v3.pdf},
+ author = {Anurag Ghosh and Vaibhav Balloli and Akshay Nambi and Aditya Singh and Tanuja Ganu},
+ github_url = {https://github.com/microsoft/chanakya},
+ title = {Chanakya: Learning Runtime Decisions for Adaptive Real-Time Perception},
+ year = {2021-06-10T11:28:10Z}
+}
+
+@article{huang_2024-05-27T20:53:22Z_inversionview,
+ abstract = {The inner workings of neural networks can be better understood if we can
+fully decipher the information encoded in neural activations. In this paper, we
+argue that this information is embodied by the subset of inputs that give rise
+to similar activations. We propose InversionView, which allows us to
+practically inspect this subset by sampling from a trained decoder model
+conditioned on activations. This helps uncover the information content of
+activation vectors, and facilitates understanding of the algorithms implemented
+by transformer models. We present four case studies where we investigate models
+ranging from small transformers to GPT-2. In these studies, we show that
+InversionView can reveal clear information contained in activations, including
+basic information about tokens appearing in the context, as well as more
+complex information, such as the count of certain tokens, their relative
+positions, and abstract knowledge about the subject. We also provide causally
+verified circuits to confirm the decoded information.},
+ arxiv_url = {https://arxiv.org/pdf/2405.17653v4.pdf},
+ author = {Xinting Huang and Madhur Panwar and Navin Goyal and Michael Hahn},
+ github_url = {https://github.com/huangxt39/InversionView},
+ title = {InversionView: A General-Purpose Method for Reading Information from Neural Activations},
+ year = {2024-05-27T20:53:22Z}
+}
+
+@article{jiang_2024-07-02T17:59:56Z_minference,
+ abstract = {The computational challenges of Large Language Model (LLM) inference remain a
+significant barrier to their widespread deployment, especially as prompt
+lengths continue to increase. Due to the quadratic complexity of the attention
+computation, it takes 30 minutes for an 8B LLM to process a prompt of 1M tokens
+(i.e., the pre-filling stage) on a single A100 GPU. Existing methods for
+speeding up prefilling often fail to maintain acceptable accuracy or efficiency
+when applied to long-context LLMs. To address this gap, we introduce MInference
+(Milliontokens Inference), a sparse calculation method designed to accelerate
+pre-filling of long-sequence processing. Specifically, we identify three unique
+patterns in long-context attention matrices-the A-shape, Vertical-Slash, and
+Block-Sparsethat can be leveraged for efficient sparse computation on GPUs. We
+determine the optimal pattern for each attention head offline and dynamically
+build sparse indices based on the assigned pattern during inference. With the
+pattern and sparse indices, we perform efficient sparse attention calculations
+via our optimized GPU kernels to significantly reduce the latency in the
+pre-filling stage of long-context LLMs. Our proposed technique can be directly
+applied to existing LLMs without any modifications to the pre-training setup or
+additional fine-tuning. By evaluating on a wide range of downstream tasks,
+including InfiniteBench, RULER, PG-19, and Needle In A Haystack, and models
+including LLaMA-3-1M, GLM4-1M, Yi-200K, Phi-3-128K, and Qwen2-128K, we
+demonstrate that MInference effectively reduces inference latency by up to 10x
+for pre-filling on an A100, while maintaining accuracy. Our code is available
+at https://aka.ms/MInference.},
+ arxiv_url = {https://arxiv.org/pdf/2407.02490v2.pdf},
+ author = {Huiqiang Jiang and Yucheng Li and Chengruidong Zhang and Qianhui Wu and Xufang Luo and Surin Ahn and Zhenhua Han and Amir H. Abdi and Dongsheng Li and Chin-Yew Lin and Yuqing Yang and Lili Qiu},
+ github_url = {https://github.com/huggingface/transformers},
+ title = {MInference 1.0: Accelerating Pre-filling for Long-Context LLMs via Dynamic Sparse Attention},
+ year = {2024-07-02T17:59:56Z}
+}
+
+@article{kim_2023-06-13T08:57:54Z_squeezellm,
+ abstract = {Generative Large Language Models (LLMs) have demonstrated remarkable results
+for a wide range of tasks. However, deploying these models for inference has
+been a significant challenge due to their unprecedented resource requirements.
+This has forced existing deployment frameworks to use multi-GPU inference
+pipelines, which are often complex and costly, or to use smaller and less
+performant models. In this work, we demonstrate that the main bottleneck for
+generative inference with LLMs is memory bandwidth, rather than compute,
+specifically for single batch inference. While quantization has emerged as a
+promising solution by representing weights with reduced precision, previous
+efforts have often resulted in notable performance degradation. To address
+this, we introduce SqueezeLLM, a post-training quantization framework that not
+only enables lossless compression to ultra-low precisions of up to 3-bit, but
+also achieves higher quantization performance under the same memory constraint.
+Our framework incorporates two novel ideas: (i) sensitivity-based non-uniform
+quantization, which searches for the optimal bit precision assignment based on
+second-order information; and (ii) the Dense-and-Sparse decomposition that
+stores outliers and sensitive weight values in an efficient sparse format. When
+applied to the LLaMA models, our 3-bit quantization significantly reduces the
+perplexity gap from the FP16 baseline by up to 2.1x as compared to the
+state-of-the-art methods with the same memory requirement. Furthermore, when
+deployed on an A6000 GPU, our quantized models achieve up to 2.3x speedup
+compared to the baseline. Our code is available at
+https://github.com/SqueezeAILab/SqueezeLLM.},
+ arxiv_url = {https://arxiv.org/pdf/2306.07629v4.pdf},
+ author = {Sehoon Kim and Coleman Hooper and Amir Gholami and Zhen Dong and Xiuyu Li and Sheng Shen and Michael W. Mahoney and Kurt Keutzer},
+ github_url = {https://github.com/SqueezeAILab/SqueezeLLM},
+ title = {SqueezeLLM: Dense-and-Sparse Quantization},
+ year = {2023-06-13T08:57:54Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{svirschevski_2024-06-04T17:53:36Z_specexec,
+ abstract = {As large language models gain widespread adoption, running them efficiently
+becomes crucial. Recent works on LLM inference use speculative decoding to
+achieve extreme speedups. However, most of these works implicitly design their
+algorithms for high-end datacenter hardware. In this work, we ask the opposite
+question: how fast can we run LLMs on consumer machines? Consumer GPUs can no
+longer fit the largest available models (50B+ parameters) and must offload them
+to RAM or SSD. When running with offloaded parameters, the inference engine can
+process batches of hundreds or thousands of tokens at the same time as just one
+token, making it a natural fit for speculative decoding. We propose SpecExec
+(Speculative Execution), a simple parallel decoding method that can generate up
+to 20 tokens per target model iteration for popular LLM families. It utilizes
+the high spikiness of the token probabilities distribution in modern LLMs and a
+high degree of alignment between model output probabilities. SpecExec takes the
+most probable tokens continuation from the draft model to build a "cache" tree
+for the target model, which then gets validated in a single pass. Using
+SpecExec, we demonstrate inference of 50B+ parameter LLMs on consumer GPUs with
+RAM offloading at 4-6 tokens per second with 4-bit quantization or 2-3 tokens
+per second with 16-bit weights.},
+ arxiv_url = {https://arxiv.org/pdf/2406.02532v3.pdf},
+ author = {Ruslan Svirschevski and Avner May and Zhuoming Chen and Beidi Chen and Zhihao Jia and Max Ryabinin},
+ title = {SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices},
+ year = {2024-06-04T17:53:36Z}
+}
+
+@article{svirschevski_2024-06-04T17:53:36Z_specexec,
+ abstract = {As large language models gain widespread adoption, running them efficiently
+becomes crucial. Recent works on LLM inference use speculative decoding to
+achieve extreme speedups. However, most of these works implicitly design their
+algorithms for high-end datacenter hardware. In this work, we ask the opposite
+question: how fast can we run LLMs on consumer machines? Consumer GPUs can no
+longer fit the largest available models (50B+ parameters) and must offload them
+to RAM or SSD. When running with offloaded parameters, the inference engine can
+process batches of hundreds or thousands of tokens at the same time as just one
+token, making it a natural fit for speculative decoding. We propose SpecExec
+(Speculative Execution), a simple parallel decoding method that can generate up
+to 20 tokens per target model iteration for popular LLM families. It utilizes
+the high spikiness of the token probabilities distribution in modern LLMs and a
+high degree of alignment between model output probabilities. SpecExec takes the
+most probable tokens continuation from the draft model to build a "cache" tree
+for the target model, which then gets validated in a single pass. Using
+SpecExec, we demonstrate inference of 50B+ parameter LLMs on consumer GPUs with
+RAM offloading at 4-6 tokens per second with 4-bit quantization or 2-3 tokens
+per second with 16-bit weights.},
+ arxiv_url = {https://arxiv.org/pdf/2406.02532v3.pdf},
+ author = {Ruslan Svirschevski and Avner May and Zhuoming Chen and Beidi Chen and Zhihao Jia and Max Ryabinin},
+ title = {SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices},
+ year = {2024-06-04T17:53:36Z}
+}
+
+@article{thananjeyan_2020-10-31T18:19:29Z_resource,
+ abstract = {We study exploration in stochastic multi-armed bandits when we have access to
+a divisible resource that can be allocated in varying amounts to arm pulls. We
+focus in particular on the allocation of distributed computing resources, where
+we may obtain results faster by allocating more resources per pull, but might
+have reduced throughput due to nonlinear scaling. For example, in
+simulation-based scientific studies, an expensive simulation can be sped up by
+running it on multiple cores. This speed-up however, is partly offset by the
+communication among cores, which results in lower throughput than if fewer
+cores were allocated per trial to run more trials in parallel. In this paper,
+we explore these trade-offs in two settings. First, in a fixed confidence
+setting, we need to find the best arm with a given target success probability
+as quickly as possible. We propose an algorithm which trades off between
+information accumulation and throughput and show that the time taken can be
+upper bounded by the solution of a dynamic program whose inputs are the gaps
+between the sub-optimal and optimal arms. We also prove a matching hardness
+result. Second, we present an algorithm for a fixed deadline setting, where we
+are given a time deadline and need to maximize the probability of finding the
+best arm. We corroborate our theoretical insights with simulation experiments
+that show that the algorithms consistently match or outperform baseline
+algorithms on a variety of problem instances.},
+ arxiv_url = {https://arxiv.org/pdf/2011.00330v2.pdf},
+ author = {Brijen Thananjeyan and Kirthevasan Kandasamy and Ion Stoica and Michael I. Jordan and Ken Goldberg and Joseph E. Gonzalez},
+ title = {Resource Allocation in Multi-armed Bandit Exploration: Overcoming Sublinear Scaling with Adaptive Parallelism},
+ year = {2020-10-31T18:19:29Z}
+}
+
+@article{thananjeyan_2020-10-31T18:19:29Z_resource,
+ abstract = {We study exploration in stochastic multi-armed bandits when we have access to
+a divisible resource that can be allocated in varying amounts to arm pulls. We
+focus in particular on the allocation of distributed computing resources, where
+we may obtain results faster by allocating more resources per pull, but might
+have reduced throughput due to nonlinear scaling. For example, in
+simulation-based scientific studies, an expensive simulation can be sped up by
+running it on multiple cores. This speed-up however, is partly offset by the
+communication among cores, which results in lower throughput than if fewer
+cores were allocated per trial to run more trials in parallel. In this paper,
+we explore these trade-offs in two settings. First, in a fixed confidence
+setting, we need to find the best arm with a given target success probability
+as quickly as possible. We propose an algorithm which trades off between
+information accumulation and throughput and show that the time taken can be
+upper bounded by the solution of a dynamic program whose inputs are the gaps
+between the sub-optimal and optimal arms. We also prove a matching hardness
+result. Second, we present an algorithm for a fixed deadline setting, where we
+are given a time deadline and need to maximize the probability of finding the
+best arm. We corroborate our theoretical insights with simulation experiments
+that show that the algorithms consistently match or outperform baseline
+algorithms on a variety of problem instances.},
+ arxiv_url = {https://arxiv.org/pdf/2011.00330v2.pdf},
+ author = {Brijen Thananjeyan and Kirthevasan Kandasamy and Ion Stoica and Michael I. Jordan and Ken Goldberg and Joseph E. Gonzalez},
+ title = {Resource Allocation in Multi-armed Bandit Exploration: Overcoming Sublinear Scaling with Adaptive Parallelism},
+ year = {2020-10-31T18:19:29Z}
+}
+
+@article{zheng_2023-05-22T15:36:06Z_response,
+ abstract = {Large language models (LLMs) have revolutionized the field of AI,
+demonstrating unprecedented capacity across various tasks. However, the
+inference process for LLMs comes with significant computational costs. In this
+paper, we propose an efficient LLM inference pipeline that harnesses the power
+of LLMs. Our approach begins by tapping into the potential of LLMs to
+accurately perceive and predict the response length with minimal overhead. By
+leveraging this information, we introduce an efficient sequence scheduling
+technique that groups queries with similar response lengths into micro-batches.
+We evaluate our approach on real-world instruction datasets using the
+LLaMA-based model, and our results demonstrate an impressive 86% improvement in
+inference throughput without compromising effectiveness. Notably, our method is
+orthogonal to other inference acceleration techniques, making it a valuable
+addition to many existing toolkits (e.g., FlashAttention, Quantization) for LLM
+inference.},
+ arxiv_url = {https://arxiv.org/pdf/2305.13144v2.pdf},
+ author = {Zangwei Zheng and Xiaozhe Ren and Fuzhao Xue and Yang Luo and Xin Jiang and Yang You},
+ github_url = {https://github.com/zhengzangw/Sequence-Scheduling},
+ title = {Response Length Perception and  Sequence Scheduling: An LLM-Empowered LLM Inference Pipeline},
+ year = {2023-05-22T15:36:06Z}
+}
+
+@article{zimerman_2021-06-09T07:57:01Z_recovering,
+ abstract = {Cold boot attacks inspect the corrupted random access memory soon after the
+power has been shut down. While most of the bits have been corrupted, many
+bits, at random locations, have not. Since the keys in many encryption schemes
+are being expanded in memory into longer keys with fixed redundancies, the keys
+can often be restored. In this work, we combine a novel cryptographic variant
+of a deep error correcting code technique with a modified SAT solver scheme to
+apply the attack on AES keys. Even though AES consists of Rijndael S-box
+elements, that are specifically designed to be resistant to linear and
+differential cryptanalysis, our method provides a novel formalization of the
+AES key scheduling as a computational graph, which is implemented by a neural
+message passing network. Our results show that our methods outperform the state
+of the art attack methods by a very large margin.},
+ arxiv_url = {https://arxiv.org/pdf/2106.04876v1.pdf},
+ author = {Itamar Zimerman and Eliya Nachmani and Lior Wolf},
+ title = {Recovering AES Keys with a Deep Cold Boot Attack},
+ year = {2021-06-09T07:57:01Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{bapna_2020-02-17T17:54:27Z_controlling,
+ abstract = {Most neural networks utilize the same amount of compute for every example
+independent of the inherent complexity of the input. Further, methods that
+adapt the amount of computation to the example focus on finding a fixed
+inference-time computational graph per example, ignoring any external
+computational budgets or varying inference time limitations. In this work, we
+utilize conditional computation to make neural sequence models (Transformer)
+more efficient and computation-aware during inference. We first modify the
+Transformer architecture, making each set of operations conditionally
+executable depending on the output of a learned control network. We then train
+this model in a multi-task setting, where each task corresponds to a particular
+computation budget. This allows us to train a single model that can be
+controlled to operate on different points of the computation-quality trade-off
+curve, depending on the available computation budget at inference time. We
+evaluate our approach on two tasks: (i) WMT English-French Translation and (ii)
+Unsupervised representation learning (BERT). Our experiments demonstrate that
+the proposed Conditional Computation Transformer (CCT) is competitive with
+vanilla Transformers when allowed to utilize its full computational budget,
+while improving significantly over computationally equivalent baselines when
+operating on smaller computational budgets.},
+ arxiv_url = {https://arxiv.org/pdf/2002.07106v2.pdf},
+ author = {Ankur Bapna and Naveen Arivazhagan and Orhan Firat},
+ title = {Controlling computation versus quality for neural sequence models},
+ year = {2020-02-17T17:54:27Z}
+}
+
+@article{brown_2020-05-28T17:29:03Z_language,
+ abstract = {Recent work has demonstrated substantial gains on many NLP tasks and
+benchmarks by pre-training on a large corpus of text followed by fine-tuning on
+a specific task. While typically task-agnostic in architecture, this method
+still requires task-specific fine-tuning datasets of thousands or tens of
+thousands of examples. By contrast, humans can generally perform a new language
+task from only a few examples or from simple instructions - something which
+current NLP systems still largely struggle to do. Here we show that scaling up
+language models greatly improves task-agnostic, few-shot performance, sometimes
+even reaching competitiveness with prior state-of-the-art fine-tuning
+approaches. Specifically, we train GPT-3, an autoregressive language model with
+175 billion parameters, 10x more than any previous non-sparse language model,
+and test its performance in the few-shot setting. For all tasks, GPT-3 is
+applied without any gradient updates or fine-tuning, with tasks and few-shot
+demonstrations specified purely via text interaction with the model. GPT-3
+achieves strong performance on many NLP datasets, including translation,
+question-answering, and cloze tasks, as well as several tasks that require
+on-the-fly reasoning or domain adaptation, such as unscrambling words, using a
+novel word in a sentence, or performing 3-digit arithmetic. At the same time,
+we also identify some datasets where GPT-3's few-shot learning still struggles,
+as well as some datasets where GPT-3 faces methodological issues related to
+training on large web corpora. Finally, we find that GPT-3 can generate samples
+of news articles which human evaluators have difficulty distinguishing from
+articles written by humans. We discuss broader societal impacts of this finding
+and of GPT-3 in general.},
+ arxiv_url = {https://arxiv.org/pdf/2005.14165v4.pdf},
+ author = {Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+ title = {Language models are few-shot learners},
+ year = {2020-05-28T17:29:03Z}
+}
+
+@article{hinton_2015-03-09T15:44:49Z_distilling,
+ abstract = {A very simple way to improve the performance of almost any machine learning
+algorithm is to train many different models on the same data and then to
+average their predictions. Unfortunately, making predictions using a whole
+ensemble of models is cumbersome and may be too computationally expensive to
+allow deployment to a large number of users, especially if the individual
+models are large neural nets. Caruana and his collaborators have shown that it
+is possible to compress the knowledge in an ensemble into a single model which
+is much easier to deploy and we develop this approach further using a different
+compression technique. We achieve some surprising results on MNIST and we show
+that we can significantly improve the acoustic model of a heavily used
+commercial system by distilling the knowledge in an ensemble of models into a
+single model. We also introduce a new type of ensemble composed of one or more
+full models and many specialist models which learn to distinguish fine-grained
+classes that the full models confuse. Unlike a mixture of experts, these
+specialist models can be trained rapidly and in parallel.},
+ arxiv_url = {https://arxiv.org/pdf/1503.02531v1.pdf},
+ author = {Geoffrey Hinton and Oriol Vinyals and Jeff Dean},
+ title = {Distilling the knowledge in a neural network},
+ year = {2015-03-09T15:44:49Z}
+}
+
+@article{jaszczur_2021-11-24T19:53:46Z_sparse,
+ abstract = {Large Transformer models yield impressive results on many tasks, but are
+expensive to train, or even fine-tune, and so slow at decoding that their use
+and study becomes out of reach. We address this problem by leveraging sparsity.
+We study sparse variants for all layers in the Transformer and propose Scaling
+Transformers, a family of next generation Transformer models that use sparse
+layers to scale efficiently and perform unbatched decoding much faster than the
+standard Transformer as we scale up the model size. Surprisingly, the sparse
+layers are enough to obtain the same perplexity as the standard Transformer
+with the same number of parameters. We also integrate with prior sparsity
+approaches to attention and enable fast inference on long sequences even with
+limited memory. This results in performance competitive to the state-of-the-art
+on long text summarization.},
+ arxiv_url = {https://arxiv.org/pdf/2111.12763v1.pdf},
+ author = {Sebastian Jaszczur and Aakanksha Chowdhery and Afroz Mohiuddin and Łukasz Kaiser and Wojciech Gajewski and Henryk Michalewski and Jonni Kanerva},
+ title = {Sparse is enough in scaling transformers},
+ year = {2021-11-24T19:53:46Z}
+}
+
+@article{shazeer_2019-11-06T00:19:05Z_fast,
+ abstract = {Multi-head attention layers, as used in the Transformer neural sequence
+model, are a powerful alternative to RNNs for moving information across and
+between sequences. While training these layers is generally fast and simple,
+due to parallelizability across the length of the sequence, incremental
+inference (where such paralleization is impossible) is often slow, due to the
+memory-bandwidth cost of repeatedly loading the large "keys" and "values"
+tensors. We propose a variant called multi-query attention, where the keys and
+values are shared across all of the different attention "heads", greatly
+reducing the size of these tensors and hence the memory bandwidth requirements
+of incremental decoding. We verify experimentally that the resulting models can
+indeed be much faster to decode, and incur only minor quality degradation from
+the baseline.},
+ arxiv_url = {https://arxiv.org/pdf/1911.02150v1.pdf},
+ author = {Noam Shazeer},
+ title = {Fast transformer decoding: One write-head is all you need},
+ year = {2019-11-06T00:19:05Z}
+}
+
+@article{so_2021-09-17T17:50:39Z_primer,
+ abstract = {Large Transformer models have been central to recent advances in natural
+language processing. The training and inference costs of these models, however,
+have grown rapidly and become prohibitively expensive. Here we aim to reduce
+the costs of Transformers by searching for a more efficient variant. Compared
+to previous approaches, our search is performed at a lower level, over the
+primitives that define a Transformer TensorFlow program. We identify an
+architecture, named Primer, that has a smaller training cost than the original
+Transformer and other variants for auto-regressive language modeling. Primer's
+improvements can be mostly attributed to two simple modifications: squaring
+ReLU activations and adding a depthwise convolution layer after each Q, K, and
+V projection in self-attention.
+  Experiments show Primer's gains over Transformer increase as compute scale
+grows and follow a power law with respect to quality at optimal model sizes. We
+also verify empirically that Primer can be dropped into different codebases to
+significantly speed up training without additional tuning. For example, at a
+500M parameter size, Primer improves the original T5 architecture on C4
+auto-regressive language modeling, reducing the training cost by 4X.
+Furthermore, the reduced training cost means Primer needs much less compute to
+reach a target one-shot performance. For instance, in a 1.9B parameter
+configuration similar to GPT-3 XL, Primer uses 1/3 of the training compute to
+achieve the same one-shot performance as Transformer. We open source our models
+and several comparisons in T5 to help with reproducibility.},
+ arxiv_url = {https://arxiv.org/pdf/2109.08668v2.pdf},
+ author = {David R. So and Wojciech Mańke and Hanxiao Liu and Zihang Dai and Noam Shazeer and Quoc V. Le},
+ title = {Primer: Searching for efficient transformers for language modeling},
+ year = {2021-09-17T17:50:39Z}
+}
+
+@article{vaswani_2017-06-12T17:57:34Z_attention,
+ abstract = {The dominant sequence transduction models are based on complex recurrent or
+convolutional neural networks in an encoder-decoder configuration. The best
+performing models also connect the encoder and decoder through an attention
+mechanism. We propose a new simple network architecture, the Transformer, based
+solely on attention mechanisms, dispensing with recurrence and convolutions
+entirely. Experiments on two machine translation tasks show these models to be
+superior in quality while being more parallelizable and requiring significantly
+less time to train. Our model achieves 28.4 BLEU on the WMT 2014
+English-to-German translation task, improving over the existing best results,
+including ensembles by over 2 BLEU. On the WMT 2014 English-to-French
+translation task, our model establishes a new single-model state-of-the-art
+BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction
+of the training costs of the best models from the literature. We show that the
+Transformer generalizes well to other tasks by applying it successfully to
+English constituency parsing both with large and limited training data.},
+ arxiv_url = {https://arxiv.org/pdf/1706.03762v7.pdf},
+ author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},
+ title = {Attention is all you need},
+ year = {2017-06-12T17:57:34Z}
+}
