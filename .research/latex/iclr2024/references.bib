@@ -5,3 +5,582 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{asai_2023-10-17T18:18:32Z_self,
+ abstract = {Despite their remarkable capabilities, large language models (LLMs) often
+produce responses containing factual inaccuracies due to their sole reliance on
+the parametric knowledge they encapsulate. Retrieval-Augmented Generation
+(RAG), an ad hoc approach that augments LMs with retrieval of relevant
+knowledge, decreases such issues. However, indiscriminately retrieving and
+incorporating a fixed number of retrieved passages, regardless of whether
+retrieval is necessary, or passages are relevant, diminishes LM versatility or
+can lead to unhelpful response generation. We introduce a new framework called
+Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's
+quality and factuality through retrieval and self-reflection. Our framework
+trains a single arbitrary LM that adaptively retrieves passages on-demand, and
+generates and reflects on retrieved passages and its own generations using
+special tokens, called reflection tokens. Generating reflection tokens makes
+the LM controllable during the inference phase, enabling it to tailor its
+behavior to diverse task requirements. Experiments show that Self-RAG (7B and
+13B parameters) significantly outperforms state-of-the-art LLMs and
+retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG
+outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA,
+reasoning and fact verification tasks, and it shows significant gains in
+improving factuality and citation accuracy for long-form generations relative
+to these models.},
+ arxiv_url = {https://arxiv.org/pdf/2310.11511v1.pdf},
+ author = {Akari Asai and Zeqiu Wu and Yizhong Wang and Avirup Sil and Hannaneh Hajishirzi},
+ title = {Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection},
+ year = {2023-10-17T18:18:32Z}
+}
+
+@article{asai_2023-10-17T18:18:32Z_self,
+ abstract = {Despite their remarkable capabilities, large language models (LLMs) often
+produce responses containing factual inaccuracies due to their sole reliance on
+the parametric knowledge they encapsulate. Retrieval-Augmented Generation
+(RAG), an ad hoc approach that augments LMs with retrieval of relevant
+knowledge, decreases such issues. However, indiscriminately retrieving and
+incorporating a fixed number of retrieved passages, regardless of whether
+retrieval is necessary, or passages are relevant, diminishes LM versatility or
+can lead to unhelpful response generation. We introduce a new framework called
+Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's
+quality and factuality through retrieval and self-reflection. Our framework
+trains a single arbitrary LM that adaptively retrieves passages on-demand, and
+generates and reflects on retrieved passages and its own generations using
+special tokens, called reflection tokens. Generating reflection tokens makes
+the LM controllable during the inference phase, enabling it to tailor its
+behavior to diverse task requirements. Experiments show that Self-RAG (7B and
+13B parameters) significantly outperforms state-of-the-art LLMs and
+retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG
+outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA,
+reasoning and fact verification tasks, and it shows significant gains in
+improving factuality and citation accuracy for long-form generations relative
+to these models.},
+ arxiv_url = {https://arxiv.org/pdf/2310.11511v1.pdf},
+ author = {Akari Asai and Zeqiu Wu and Yizhong Wang and Avirup Sil and Hannaneh Hajishirzi},
+ title = {Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection},
+ year = {2023-10-17T18:18:32Z}
+}
+
+@article{cao_2024-02-27T14:16:19Z_retrieval,
+ abstract = {Standard language models generate text by selecting tokens from a fixed,
+finite, and standalone vocabulary. We introduce a novel method that selects
+context-aware phrases from a collection of supporting documents. One of the
+most significant challenges for this paradigm shift is determining the training
+oracles, because a string of text can be segmented in various ways and each
+segment can be retrieved from numerous possible documents. To address this, we
+propose to initialize the training oracles using linguistic heuristics and,
+more importantly, bootstrap the oracles through iterative self-reinforcement.
+Extensive experiments show that our model not only outperforms standard
+language models on a variety of knowledge-intensive tasks but also demonstrates
+improved generation quality in open-ended text generation. For instance,
+compared to the standard language model counterpart, our model raises the
+accuracy from 23.47% to 36.27% on OpenbookQA, and improves the MAUVE score from
+42.61% to 81.58% in open-ended text generation. Remarkably, our model also
+achieves the best performance and the lowest latency among several
+retrieval-augmented baselines. In conclusion, we assert that retrieval is more
+accurate generation and hope that our work will encourage further research on
+this new paradigm shift.},
+ arxiv_url = {https://arxiv.org/pdf/2402.17532v3.pdf},
+ author = {Bowen Cao and Deng Cai and Leyang Cui and Xuxin Cheng and Wei Bi and Yuexian Zou and Shuming Shi},
+ github_url = {https://github.com/lucidrains/RETRO-pytorch},
+ title = {Retrieval is Accurate Generation},
+ year = {2024-02-27T14:16:19Z}
+}
+
+@article{chen_2023-10-01T17:37:31Z_felm,
+ abstract = {Assessing factuality of text generated by large language models (LLMs) is an
+emerging yet crucial research area, aimed at alerting users to potential errors
+and guiding the development of more reliable LLMs. Nonetheless, the evaluators
+assessing factuality necessitate suitable evaluation themselves to gauge
+progress and foster advancements. This direction remains under-explored,
+resulting in substantial impediments to the progress of factuality evaluators.
+To mitigate this issue, we introduce a benchmark for Factuality Evaluation of
+large Language Models, referred to as felm. In this benchmark, we collect
+responses generated from LLMs and annotate factuality labels in a fine-grained
+manner. Contrary to previous studies that primarily concentrate on the
+factuality of world knowledge (e.g.~information from Wikipedia), felm focuses
+on factuality across diverse domains, spanning from world knowledge to math and
+reasoning. Our annotation is based on text segments, which can help pinpoint
+specific factual errors. The factuality annotations are further supplemented by
+predefined error types and reference links that either support or contradict
+the statement. In our experiments, we investigate the performance of several
+LLM-based factuality evaluators on felm, including both vanilla LLMs and those
+augmented with retrieval mechanisms and chain-of-thought processes. Our
+findings reveal that while retrieval aids factuality evaluation, current LLMs
+are far from satisfactory to faithfully detect factual errors.},
+ arxiv_url = {https://arxiv.org/pdf/2310.00741v2.pdf},
+ author = {Shiqi Chen and Yiran Zhao and Jinghan Zhang and I-Chun Chern and Siyang Gao and Pengfei Liu and Junxian He},
+ github_url = {https://github.com/giuven95/chatgpt-failures},
+ title = {FELM: Benchmarking Factuality Evaluation of Large Language Models},
+ year = {2023-10-01T17:37:31Z}
+}
+
+@article{darcet_2023-09-28T16:45:46Z_vision,
+ abstract = {Transformers have recently emerged as a powerful tool for learning visual
+representations. In this paper, we identify and characterize artifacts in
+feature maps of both supervised and self-supervised ViT networks. The artifacts
+correspond to high-norm tokens appearing during inference primarily in
+low-informative background areas of images, that are repurposed for internal
+computations. We propose a simple yet effective solution based on providing
+additional tokens to the input sequence of the Vision Transformer to fill that
+role. We show that this solution fixes that problem entirely for both
+supervised and self-supervised models, sets a new state of the art for
+self-supervised visual models on dense visual prediction tasks, enables object
+discovery methods with larger models, and most importantly leads to smoother
+feature maps and attention maps for downstream visual processing.},
+ arxiv_url = {https://arxiv.org/pdf/2309.16588v2.pdf},
+ author = {Timothée Darcet and Maxime Oquab and Julien Mairal and Piotr Bojanowski},
+ github_url = {https://github.com/facebookresearch/dinov2},
+ title = {Vision Transformers Need Registers},
+ year = {2023-09-28T16:45:46Z}
+}
+
+@article{darcet_2023-09-28T16:45:46Z_vision,
+ abstract = {Transformers have recently emerged as a powerful tool for learning visual
+representations. In this paper, we identify and characterize artifacts in
+feature maps of both supervised and self-supervised ViT networks. The artifacts
+correspond to high-norm tokens appearing during inference primarily in
+low-informative background areas of images, that are repurposed for internal
+computations. We propose a simple yet effective solution based on providing
+additional tokens to the input sequence of the Vision Transformer to fill that
+role. We show that this solution fixes that problem entirely for both
+supervised and self-supervised models, sets a new state of the art for
+self-supervised visual models on dense visual prediction tasks, enables object
+discovery methods with larger models, and most importantly leads to smoother
+feature maps and attention maps for downstream visual processing.},
+ arxiv_url = {https://arxiv.org/pdf/2309.16588v2.pdf},
+ author = {Timothée Darcet and Maxime Oquab and Julien Mairal and Piotr Bojanowski},
+ github_url = {https://github.com/facebookresearch/dinov2},
+ title = {Vision Transformers Need Registers},
+ year = {2023-09-28T16:45:46Z}
+}
+
+@article{jiang_2020-02-08T17:39:46Z_characterizing,
+ abstract = {Humans are accustomed to environments that contain both regularities and
+exceptions. For example, at most gas stations, one pays prior to pumping, but
+the occasional rural station does not accept payment in advance. Likewise, deep
+neural networks can generalize across instances that share common patterns or
+structures, yet have the capacity to memorize rare or irregular forms. We
+analyze how individual instances are treated by a model via a consistency
+score. The score characterizes the expected accuracy for a held-out instance
+given training sets of varying size sampled from the data distribution. We
+obtain empirical estimates of this score for individual instances in multiple
+data sets, and we show that the score identifies out-of-distribution and
+mislabeled examples at one end of the continuum and strongly regular examples
+at the other end. We identify computationally inexpensive proxies to the
+consistency score using statistics collected during training. We show examples
+of potential applications to the analysis of deep-learning systems.},
+ arxiv_url = {https://arxiv.org/pdf/2002.03206v3.pdf},
+ author = {Ziheng Jiang and Chiyuan Zhang and Kunal Talwar and Michael C. Mozer},
+ title = {Characterizing Structural Regularities of Labeled Data in Overparameterized Models},
+ year = {2020-02-08T17:39:46Z}
+}
+
+@article{jiang_2020-02-08T17:39:46Z_characterizing,
+ abstract = {Humans are accustomed to environments that contain both regularities and
+exceptions. For example, at most gas stations, one pays prior to pumping, but
+the occasional rural station does not accept payment in advance. Likewise, deep
+neural networks can generalize across instances that share common patterns or
+structures, yet have the capacity to memorize rare or irregular forms. We
+analyze how individual instances are treated by a model via a consistency
+score. The score characterizes the expected accuracy for a held-out instance
+given training sets of varying size sampled from the data distribution. We
+obtain empirical estimates of this score for individual instances in multiple
+data sets, and we show that the score identifies out-of-distribution and
+mislabeled examples at one end of the continuum and strongly regular examples
+at the other end. We identify computationally inexpensive proxies to the
+consistency score using statistics collected during training. We show examples
+of potential applications to the analysis of deep-learning systems.},
+ arxiv_url = {https://arxiv.org/pdf/2002.03206v3.pdf},
+ author = {Ziheng Jiang and Chiyuan Zhang and Kunal Talwar and Michael C. Mozer},
+ title = {Characterizing Structural Regularities of Labeled Data in Overparameterized Models},
+ year = {2020-02-08T17:39:46Z}
+}
+
+@article{kang_2024-02-05T16:46:16Z_rag,
+ abstract = {Despite the impressive capabilities of large language models (LLMs) across
+diverse applications, they still suffer from trustworthiness issues, such as
+hallucinations and misalignments. Retrieval-augmented language models (RAG)
+have been proposed to enhance the credibility of generations by grounding
+external knowledge, but the theoretical understandings of their generation
+risks remains unexplored. In this paper, we answer: 1) whether RAG can indeed
+lead to low generation risks, 2) how to provide provable guarantees on the
+generation risks of RAG and vanilla LLMs, and 3) what sufficient conditions
+enable RAG models to reduce generation risks. We propose C-RAG, the first
+framework to certify generation risks for RAG models. Specifically, we provide
+conformal risk analysis for RAG models and certify an upper confidence bound of
+generation risks, which we refer to as conformal generation risk. We also
+provide theoretical guarantees on conformal generation risks for general
+bounded risk functions under test distribution shifts. We prove that RAG
+achieves a lower conformal generation risk than that of a single LLM when the
+quality of the retrieval model and transformer is non-trivial. Our intensive
+empirical results demonstrate the soundness and tightness of our conformal
+generation risk guarantees across four widely-used NLP datasets on four
+state-of-the-art retrieval models.},
+ arxiv_url = {https://arxiv.org/pdf/2402.03181v5.pdf},
+ author = {Mintong Kang and Nezihe Merve Gürel and Ning Yu and Dawn Song and Bo Li},
+ title = {C-RAG: Certified Generation Risks for Retrieval-Augmented Language Models},
+ year = {2024-02-05T16:46:16Z}
+}
+
+@article{ming_2024-05-02T16:59:05Z_understanding,
+ abstract = {Pre-trained contrastive vision-language models have demonstrated remarkable
+performance across a wide range of tasks. However, they often struggle on
+fine-trained datasets with categories not adequately represented during
+pre-training, which makes adaptation necessary. Recent works have shown
+promising results by utilizing samples from web-scale databases for
+retrieval-augmented adaptation, especially in low-data regimes. Despite the
+empirical success, understanding how retrieval impacts the adaptation of
+vision-language models remains an open research question. In this work, we
+adopt a reflective perspective by presenting a systematic study to understand
+the roles of key components in retrieval-augmented adaptation. We unveil new
+insights on uni-modal and cross-modal retrieval and highlight the critical role
+of logit ensemble for effective adaptation. We further present theoretical
+underpinnings that directly support our empirical observations.},
+ arxiv_url = {https://arxiv.org/pdf/2405.01468v1.pdf},
+ author = {Yifei Ming and Yixuan Li},
+ title = {Understanding Retrieval-Augmented Task Adaptation for Vision-Language Models},
+ year = {2024-05-02T16:59:05Z}
+}
+
+@article{rege_2023-05-30T22:05:47Z_adanns,
+ abstract = {Web-scale search systems learn an encoder to embed a given query which is
+then hooked into an approximate nearest neighbor search (ANNS) pipeline to
+retrieve similar data points. To accurately capture tail queries and data
+points, learned representations typically are rigid, high-dimensional vectors
+that are generally used as-is in the entire ANNS pipeline and can lead to
+computationally expensive retrieval. In this paper, we argue that instead of
+rigid representations, different stages of ANNS can leverage adaptive
+representations of varying capacities to achieve significantly better
+accuracy-compute trade-offs, i.e., stages of ANNS that can get away with more
+approximate computation should use a lower-capacity representation of the same
+data point. To this end, we introduce AdANNS, a novel ANNS design framework
+that explicitly leverages the flexibility of Matryoshka Representations. We
+demonstrate state-of-the-art accuracy-compute trade-offs using novel
+AdANNS-based key ANNS building blocks like search data structures (AdANNS-IVF)
+and quantization (AdANNS-OPQ). For example on ImageNet retrieval, AdANNS-IVF is
+up to 1.5% more accurate than the rigid representations-based IVF at the same
+compute budget; and matches accuracy while being up to 90x faster in wall-clock
+time. For Natural Questions, 32-byte AdANNS-OPQ matches the accuracy of the
+64-byte OPQ baseline constructed using rigid representations -- same accuracy
+at half the cost! We further show that the gains from AdANNS translate to
+modern-day composite ANNS indices that combine search structures and
+quantization. Finally, we demonstrate that AdANNS can enable inference-time
+adaptivity for compute-aware search on ANNS indices built non-adaptively on
+matryoshka representations. Code is open-sourced at
+https://github.com/RAIVNLab/AdANNS.},
+ arxiv_url = {https://arxiv.org/pdf/2305.19435v2.pdf},
+ author = {Aniket Rege and Aditya Kusupati and Sharan Ranjit S and Alan Fan and Qingqing Cao and Sham Kakade and Prateek Jain and Ali Farhadi},
+ github_url = {https://github.com/RAIVNLab/AdANNS},
+ title = {AdANNS: A Framework for Adaptive Semantic Search},
+ year = {2023-05-30T22:05:47Z}
+}
+
+@article{ryoo_2021-06-21T17:55:59Z_tokenlearner,
+ abstract = {In this paper, we introduce a novel visual representation learning which
+relies on a handful of adaptively learned tokens, and which is applicable to
+both image and video understanding tasks. Instead of relying on hand-designed
+splitting strategies to obtain visual tokens and processing a large number of
+densely sampled patches for attention, our approach learns to mine important
+tokens in visual data. This results in efficiently and effectively finding a
+few important visual tokens and enables modeling of pairwise attention between
+such tokens, over a longer temporal horizon for videos, or the spatial content
+in images. Our experiments demonstrate strong performance on several
+challenging benchmarks for both image and video recognition tasks. Importantly,
+due to our tokens being adaptive, we accomplish competitive results at
+significantly reduced compute amount. We obtain comparable results to the
+state-of-the-arts on ImageNet while being computationally more efficient. We
+also confirm the effectiveness of the approach on multiple video datasets,
+including Kinetics-400, Kinetics-600, Charades, and AViD.
+  The code is available at:
+https://github.com/google-research/scenic/tree/main/scenic/projects/token_learner},
+ arxiv_url = {https://arxiv.org/pdf/2106.11297v4.pdf},
+ author = {Michael S. Ryoo and AJ Piergiovanni and Anurag Arnab and Mostafa Dehghani and Anelia Angelova},
+ github_url = {https://github.com/google-research/scenic},
+ journal = {NeurIPS 2021},
+ title = {TokenLearner: Adaptive Space-Time Tokenization for Videos},
+ year = {2021-06-21T17:55:59Z}
+}
+
+@article{wang_2020-11-13T07:47:01Z_wisdom,
+ abstract = {Deep learning classifiers are assisting humans in making decisions and hence
+the user's trust in these models is of paramount importance. Trust is often a
+function of constant behavior. From an AI model perspective it means given the
+same input the user would expect the same output, especially for correct
+outputs, or in other words consistently correct outputs. This paper studies a
+model behavior in the context of periodic retraining of deployed models where
+the outputs from successive generations of the models might not agree on the
+correct labels assigned to the same input. We formally define consistency and
+correct-consistency of a learning model. We prove that consistency and
+correct-consistency of an ensemble learner is not less than the average
+consistency and correct-consistency of individual learners and
+correct-consistency can be improved with a probability by combining learners
+with accuracy not less than the average accuracy of ensemble component
+learners. To validate the theory using three datasets and two state-of-the-art
+deep learning classifiers we also propose an efficient dynamic snapshot
+ensemble method and demonstrate its value.},
+ arxiv_url = {https://arxiv.org/pdf/2011.06796v1.pdf},
+ author = {Lijing Wang and Dipanjan Ghosh and Maria Teresa Gonzalez Diaz and Ahmed Farahat and Mahbubul Alam and Chetan Gupta and Jiangzhuo Chen and Madhav Marathe},
+ github_url = {https://github.com/christa60/dynens},
+ title = {Wisdom of the Ensemble: Improving Consistency of Deep Learning Models},
+ year = {2020-11-13T07:47:01Z}
+}
+
+@article{wu_2024-03-15T06:59:43Z_repoformer,
+ abstract = {Recent advances in retrieval-augmented generation (RAG) have initiated a new
+era in repository-level code completion. However, the invariable use of
+retrieval in existing methods exposes issues in both efficiency and robustness,
+with a large proportion of the retrieved contexts proving unhelpful or harmful
+to code language models (code LMs). In this paper, we propose a selective RAG
+framework to avoid retrieval when unnecessary. To power this framework, we
+design a self-supervised learning approach to enable a code LM to accurately
+self-evaluate whether retrieval can improve its output quality and robustly
+leverage the potentially noisy retrieved contexts. Using this LM as both the
+selective RAG policy and the generation model, our framework achieves
+state-of-the-art repository-level code completion performance on diverse
+benchmarks including RepoEval, CrossCodeEval, and CrossCodeLongEval, a new
+long-form code completion benchmark. Meanwhile, our analyses show that
+selectively retrieving brings as much as 70% inference speedup in the online
+serving setting without harming the performance. We further demonstrate that
+our framework is able to accommodate different generation models, retrievers,
+and programming languages. These advancements position our framework as an
+important step towards more accurate and efficient repository-level code
+completion.},
+ arxiv_url = {https://arxiv.org/pdf/2403.10059v2.pdf},
+ author = {Di Wu and Wasi Uddin Ahmad and Dejiao Zhang and Murali Krishna Ramanathan and Xiaofei Ma},
+ title = {Repoformer: Selective Retrieval for Repository-Level Code Completion},
+ year = {2024-03-15T06:59:43Z}
+}
+
+@article{yang_2024-06-07T08:43:07Z_crag,
+ abstract = {Retrieval-Augmented Generation (RAG) has recently emerged as a promising
+solution to alleviate Large Language Model (LLM)'s deficiency in lack of
+knowledge. Existing RAG datasets, however, do not adequately represent the
+diverse and dynamic nature of real-world Question Answering (QA) tasks. To
+bridge this gap, we introduce the Comprehensive RAG Benchmark (CRAG), a factual
+question answering benchmark of 4,409 question-answer pairs and mock APIs to
+simulate web and Knowledge Graph (KG) search. CRAG is designed to encapsulate a
+diverse array of questions across five domains and eight question categories,
+reflecting varied entity popularity from popular to long-tail, and temporal
+dynamisms ranging from years to seconds. Our evaluation of this benchmark
+highlights the gap to fully trustworthy QA. Whereas most advanced LLMs achieve
+<=34% accuracy on CRAG, adding RAG in a straightforward manner improves the
+accuracy only to 44%. State-of-the-art industry RAG solutions only answer 63%
+of questions without any hallucination. CRAG also reveals much lower accuracy
+in answering questions regarding facts with higher dynamism, lower popularity,
+or higher complexity, suggesting future research directions. The CRAG benchmark
+laid the groundwork for a KDD Cup 2024 challenge and attracted thousands of
+participants and submissions. We commit to maintaining CRAG to serve research
+communities in advancing RAG solutions and general QA solutions. CRAG is
+available at https://github.com/facebookresearch/CRAG/.},
+ arxiv_url = {https://arxiv.org/pdf/2406.04744v2.pdf},
+ author = {Xiao Yang and Kai Sun and Hao Xin and Yushi Sun and Nikita Bhalla and Xiangsen Chen and Sajal Choudhary and Rongze Daniel Gui and Ziran Will Jiang and Ziyu Jiang and Lingkun Kong and Brian Moran and Jiaqi Wang and Yifan Ethan Xu and An Yan and Chenyu Yang and Eting Yuan and Hanwen Zha and Nan Tang and Lei Chen and Nicolas Scheffer and Yue Liu and Nirav Shah and Rakesh Wanga and Anuj Kumar and Wen-tau Yih and Xin Luna Dong},
+ github_url = {https://github.com/facebookresearch/CRAG},
+ title = {CRAG - Comprehensive RAG Benchmark},
+ year = {2024-06-07T08:43:07Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{asai_2023-10-17T18:18:32Z_self,
+ abstract = {Despite their remarkable capabilities, large language models (LLMs) often
+produce responses containing factual inaccuracies due to their sole reliance on
+the parametric knowledge they encapsulate. Retrieval-Augmented Generation
+(RAG), an ad hoc approach that augments LMs with retrieval of relevant
+knowledge, decreases such issues. However, indiscriminately retrieving and
+incorporating a fixed number of retrieved passages, regardless of whether
+retrieval is necessary, or passages are relevant, diminishes LM versatility or
+can lead to unhelpful response generation. We introduce a new framework called
+Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's
+quality and factuality through retrieval and self-reflection. Our framework
+trains a single arbitrary LM that adaptively retrieves passages on-demand, and
+generates and reflects on retrieved passages and its own generations using
+special tokens, called reflection tokens. Generating reflection tokens makes
+the LM controllable during the inference phase, enabling it to tailor its
+behavior to diverse task requirements. Experiments show that Self-RAG (7B and
+13B parameters) significantly outperforms state-of-the-art LLMs and
+retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG
+outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA,
+reasoning and fact verification tasks, and it shows significant gains in
+improving factuality and citation accuracy for long-form generations relative
+to these models.},
+ arxiv_url = {https://arxiv.org/pdf/2310.11511v1.pdf},
+ author = {Akari Asai and Zeqiu Wu and Yizhong Wang and Avirup Sil and Hannaneh Hajishirzi},
+ title = {Self-RAG: Learning to retrieve, generate, and critique through self-reflection},
+ year = {2023-10-17T18:18:32Z}
+}
+
+@article{chen_2021-07-07T17:41:24Z_evaluating,
+ abstract = {We introduce Codex, a GPT language model fine-tuned on publicly available
+code from GitHub, and study its Python code-writing capabilities. A distinct
+production version of Codex powers GitHub Copilot. On HumanEval, a new
+evaluation set we release to measure functional correctness for synthesizing
+programs from docstrings, our model solves 28.8% of the problems, while GPT-3
+solves 0% and GPT-J solves 11.4%. Furthermore, we find that repeated sampling
+from the model is a surprisingly effective strategy for producing working
+solutions to difficult prompts. Using this method, we solve 70.2% of our
+problems with 100 samples per problem. Careful investigation of our model
+reveals its limitations, including difficulty with docstrings describing long
+chains of operations and with binding operations to variables. Finally, we
+discuss the potential broader impacts of deploying powerful code generation
+technologies, covering safety, security, and economics.},
+ arxiv_url = {https://arxiv.org/pdf/2107.03374v2.pdf},
+ author = {Mark Chen and Jerry Tworek and Heewoo Jun and Qiming Yuan and Henrique Ponde de Oliveira Pinto and Jared Kaplan and Harri Edwards and Yuri Burda and Nicholas Joseph and Greg Brockman and Alex Ray and Raul Puri and Gretchen Krueger and Michael Petrov and Heidy Khlaaf and Girish Sastry and Pamela Mishkin and Brooke Chan and Scott Gray and Nick Ryder and Mikhail Pavlov and Alethea Power and Lukasz Kaiser and Mohammad Bavarian and Clemens Winter and Philippe Tillet and Felipe Petroski Such and Dave Cummings and Matthias Plappert and Fotios Chantzis and Elizabeth Barnes and Ariel Herbert-Voss and William Hebgen Guss and Alex Nichol and Alex Paino and Nikolas Tezak and Jie Tang and Igor Babuschkin and Suchir Balaji and Shantanu Jain and William Saunders and Christopher Hesse and Andrew N. Carr and Jan Leike and Josh Achiam and Vedant Misra and Evan Morikawa and Alec Radford and Matthew Knight and Miles Brundage and Mira Murati and Katie Mayer and Peter Welinder and Bob McGrew and Dario Amodei and Sam McCandlish and Ilya Sutskever and Wojciech Zaremba},
+ title = {Evaluating large language models trained on code},
+ year = {2021-07-07T17:41:24Z}
+}
+
+@article{chen_2023-02-02T18:44:11Z_accelerating,
+ abstract = {We present speculative sampling, an algorithm for accelerating transformer
+decoding by enabling the generation of multiple tokens from each transformer
+call. Our algorithm relies on the observation that the latency of parallel
+scoring of short continuations, generated by a faster but less powerful draft
+model, is comparable to that of sampling a single token from the larger target
+model. This is combined with a novel modified rejection sampling scheme which
+preserves the distribution of the target model within hardware numerics. We
+benchmark speculative sampling with Chinchilla, a 70 billion parameter language
+model, achieving a 2-2.5x decoding speedup in a distributed setup, without
+compromising the sample quality or making modifications to the model itself.},
+ arxiv_url = {https://arxiv.org/pdf/2302.01318v1.pdf},
+ author = {Charlie Chen and Sebastian Borgeaud and Geoffrey Irving and Jean-Baptiste Lespiau and Laurent Sifre and John Jumper},
+ title = {Accelerating large language model decoding with speculative sampling},
+ year = {2023-02-02T18:44:11Z}
+}
+
+@article{ding_2023-10-17T13:18:01Z_crosscodeeval,
+ abstract = {Code completion models have made significant progress in recent years, yet
+current popular evaluation datasets, such as HumanEval and MBPP, predominantly
+focus on code completion tasks within a single file. This over-simplified
+setting falls short of representing the real-world software development
+scenario where repositories span multiple files with numerous cross-file
+dependencies, and accessing and understanding cross-file context is often
+required to complete the code correctly.
+  To fill in this gap, we propose CrossCodeEval, a diverse and multilingual
+code completion benchmark that necessitates an in-depth cross-file contextual
+understanding to complete the code accurately. CrossCodeEval is built on a
+diverse set of real-world, open-sourced, permissively-licensed repositories in
+four popular programming languages: Python, Java, TypeScript, and C#. To create
+examples that strictly require cross-file context for accurate completion, we
+propose a straightforward yet efficient static-analysis-based approach to
+pinpoint the use of cross-file context within the current file.
+  Extensive experiments on state-of-the-art code language models like CodeGen
+and StarCoder demonstrate that CrossCodeEval is extremely challenging when the
+relevant cross-file context is absent, and we see clear improvements when
+adding these context into the prompt. However, despite such improvements, the
+pinnacle of performance remains notably unattained even with the
+highest-performing model, indicating that CrossCodeEval is also capable of
+assessing model's capability in leveraging extensive context to make better
+code completion. Finally, we benchmarked various methods in retrieving
+cross-file context, and show that CrossCodeEval can also be used to measure the
+capability of code retrievers.},
+ arxiv_url = {https://arxiv.org/pdf/2310.11248v2.pdf},
+ author = {Yangruibo Ding and Zijian Wang and Wasi Uddin Ahmad and Hantian Ding and Ming Tan and Nihal Jain and Murali Krishna Ramanathan and Ramesh Nallapati and Parminder Bhatia and Dan Roth and Bing Xiang},
+ title = {Crosscodeeval: A diverse and multilingual benchmark for cross-file code completion},
+ year = {2023-10-17T13:18:01Z}
+}
+
+@article{drozdov_2022-10-28T02:57:40Z_you,
+ abstract = {Retrieval-enhanced language models (LMs), which condition their predictions
+on text retrieved from large external datastores, have recently shown
+significant perplexity improvements compared to standard LMs. One such
+approach, the $k$NN-LM, interpolates any existing LM's predictions with the
+output of a $k$-nearest neighbors model and requires no additional training. In
+this paper, we explore the importance of lexical and semantic matching in the
+context of items retrieved by $k$NN-LM. We find two trends: (1) the presence of
+large overlapping $n$-grams between the datastore and evaluation set plays an
+important factor in strong performance, even when the datastore is derived from
+the training data; and (2) the $k$NN-LM is most beneficial when retrieved items
+have high semantic similarity with the query. Based on our analysis, we define
+a new formulation of the $k$NN-LM that uses retrieval quality to assign the
+interpolation coefficient. We empirically measure the effectiveness of our
+approach on two English language modeling datasets, Wikitext-103 and PG-19. Our
+re-formulation of the $k$NN-LM is beneficial in both cases, and leads to nearly
+4% improvement in perplexity on the Wikitext-103 test set.},
+ arxiv_url = {https://arxiv.org/pdf/2210.15859v1.pdf},
+ author = {Andrew Drozdov and Shufan Wang and Razieh Rahimi and Andrew McCallum and Hamed Zamani and Mohit Iyyer},
+ title = {You can’t pick your neighbors, or can you? when and how to rely on retrieval in the kNN-LM},
+ year = {2022-10-28T02:57:40Z}
+}
+
+@article{guo_2022-03-08T04:48:07Z_unixcoder,
+ abstract = {Pre-trained models for programming languages have recently demonstrated great
+success on code intelligence. To support both code-related understanding and
+generation tasks, recent works attempt to pre-train unified encoder-decoder
+models. However, such encoder-decoder framework is sub-optimal for
+auto-regressive tasks, especially code completion that requires a decoder-only
+manner for efficient inference. In this paper, we present UniXcoder, a unified
+cross-modal pre-trained model for programming language. The model utilizes mask
+attention matrices with prefix adapters to control the behavior of the model
+and leverages cross-modal contents like AST and code comment to enhance code
+representation. To encode AST that is represented as a tree in parallel, we
+propose a one-to-one mapping method to transform AST in a sequence structure
+that retains all structural information from the tree. Furthermore, we propose
+to utilize multi-modal contents to learn representation of code fragment with
+contrastive learning, and then align representations among programming
+languages using a cross-modal generation task. We evaluate UniXcoder on five
+code-related tasks over nine datasets. To further evaluate the performance of
+code fragment representation, we also construct a dataset for a new task,
+called zero-shot code-to-code search. Results show that our model achieves
+state-of-the-art performance on most tasks and analysis reveals that comment
+and AST can both enhance UniXcoder.},
+ arxiv_url = {https://arxiv.org/pdf/2203.03850v1.pdf},
+ author = {Daya Guo and Shuai Lu and Nan Duan and Yanlin Wang and Ming Zhou and Jian Yin},
+ title = {UniXcoder: Unified cross-modal pre-training for code representation},
+ year = {2022-03-08T04:48:07Z}
+}
+
+@article{he_2021-09-09T12:32:28Z_efficient,
+ abstract = {Non-parametric neural language models (NLMs) learn predictive distributions
+of text utilizing an external datastore, which allows them to learn through
+explicitly memorizing the training datapoints. While effective, these models
+often require retrieval from a large datastore at test time, significantly
+increasing the inference overhead and thus limiting the deployment of
+non-parametric NLMs in practical applications. In this paper, we take the
+recently proposed $k$-nearest neighbors language model (Khandelwal et al.,
+2020) as an example, exploring methods to improve its efficiency along various
+dimensions. Experiments on the standard WikiText-103 benchmark and
+domain-adaptation datasets show that our methods are able to achieve up to a 6x
+speed-up in inference speed while retaining comparable performance. The
+empirical analysis we present may provide guidelines for future research
+seeking to develop or deploy more efficient non-parametric NLMs.},
+ arxiv_url = {https://arxiv.org/pdf/2109.04212v3.pdf},
+ author = {Junxian He and Graham Neubig and Taylor Berg-Kirkpatrick},
+ title = {Efficient nearest neighbor language models},
+ year = {2021-09-09T12:32:28Z}
+}
+
+@article{karampatsis_2019-03-13T22:03:22Z_are,
+ abstract = {Statistical language modeling techniques have successfully been applied to
+source code, yielding a variety of new software development tools, such as
+tools for code suggestion and improving readability. A major issue with these
+techniques is that code introduces new vocabulary at a far higher rate than
+natural language, as new identifier names proliferate. But traditional language
+models limit the vocabulary to a fixed set of common words. For code, this
+strong assumption has been shown to have a significant negative effect on
+predictive performance. But the open vocabulary version of the neural network
+language models for code have not been introduced in the literature. We present
+a new open-vocabulary neural language model for code that is not limited to a
+fixed vocabulary of identifier names. We employ a segmentation into subword
+units, subsequences of tokens chosen based on a compression criterion,
+following previous work in machine translation. Our network achieves best in
+class performance, outperforming even the state-of-the-art methods of
+Hellendoorn and Devanbu that are designed specifically to model code.
+Furthermore, we present a simple method for dynamically adapting the model to a
+new test project, resulting in increased performance. We showcase our
+methodology on code corpora in three different languages of over a billion
+tokens each, hundreds of times larger than in previous work. To our knowledge,
+this is the largest neural language model for code that has been reported.},
+ arxiv_url = {https://arxiv.org/pdf/1903.05734v1.pdf},
+ author = {Rafael-Michael Karampatsis and Charles Sutton},
+ title = {Are deep neural networks the best choice for modeling source code?},
+ year = {2019-03-13T22:03:22Z}
+}
