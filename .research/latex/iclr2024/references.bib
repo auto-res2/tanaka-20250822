@@ -5,3 +5,449 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{author_year_qbb,
+ title = {QBB: Quantization with Binary Bases for LLMs}
+}
+
+@article{author_year_reward,
+ title = {Reward Shaping for Reinforcement Learning with An Assistant Reward Agent}
+}
+
+@article{cui_2023-10-02T17:40:01Z_ultrafeedback,
+ abstract = {Learning from human feedback has become a pivot technique in aligning large
+language models (LLMs) with human preferences. However, acquiring vast and
+premium human feedback is bottlenecked by time, labor, and human capability,
+resulting in small sizes or limited topics of current datasets. This further
+hinders feedback learning as well as alignment research within the open-source
+community. To address this issue, we explore how to go beyond human feedback
+and collect high-quality \textit{AI feedback} automatically for a scalable
+alternative. Specifically, we identify \textbf{scale and diversity} as the key
+factors for feedback data to take effect. Accordingly, we first broaden
+instructions and responses in both amount and breadth to encompass a wider
+range of user-assistant interactions. Then, we meticulously apply a series of
+techniques to mitigate annotation biases for more reliable AI feedback. We
+finally present \textsc{UltraFeedback}, a large-scale, high-quality, and
+diversified AI feedback dataset, which contains over 1 million GPT-4 feedback
+for 250k user-assistant conversations from various aspects. Built upon
+\textsc{UltraFeedback}, we align a LLaMA-based model by best-of-$n$ sampling
+and reinforcement learning, demonstrating its exceptional performance on chat
+benchmarks. Our work validates the effectiveness of scaled AI feedback data in
+constructing strong open-source chat language models, serving as a solid
+foundation for future feedback learning research. Our data and models are
+available at https://github.com/thunlp/UltraFeedback.},
+ arxiv_url = {https://arxiv.org/pdf/2310.01377v2.pdf},
+ author = {Ganqu Cui and Lifan Yuan and Ning Ding and Guanming Yao and Bingxiang He and Wei Zhu and Yuan Ni and Guotong Xie and Ruobing Xie and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+ title = {ULTRAFEEDBACK: Boosting Language Models with Scaled AI Feedback},
+ year = {2023-10-02T17:40:01Z}
+}
+
+@article{dettmers_2023-05-23T17:50:33Z_qlora,
+ abstract = {We present QLoRA, an efficient finetuning approach that reduces memory usage
+enough to finetune a 65B parameter model on a single 48GB GPU while preserving
+full 16-bit finetuning task performance. QLoRA backpropagates gradients through
+a frozen, 4-bit quantized pretrained language model into Low Rank
+Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all
+previous openly released models on the Vicuna benchmark, reaching 99.3% of the
+performance level of ChatGPT while only requiring 24 hours of finetuning on a
+single GPU. QLoRA introduces a number of innovations to save memory without
+sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is
+information theoretically optimal for normally distributed weights (b) double
+quantization to reduce the average memory footprint by quantizing the
+quantization constants, and (c) paged optimziers to manage memory spikes. We
+use QLoRA to finetune more than 1,000 models, providing a detailed analysis of
+instruction following and chatbot performance across 8 instruction datasets,
+multiple model types (LLaMA, T5), and model scales that would be infeasible to
+run with regular finetuning (e.g. 33B and 65B parameter models). Our results
+show that QLoRA finetuning on a small high-quality dataset leads to
+state-of-the-art results, even when using smaller models than the previous
+SoTA. We provide a detailed analysis of chatbot performance based on both human
+and GPT-4 evaluations showing that GPT-4 evaluations are a cheap and reasonable
+alternative to human evaluation. Furthermore, we find that current chatbot
+benchmarks are not trustworthy to accurately evaluate the performance levels of
+chatbots. A lemon-picked analysis demonstrates where Guanaco fails compared to
+ChatGPT. We release all of our models and code, including CUDA kernels for
+4-bit training.},
+ arxiv_url = {https://arxiv.org/pdf/2305.14314v1.pdf},
+ author = {Tim Dettmers and Artidoro Pagnoni and Ari Holtzman and Luke Zettlemoyer},
+ github_url = {https://github.com/artidoro/qlora},
+ title = {QLoRA: Efficient Finetuning of Quantized LLMs},
+ year = {2023-05-23T17:50:33Z}
+}
+
+@article{dettmers_2023-05-23T17:50:33Z_qlora,
+ abstract = {We present QLoRA, an efficient finetuning approach that reduces memory usage
+enough to finetune a 65B parameter model on a single 48GB GPU while preserving
+full 16-bit finetuning task performance. QLoRA backpropagates gradients through
+a frozen, 4-bit quantized pretrained language model into Low Rank
+Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all
+previous openly released models on the Vicuna benchmark, reaching 99.3% of the
+performance level of ChatGPT while only requiring 24 hours of finetuning on a
+single GPU. QLoRA introduces a number of innovations to save memory without
+sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is
+information theoretically optimal for normally distributed weights (b) double
+quantization to reduce the average memory footprint by quantizing the
+quantization constants, and (c) paged optimziers to manage memory spikes. We
+use QLoRA to finetune more than 1,000 models, providing a detailed analysis of
+instruction following and chatbot performance across 8 instruction datasets,
+multiple model types (LLaMA, T5), and model scales that would be infeasible to
+run with regular finetuning (e.g. 33B and 65B parameter models). Our results
+show that QLoRA finetuning on a small high-quality dataset leads to
+state-of-the-art results, even when using smaller models than the previous
+SoTA. We provide a detailed analysis of chatbot performance based on both human
+and GPT-4 evaluations showing that GPT-4 evaluations are a cheap and reasonable
+alternative to human evaluation. Furthermore, we find that current chatbot
+benchmarks are not trustworthy to accurately evaluate the performance levels of
+chatbots. A lemon-picked analysis demonstrates where Guanaco fails compared to
+ChatGPT. We release all of our models and code, including CUDA kernels for
+4-bit training.},
+ arxiv_url = {https://arxiv.org/pdf/2305.14314v1.pdf},
+ author = {Tim Dettmers and Artidoro Pagnoni and Ari Holtzman and Luke Zettlemoyer},
+ github_url = {https://github.com/artidoro/qlora},
+ title = {QLoRA: Efficient Finetuning of Quantized LLMs},
+ year = {2023-05-23T17:50:33Z}
+}
+
+@article{gao_2024-01-21T10:46:23Z_linear,
+ abstract = {The success of AI assistants based on Language Models (LLMs) hinges on
+Reinforcement Learning from Human Feedback (RLHF) to comprehend and align with
+user intentions. However, traditional alignment algorithms, such as PPO, are
+hampered by complex annotation and training requirements. This reliance limits
+the applicability of RLHF and hinders the development of professional
+assistants tailored to diverse human preferences. In this work, we introduce
+\textit{Linear Alignment}, a novel algorithm that aligns language models with
+human preferences in one single inference step, eliminating the reliance on
+data annotation and model training. Linear alignment incorporates a new
+parameterization for policy optimization under divergence constraints, which
+enables the extraction of optimal policy in a closed-form manner and
+facilitates the direct estimation of the aligned response. Extensive
+experiments on both general and personalized preference datasets demonstrate
+that linear alignment significantly enhances the performance and efficiency of
+LLM alignment across diverse scenarios. Our code and dataset is published on
+\url{https://github.com/Wizardcoast/Linear_Alignment.git}.},
+ arxiv_url = {https://arxiv.org/pdf/2401.11458v3.pdf},
+ author = {Songyang Gao and Qiming Ge and Wei Shen and Shihan Dou and Junjie Ye and Xiao Wang and Rui Zheng and Yicheng Zou and Zhi Chen and Hang Yan and Qi Zhang and Dahua Lin},
+ title = {Linear Alignment: A Closed-form Solution for Aligning Human Preferences without Tuning and Feedback},
+ year = {2024-01-21T10:46:23Z}
+}
+
+@article{hao_2022-12-19T16:50:41Z_optimizing,
+ abstract = {Well-designed prompts can guide text-to-image models to generate amazing
+images. However, the performant prompts are often model-specific and misaligned
+with user input. Instead of laborious human engineering, we propose prompt
+adaptation, a general framework that automatically adapts original user input
+to model-preferred prompts. Specifically, we first perform supervised
+fine-tuning with a pretrained language model on a small collection of manually
+engineered prompts. Then we use reinforcement learning to explore better
+prompts. We define a reward function that encourages the policy to generate
+more aesthetically pleasing images while preserving the original user
+intentions. Experimental results on Stable Diffusion show that our method
+outperforms manual prompt engineering in terms of both automatic metrics and
+human preference ratings. Moreover, reinforcement learning further boosts
+performance, especially on out-of-domain prompts. The pretrained checkpoints
+are available at https://aka.ms/promptist. The demo can be found at
+https://aka.ms/promptist-demo.},
+ arxiv_url = {https://arxiv.org/pdf/2212.09611v2.pdf},
+ author = {Yaru Hao and Zewen Chi and Li Dong and Furu Wei},
+ github_url = {https://github.com/christophschuhmann/improved-aesthetic-predictor},
+ title = {Optimizing Prompts for Text-to-Image Generation},
+ year = {2022-12-19T16:50:41Z}
+}
+
+@article{hejna_2023-10-20T16:37:56Z_contrastive,
+ abstract = {Reinforcement Learning from Human Feedback (RLHF) has emerged as a popular
+paradigm for aligning models with human intent. Typically RLHF algorithms
+operate in two phases: first, use human preferences to learn a reward function
+and second, align the model by optimizing the learned reward via reinforcement
+learning (RL). This paradigm assumes that human preferences are distributed
+according to reward, but recent work suggests that they instead follow the
+regret under the user's optimal policy. Thus, learning a reward function from
+feedback is not only based on a flawed assumption of human preference, but also
+leads to unwieldy optimization challenges that stem from policy gradients or
+bootstrapping in the RL phase. Because of these optimization challenges,
+contemporary RLHF methods restrict themselves to contextual bandit settings
+(e.g., as in large language models) or limit observation dimensionality (e.g.,
+state-based robotics). We overcome these limitations by introducing a new
+family of algorithms for optimizing behavior from human feedback using the
+regret-based model of human preferences. Using the principle of maximum
+entropy, we derive Contrastive Preference Learning (CPL), an algorithm for
+learning optimal policies from preferences without learning reward functions,
+circumventing the need for RL. CPL is fully off-policy, uses only a simple
+contrastive objective, and can be applied to arbitrary MDPs. This enables CPL
+to elegantly scale to high-dimensional and sequential RLHF problems while being
+simpler than prior methods.},
+ arxiv_url = {https://arxiv.org/pdf/2310.13639v3.pdf},
+ author = {Joey Hejna and Rafael Rafailov and Harshit Sikchi and Chelsea Finn and Scott Niekum and W. Bradley Knox and Dorsa Sadigh},
+ github_url = {https://github.com/jhejna/cpl},
+ title = {Contrastive Preference Learning: Learning from Human Feedback without Reinforcement Learning},
+ year = {2023-10-20T16:37:56Z}
+}
+
+@article{hong_2023-07-24T17:59:02Z_llm,
+ abstract = {Large language models (LLMs) and Vision-Language Models (VLMs) have been
+proven to excel at multiple tasks, such as commonsense reasoning. Powerful as
+these models can be, they are not grounded in the 3D physical world, which
+involves richer concepts such as spatial relationships, affordances, physics,
+layout, and so on. In this work, we propose to inject the 3D world into large
+language models and introduce a whole new family of 3D-LLMs. Specifically,
+3D-LLMs can take 3D point clouds and their features as input and perform a
+diverse set of 3D-related tasks, including captioning, dense captioning, 3D
+question answering, task decomposition, 3D grounding, 3D-assisted dialog,
+navigation, and so on. Using three types of prompting mechanisms that we
+design, we are able to collect over 300k 3D-language data covering these tasks.
+To efficiently train 3D-LLMs, we first utilize a 3D feature extractor that
+obtains 3D features from rendered multi- view images. Then, we use 2D VLMs as
+our backbones to train our 3D-LLMs. By introducing a 3D localization mechanism,
+3D-LLMs can better capture 3D spatial information. Experiments on ScanQA show
+that our model outperforms state-of-the-art baselines by a large margin (e.g.,
+the BLEU-1 score surpasses state-of-the-art score by 9%). Furthermore,
+experiments on our held-in datasets for 3D captioning, task composition, and
+3D-assisted dialogue show that our model outperforms 2D VLMs. Qualitative
+examples also show that our model could perform more tasks beyond the scope of
+existing LLMs and VLMs. Project Page: : https://vis-www.cs.umass.edu/3dllm/.},
+ arxiv_url = {https://arxiv.org/pdf/2307.12981v1.pdf},
+ author = {Yining Hong and Haoyu Zhen and Peihao Chen and Shuhong Zheng and Yilun Du and Zhenfang Chen and Chuang Gan},
+ title = {3D-LLM: Injecting the 3D World into Large Language Models},
+ year = {2023-07-24T17:59:02Z}
+}
+
+@article{li_2023-10-12T18:34:08Z_loftq,
+ abstract = {Quantization is an indispensable technique for serving Large Language Models
+(LLMs) and has recently found its way into LoRA fine-tuning. In this work we
+focus on the scenario where quantization and LoRA fine-tuning are applied
+together on a pre-trained model. In such cases it is common to observe a
+consistent gap in the performance on downstream tasks between full fine-tuning
+and quantization plus LoRA fine-tuning approach. In response, we propose LoftQ
+(LoRA-Fine-Tuning-aware Quantization), a novel quantization framework that
+simultaneously quantizes an LLM and finds a proper low-rank initialization for
+LoRA fine-tuning. Such an initialization alleviates the discrepancy between the
+quantized and full-precision model and significantly improves generalization in
+downstream tasks. We evaluate our method on natural language understanding,
+question answering, summarization, and natural language generation tasks.
+Experiments show that our method is highly effective and outperforms existing
+quantization methods, especially in the challenging 2-bit and 2/4-bit mixed
+precision regimes. The code is available on https://github.com/yxli2123/LoftQ.},
+ arxiv_url = {https://arxiv.org/pdf/2310.08659v4.pdf},
+ author = {Yixiao Li and Yifan Yu and Chen Liang and Pengcheng He and Nikos Karampatziakis and Weizhu Chen and Tuo Zhao},
+ github_url = {https://github.com/yxli2123/LoftQ},
+ title = {LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models},
+ year = {2023-10-12T18:34:08Z}
+}
+
+@article{liu_2024-02-22T18:58:55Z_mobilellm,
+ abstract = {This paper addresses the growing need for efficient large language models
+(LLMs) on mobile devices, driven by increasing cloud costs and latency
+concerns. We focus on designing top-quality LLMs with fewer than a billion
+parameters, a practical choice for mobile deployment. Contrary to prevailing
+belief emphasizing the pivotal role of data and parameter quantity in
+determining model quality, our investigation underscores the significance of
+model architecture for sub-billion scale LLMs. Leveraging deep and thin
+architectures, coupled with embedding sharing and grouped-query attention
+mechanisms, we establish a strong baseline network denoted as MobileLLM, which
+attains a remarkable 2.7%/4.3% accuracy boost over preceding 125M/350M
+state-of-the-art models. Additionally, we propose an immediate block-wise
+weight-sharing approach with no increase in model size and only marginal
+latency overhead. The resultant models, denoted as MobileLLM-LS, demonstrate a
+further accuracy enhancement of 0.7%/0.8% than MobileLLM 125M/350M. Moreover,
+MobileLLM model family shows significant improvements compared to previous
+sub-billion models on chat benchmarks, and demonstrates close correctness to
+LLaMA-v2 7B in API calling tasks, highlighting the capability of small models
+for common on-device use cases.},
+ arxiv_url = {https://arxiv.org/pdf/2402.14905v2.pdf},
+ author = {Zechun Liu and Changsheng Zhao and Forrest Iandola and Chen Lai and Yuandong Tian and Igor Fedorov and Yunyang Xiong and Ernie Chang and Yangyang Shi and Raghuraman Krishnamoorthi and Liangzhen Lai and Vikas Chandra},
+ title = {MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases},
+ year = {2024-02-22T18:58:55Z}
+}
+
+@article{xu_2024-04-16T16:51:53Z_dpo,
+ abstract = {Reinforcement Learning from Human Feedback (RLHF) is currently the most
+widely used method to align large language models (LLMs) with human
+preferences. Existing RLHF methods can be roughly categorized as either
+reward-based or reward-free. Novel applications such as ChatGPT and Claude
+leverage reward-based methods that first learn a reward model and apply
+actor-critic algorithms, such as Proximal Policy Optimization (PPO). However,
+in academic benchmarks, state-of-the-art results are often achieved via
+reward-free methods, such as Direct Preference Optimization (DPO). Is DPO truly
+superior to PPO? Why does PPO perform poorly on these benchmarks? In this
+paper, we first conduct both theoretical and empirical studies on the
+algorithmic properties of DPO and show that DPO may have fundamental
+limitations. Moreover, we also comprehensively examine PPO and reveal the key
+factors for the best performances of PPO in fine-tuning LLMs. Finally, we
+benchmark DPO and PPO across a collection of RLHF testbeds, ranging from
+dialogue to code generation. Experiment results demonstrate that PPO is able to
+surpass other alignment methods in all cases and achieve state-of-the-art
+results in challenging code competitions. Our code is publicly available at
+https://github.com/openpsi-project/ReaLHF.},
+ arxiv_url = {https://arxiv.org/pdf/2404.10719v3.pdf},
+ author = {Shusheng Xu and Wei Fu and Jiaxuan Gao and Wenjie Ye and Weilin Liu and Zhiyu Mei and Guangju Wang and Chao Yu and Yi Wu},
+ github_url = {https://github.com/PKU-Alignment/safe-rlhf},
+ journal = {ICML 2024},
+ title = {Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study},
+ year = {2024-04-16T16:51:53Z}
+}
+
+@article{xu_2024-04-16T16:51:53Z_dpo,
+ abstract = {Reinforcement Learning from Human Feedback (RLHF) is currently the most
+widely used method to align large language models (LLMs) with human
+preferences. Existing RLHF methods can be roughly categorized as either
+reward-based or reward-free. Novel applications such as ChatGPT and Claude
+leverage reward-based methods that first learn a reward model and apply
+actor-critic algorithms, such as Proximal Policy Optimization (PPO). However,
+in academic benchmarks, state-of-the-art results are often achieved via
+reward-free methods, such as Direct Preference Optimization (DPO). Is DPO truly
+superior to PPO? Why does PPO perform poorly on these benchmarks? In this
+paper, we first conduct both theoretical and empirical studies on the
+algorithmic properties of DPO and show that DPO may have fundamental
+limitations. Moreover, we also comprehensively examine PPO and reveal the key
+factors for the best performances of PPO in fine-tuning LLMs. Finally, we
+benchmark DPO and PPO across a collection of RLHF testbeds, ranging from
+dialogue to code generation. Experiment results demonstrate that PPO is able to
+surpass other alignment methods in all cases and achieve state-of-the-art
+results in challenging code competitions. Our code is publicly available at
+https://github.com/openpsi-project/ReaLHF.},
+ arxiv_url = {https://arxiv.org/pdf/2404.10719v3.pdf},
+ author = {Shusheng Xu and Wei Fu and Jiaxuan Gao and Wenjie Ye and Weilin Liu and Zhiyu Mei and Guangju Wang and Chao Yu and Yi Wu},
+ github_url = {https://github.com/PKU-Alignment/safe-rlhf},
+ journal = {ICML 2024},
+ title = {Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study},
+ year = {2024-04-16T16:51:53Z}
+}
+
+@article{yang_2023-11-22T08:42:46Z_using,
+ abstract = {Using reinforcement learning with human feedback (RLHF) has shown significant
+promise in fine-tuning diffusion models. Previous methods start by training a
+reward model that aligns with human preferences, then leverage RL techniques to
+fine-tune the underlying models. However, crafting an efficient reward model
+demands extensive datasets, optimal architecture, and manual hyperparameter
+tuning, making the process both time and cost-intensive. The direct preference
+optimization (DPO) method, effective in fine-tuning large language models,
+eliminates the necessity for a reward model. However, the extensive GPU memory
+requirement of the diffusion model's denoising process hinders the direct
+application of the DPO method. To address this issue, we introduce the Direct
+Preference for Denoising Diffusion Policy Optimization (D3PO) method to
+directly fine-tune diffusion models. The theoretical analysis demonstrates that
+although D3PO omits training a reward model, it effectively functions as the
+optimal reward model trained using human feedback data to guide the learning
+process. This approach requires no training of a reward model, proving to be
+more direct, cost-effective, and minimizing computational overhead. In
+experiments, our method uses the relative scale of objectives as a proxy for
+human preference, delivering comparable results to methods using ground-truth
+rewards. Moreover, D3PO demonstrates the ability to reduce image distortion
+rates and generate safer images, overcoming challenges lacking robust reward
+models. Our code is publicly available at https://github.com/yk7333/D3PO.},
+ arxiv_url = {https://arxiv.org/pdf/2311.13231v3.pdf},
+ author = {Kai Yang and Jian Tao and Jiafei Lyu and Chunjiang Ge and Jiaxin Chen and Qimai Li and Weihan Shen and Xiaolong Zhu and Xiu Li},
+ github_url = {https://github.com/yk7333/D3PO},
+ title = {Using Human Feedback to Fine-tune Diffusion Models without Any Reward Model},
+ year = {2023-11-22T08:42:46Z}
+}
+
+@article{yuan_2024-01-18T14:43:47Z_self,
+ abstract = {We posit that to achieve superhuman agents, future models require superhuman
+feedback in order to provide an adequate training signal. Current approaches
+commonly train reward models from human preferences, which may then be
+bottlenecked by human performance level, and secondly these separate frozen
+reward models cannot then learn to improve during LLM training. In this work,
+we study Self-Rewarding Language Models, where the language model itself is
+used via LLM-as-a-Judge prompting to provide its own rewards during training.
+We show that during Iterative DPO training that not only does instruction
+following ability improve, but also the ability to provide high-quality rewards
+to itself. Fine-tuning Llama 2 70B on three iterations of our approach yields a
+model that outperforms many existing systems on the AlpacaEval 2.0 leaderboard,
+including Claude 2, Gemini Pro, and GPT-4 0613. While there is much left still
+to explore, this work opens the door to the possibility of models that can
+continually improve in both axes.},
+ arxiv_url = {https://arxiv.org/pdf/2401.10020v3.pdf},
+ author = {Weizhe Yuan and Richard Yuanzhe Pang and Kyunghyun Cho and Xian Li and Sainbayar Sukhbaatar and Jing Xu and Jason Weston},
+ github_url = {https://github.com/tatsu-lab/alpaca_eval},
+ title = {Self-Rewarding Language Models},
+ year = {2024-01-18T14:43:47Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{cobbe_2021-10-27T04:49:45Z_training,
+ abstract = {State-of-the-art language models can match human performance on many tasks,
+but they still struggle to robustly perform multi-step mathematical reasoning.
+To diagnose the failures of current models and support research, we introduce
+GSM8K, a dataset of 8.5K high quality linguistically diverse grade school math
+word problems. We find that even the largest transformer models fail to achieve
+high test performance, despite the conceptual simplicity of this problem
+distribution. To increase performance, we propose training verifiers to judge
+the correctness of model completions. At test time, we generate many candidate
+solutions and select the one ranked highest by the verifier. We demonstrate
+that verification significantly improves performance on GSM8K, and we provide
+strong empirical evidence that verification scales more effectively with
+increased data than a finetuning baseline.},
+ arxiv_url = {https://arxiv.org/pdf/2110.14168v2.pdf},
+ author = {Karl Cobbe and Vineet Kosaraju and Mohammad Bavarian and Mark Chen and Heewoo Jun and Lukasz Kaiser and Matthias Plappert and Jerry Tworek and Jacob Hilton and Reiichiro Nakano and Christopher Hesse and John Schulman},
+ title = {Training verifiers to solve math word problems},
+ year = {2021-10-27T04:49:45Z}
+}
+
+@article{dettmers_2022-08-15T17:08:50Z_llm,
+ abstract = {Large language models have been widely adopted but require significant GPU
+memory for inference. We develop a procedure for Int8 matrix multiplication for
+feed-forward and attention projection layers in transformers, which cut the
+memory needed for inference by half while retaining full precision performance.
+With our method, a 175B parameter 16/32-bit checkpoint can be loaded, converted
+to Int8, and used immediately without performance degradation. This is made
+possible by understanding and working around properties of highly systematic
+emergent features in transformer language models that dominate attention and
+transformer predictive performance. To cope with these features, we develop a
+two-part quantization procedure, LLM.int8(). We first use vector-wise
+quantization with separate normalization constants for each inner product in
+the matrix multiplication, to quantize most of the features. However, for the
+emergent outliers, we also include a new mixed-precision decomposition scheme,
+which isolates the outlier feature dimensions into a 16-bit matrix
+multiplication while still more than 99.9% of values are multiplied in 8-bit.
+Using LLM.int8(), we show empirically it is possible to perform inference in
+LLMs with up to 175B parameters without any performance degradation. This
+result makes such models much more accessible, for example making it possible
+to use OPT-175B/BLOOM on a single server with consumer GPUs. We open-source our
+software.},
+ arxiv_url = {https://arxiv.org/pdf/2208.07339v2.pdf},
+ author = {Tim Dettmers and Mike Lewis and Younes Belkada and Luke Zettlemoyer},
+ title = {Llm. int8 (): 8-bit matrix multiplication for transformers at scale},
+ year = {2022-08-15T17:08:50Z}
+}
+
+@article{dettmers_2023-05-23T17:50:33Z_qlora,
+ abstract = {We present QLoRA, an efficient finetuning approach that reduces memory usage
+enough to finetune a 65B parameter model on a single 48GB GPU while preserving
+full 16-bit finetuning task performance. QLoRA backpropagates gradients through
+a frozen, 4-bit quantized pretrained language model into Low Rank
+Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all
+previous openly released models on the Vicuna benchmark, reaching 99.3% of the
+performance level of ChatGPT while only requiring 24 hours of finetuning on a
+single GPU. QLoRA introduces a number of innovations to save memory without
+sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is
+information theoretically optimal for normally distributed weights (b) double
+quantization to reduce the average memory footprint by quantizing the
+quantization constants, and (c) paged optimziers to manage memory spikes. We
+use QLoRA to finetune more than 1,000 models, providing a detailed analysis of
+instruction following and chatbot performance across 8 instruction datasets,
+multiple model types (LLaMA, T5), and model scales that would be infeasible to
+run with regular finetuning (e.g. 33B and 65B parameter models). Our results
+show that QLoRA finetuning on a small high-quality dataset leads to
+state-of-the-art results, even when using smaller models than the previous
+SoTA. We provide a detailed analysis of chatbot performance based on both human
+and GPT-4 evaluations showing that GPT-4 evaluations are a cheap and reasonable
+alternative to human evaluation. Furthermore, we find that current chatbot
+benchmarks are not trustworthy to accurately evaluate the performance levels of
+chatbots. A lemon-picked analysis demonstrates where Guanaco fails compared to
+ChatGPT. We release all of our models and code, including CUDA kernels for
+4-bit training.},
+ arxiv_url = {https://arxiv.org/pdf/2305.14314v1.pdf},
+ author = {Tim Dettmers and Artidoro Pagnoni and Ari Holtzman and Luke Zettlemoyer},
+ title = {Qlora: E fficient finetuning of quantized llms},
+ year = {2023-05-23T17:50:33Z}
+}
