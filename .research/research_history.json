@@ -1,0 +1,10 @@
+{
+  "research_topic": "Tent-based test-time adaptation for ResNet-50 on ImageNet-C: improve robustness (mCE) with lightweight TTA",
+  "queries": [
+    "Tent test-time adaptation",
+    "ImageNet-C mCE",
+    "ResNet-50 test-time adaptation",
+    "lightweight TTA",
+    "entropy minimization TTA"
+  ]
+}
