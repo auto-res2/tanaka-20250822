@@ -5,3 +5,437 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{author_year_accelerated,
+ title = {Accelerated Speculative Sampling Based on Tree Monte Carlo}
+}
+
+@article{author_year_decoding,
+ title = {Decoding As Dynamic Programming For Recurrent Autoregressive Models}
+}
+
+@article{author_year_recruitment,
+ title = {Recruitment Strategies That Take a Chance}
+}
+
+@article{author_year_trustworthy,
+ title = {Trustworthy Monte Carlo}
+}
+
+@article{author_year_trustworthy,
+ title = {Trustworthy Monte Carlo}
+}
+
+@article{choi_2023-07-02T23:27:00Z_tools,
+ abstract = {It is important that consumers and regulators can verify the provenance of
+large neural models to evaluate their capabilities and risks. We introduce the
+concept of a "Proof-of-Training-Data": any protocol that allows a model trainer
+to convince a Verifier of the training data that produced a set of model
+weights. Such protocols could verify the amount and kind of data and compute
+used to train the model, including whether it was trained on specific harmful
+or beneficial data sources. We explore efficient verification strategies for
+Proof-of-Training-Data that are compatible with most current large-model
+training procedures. These include a method for the model-trainer to verifiably
+pre-commit to a random seed used in training, and a method that exploits
+models' tendency to temporarily overfit to training data in order to detect
+whether a given data-point was included in training. We show experimentally
+that our verification procedures can catch a wide variety of attacks, including
+all known attacks from the Proof-of-Learning literature.},
+ arxiv_url = {https://arxiv.org/pdf/2307.00682v1.pdf},
+ author = {Dami Choi and Yonadav Shavit and David Duvenaud},
+ title = {Tools for Verifying Neural Models' Training Data},
+ year = {2023-07-02T23:27:00Z}
+}
+
+@article{hao_2022-10-17T02:48:58Z_teacher,
+ abstract = {Reinforcement learning (RL) has been widely used in text generation to
+alleviate the exposure bias issue or to utilize non-parallel datasets. The
+reward function plays an important role in making RL training successful.
+However, previous reward functions are typically task-specific and sparse,
+restricting the use of RL. In our work, we propose a task-agnostic approach
+that derives a step-wise reward function directly from a model trained with
+teacher forcing. We additionally propose a simple modification to stabilize the
+RL training on non-parallel datasets with our induced reward function.
+Empirical results show that our method outperforms self-training and reward
+regression methods on several text generation tasks, confirming the
+effectiveness of our reward function.},
+ arxiv_url = {https://arxiv.org/pdf/2210.08708v2.pdf},
+ author = {Yongchang Hao and Yuxin Liu and Lili Mou},
+ github_url = {https://github.com/MANGA-UOFA/LMReward},
+ title = {Teacher Forcing Recovers Reward Functions for Text Generation},
+ year = {2022-10-17T02:48:58Z}
+}
+
+@article{khanov_2024-01-23T23:42:41Z_args,
+ abstract = {Aligning large language models with human objectives is paramount, yet common
+approaches including RLHF suffer from unstable and resource-intensive training.
+In response to this challenge, we introduce ARGS, Alignment as Reward-Guided
+Search, a novel framework that integrates alignment into the decoding process,
+eliminating the need for expensive RL training. By adjusting the model's
+probabilistic predictions using a reward signal, ARGS generates texts with
+semantic diversity while being aligned with human preferences, offering a
+promising and flexible solution for aligning language models. Notably, ARGS
+demonstrates consistent enhancements in average reward compared to baselines
+across diverse alignment tasks and various model dimensions. For example, under
+the same greedy-based decoding strategy, our method improves the average reward
+by 19.56% relative to the baseline and secures a preference or tie score of
+64.33% in GPT-4 evaluation. We believe that our framework, emphasizing
+decoding-time alignment, paves the way for more responsive language models in
+the future. Code is publicly available at:
+\url{https://github.com/deeplearning-wisc/args}.},
+ arxiv_url = {https://arxiv.org/pdf/2402.01694v1.pdf},
+ author = {Maxim Khanov and Jirayu Burapacheep and Yixuan Li},
+ github_url = {https://github.com/deeplearning-wisc/args},
+ title = {ARGS: Alignment as Reward-Guided Search},
+ year = {2024-01-23T23:42:41Z}
+}
+
+@article{kumar_2021-07-23T00:04:39Z_implicit,
+ abstract = {We consider a popular family of constrained optimization problems arising in
+machine learning that involve optimizing a non-decomposable evaluation metric
+with a certain thresholded form, while constraining another metric of interest.
+Examples of such problems include optimizing the false negative rate at a fixed
+false positive rate, optimizing precision at a fixed recall, optimizing the
+area under the precision-recall or ROC curves, etc. Our key idea is to
+formulate a rate-constrained optimization that expresses the threshold
+parameter as a function of the model parameters via the Implicit Function
+theorem. We show how the resulting optimization problem can be solved using
+standard gradient based methods. Experiments on benchmark datasets demonstrate
+the effectiveness of our proposed method over existing state-of-the art
+approaches for these problems. The code for the proposed method is available at
+https://github.com/google-research/google-research/tree/master/implicit_constrained_optimization .},
+ arxiv_url = {https://arxiv.org/pdf/2107.10960v3.pdf},
+ author = {Abhishek Kumar and Harikrishna Narasimhan and Andrew Cotter},
+ title = {Implicit rate-constrained optimization of non-decomposable objectives},
+ year = {2021-07-23T00:04:39Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{leviathan_2022-11-30T17:33:28Z_fast,
+ abstract = {Inference from large autoregressive models like Transformers is slow -
+decoding K tokens takes K serial runs of the model. In this work we introduce
+speculative decoding - an algorithm to sample from autoregressive models faster
+without any changes to the outputs, by computing several tokens in parallel. At
+the heart of our approach lie the observations that (1) hard language-modeling
+tasks often include easier subtasks that can be approximated well by more
+efficient models, and (2) using speculative execution and a novel sampling
+method, we can make exact decoding from the large models faster, by running
+them in parallel on the outputs of the approximation models, potentially
+generating several tokens concurrently, and without changing the distribution.
+Our method can accelerate existing off-the-shelf models without retraining or
+architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration
+compared to the standard T5X implementation, with identical outputs.},
+ arxiv_url = {https://arxiv.org/pdf/2211.17192v2.pdf},
+ author = {Yaniv Leviathan and Matan Kalman and Yossi Matias},
+ title = {Fast Inference from Transformers via Speculative Decoding},
+ year = {2022-11-30T17:33:28Z}
+}
+
+@article{mehta_2020-12-14T20:53:39Z_hitting,
+ abstract = {We consider the fundamental problem of selecting $k$ out of $n$ random
+variables in a way that the expected highest or second-highest value is
+maximized. This question captures several applications where we have
+uncertainty about the quality of candidates (e.g. auction bids, search results)
+and have the capacity to explore only a small subset due to an exogenous
+constraint. For example, consider a second price auction where system
+constraints (e.g., costly retrieval or model computation) allow the
+participation of only $k$ out of $n$ bidders, and the goal is to optimize the
+expected efficiency (highest bid) or expected revenue (second highest bid).
+  We study the case where we are given an explicit description of each random
+variable. We give a PTAS for the problem of maximizing the expected highest
+value. For the second-highest value, we prove a hardness result: assuming the
+Planted Clique Hypothesis, there is no constant factor approximation algorithm
+that runs in polynomial time. Surprisingly, under the assumption that each
+random variable has monotone hazard rate (MHR), a simple score-based algorithm,
+namely picking the $k$ random variables with the largest $1/\sqrt{k}$ top
+quantile value, is a constant approximation to the expected highest and second
+highest value, \emph{simultaneously}.},
+ arxiv_url = {https://arxiv.org/pdf/2012.07935v1.pdf},
+ author = {Aranyak Mehta and Uri Nadav and Alexandros Psomas and Aviad Rubinstein},
+ title = {Hitting the High Notes: Subset Selection for Maximizing Expected Order Statistics},
+ year = {2020-12-14T20:53:39Z}
+}
+
+@article{svirschevski_2024-06-04T17:53:36Z_specexec,
+ abstract = {As large language models gain widespread adoption, running them efficiently
+becomes crucial. Recent works on LLM inference use speculative decoding to
+achieve extreme speedups. However, most of these works implicitly design their
+algorithms for high-end datacenter hardware. In this work, we ask the opposite
+question: how fast can we run LLMs on consumer machines? Consumer GPUs can no
+longer fit the largest available models (50B+ parameters) and must offload them
+to RAM or SSD. When running with offloaded parameters, the inference engine can
+process batches of hundreds or thousands of tokens at the same time as just one
+token, making it a natural fit for speculative decoding. We propose SpecExec
+(Speculative Execution), a simple parallel decoding method that can generate up
+to 20 tokens per target model iteration for popular LLM families. It utilizes
+the high spikiness of the token probabilities distribution in modern LLMs and a
+high degree of alignment between model output probabilities. SpecExec takes the
+most probable tokens continuation from the draft model to build a "cache" tree
+for the target model, which then gets validated in a single pass. Using
+SpecExec, we demonstrate inference of 50B+ parameter LLMs on consumer GPUs with
+RAM offloading at 4-6 tokens per second with 4-bit quantization or 2-3 tokens
+per second with 16-bit weights.},
+ arxiv_url = {https://arxiv.org/pdf/2406.02532v3.pdf},
+ author = {Ruslan Svirschevski and Avner May and Zhuoming Chen and Beidi Chen and Zhihao Jia and Max Ryabinin},
+ title = {SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices},
+ year = {2024-06-04T17:53:36Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{author_year_speculative,
+ title = {Speculative computation, parallelism, and functional programming}
+}
+
+@article{bapna_2020-02-17T17:54:27Z_controlling,
+ abstract = {Most neural networks utilize the same amount of compute for every example
+independent of the inherent complexity of the input. Further, methods that
+adapt the amount of computation to the example focus on finding a fixed
+inference-time computational graph per example, ignoring any external
+computational budgets or varying inference time limitations. In this work, we
+utilize conditional computation to make neural sequence models (Transformer)
+more efficient and computation-aware during inference. We first modify the
+Transformer architecture, making each set of operations conditionally
+executable depending on the output of a learned control network. We then train
+this model in a multi-task setting, where each task corresponds to a particular
+computation budget. This allows us to train a single model that can be
+controlled to operate on different points of the computation-quality trade-off
+curve, depending on the available computation budget at inference time. We
+evaluate our approach on two tasks: (i) WMT English-French Translation and (ii)
+Unsupervised representation learning (BERT). Our experiments demonstrate that
+the proposed Conditional Computation Transformer (CCT) is competitive with
+vanilla Transformers when allowed to utilize its full computational budget,
+while improving significantly over computationally equivalent baselines when
+operating on smaller computational budgets.},
+ arxiv_url = {https://arxiv.org/pdf/2002.07106v2.pdf},
+ author = {Ankur Bapna and Naveen Arivazhagan and Orhan Firat},
+ title = {Controlling computation versus quality for neural sequence models},
+ year = {2020-02-17T17:54:27Z}
+}
+
+@article{brown_2020-05-28T17:29:03Z_language,
+ abstract = {Recent work has demonstrated substantial gains on many NLP tasks and
+benchmarks by pre-training on a large corpus of text followed by fine-tuning on
+a specific task. While typically task-agnostic in architecture, this method
+still requires task-specific fine-tuning datasets of thousands or tens of
+thousands of examples. By contrast, humans can generally perform a new language
+task from only a few examples or from simple instructions - something which
+current NLP systems still largely struggle to do. Here we show that scaling up
+language models greatly improves task-agnostic, few-shot performance, sometimes
+even reaching competitiveness with prior state-of-the-art fine-tuning
+approaches. Specifically, we train GPT-3, an autoregressive language model with
+175 billion parameters, 10x more than any previous non-sparse language model,
+and test its performance in the few-shot setting. For all tasks, GPT-3 is
+applied without any gradient updates or fine-tuning, with tasks and few-shot
+demonstrations specified purely via text interaction with the model. GPT-3
+achieves strong performance on many NLP datasets, including translation,
+question-answering, and cloze tasks, as well as several tasks that require
+on-the-fly reasoning or domain adaptation, such as unscrambling words, using a
+novel word in a sentence, or performing 3-digit arithmetic. At the same time,
+we also identify some datasets where GPT-3's few-shot learning still struggles,
+as well as some datasets where GPT-3 faces methodological issues related to
+training on large web corpora. Finally, we find that GPT-3 can generate samples
+of news articles which human evaluators have difficulty distinguishing from
+articles written by humans. We discuss broader societal impacts of this finding
+and of GPT-3 in general.},
+ arxiv_url = {https://arxiv.org/pdf/2005.14165v4.pdf},
+ author = {Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+ title = {Language models are few-shot learners},
+ year = {2020-05-28T17:29:03Z}
+}
+
+@article{chen_2023-02-02T18:44:11Z_accelerating,
+ abstract = {We present speculative sampling, an algorithm for accelerating transformer
+decoding by enabling the generation of multiple tokens from each transformer
+call. Our algorithm relies on the observation that the latency of parallel
+scoring of short continuations, generated by a faster but less powerful draft
+model, is comparable to that of sampling a single token from the larger target
+model. This is combined with a novel modified rejection sampling scheme which
+preserves the distribution of the target model within hardware numerics. We
+benchmark speculative sampling with Chinchilla, a 70 billion parameter language
+model, achieving a 2-2.5x decoding speedup in a distributed setup, without
+compromising the sample quality or making modifications to the model itself.},
+ arxiv_url = {https://arxiv.org/pdf/2302.01318v1.pdf},
+ author = {Charlie Chen and Sebastian Borgeaud and Geoffrey Irving and Jean-Baptiste Lespiau and Laurent Sifre and John Jumper},
+ title = {Accelerating large language model decoding with speculative sampling},
+ year = {2023-02-02T18:44:11Z}
+}
+
+@article{chowdhery_2022-04-05T16:11:45Z_palm,
+ abstract = {Large language models have been shown to achieve remarkable performance
+across a variety of natural language tasks using few-shot learning, which
+drastically reduces the number of task-specific training examples needed to
+adapt the model to a particular application. To further our understanding of
+the impact of scale on few-shot learning, we trained a 540-billion parameter,
+densely activated, Transformer language model, which we call Pathways Language
+Model PaLM. We trained PaLM on 6144 TPU v4 chips using Pathways, a new ML
+system which enables highly efficient training across multiple TPU Pods. We
+demonstrate continued benefits of scaling by achieving state-of-the-art
+few-shot learning results on hundreds of language understanding and generation
+benchmarks. On a number of these tasks, PaLM 540B achieves breakthrough
+performance, outperforming the finetuned state-of-the-art on a suite of
+multi-step reasoning tasks, and outperforming average human performance on the
+recently released BIG-bench benchmark. A significant number of BIG-bench tasks
+showed discontinuous improvements from model scale, meaning that performance
+steeply increased as we scaled to our largest model. PaLM also has strong
+capabilities in multilingual tasks and source code generation, which we
+demonstrate on a wide array of benchmarks. We additionally provide a
+comprehensive analysis on bias and toxicity, and study the extent of training
+data memorization with respect to model scale. Finally, we discuss the ethical
+considerations related to large language models and discuss potential
+mitigation strategies.},
+ arxiv_url = {https://arxiv.org/pdf/2204.02311v5.pdf},
+ author = {Aakanksha Chowdhery and Sharan Narang and Jacob Devlin and Maarten Bosma and Gaurav Mishra and Adam Roberts and Paul Barham and Hyung Won Chung and Charles Sutton and Sebastian Gehrmann and Parker Schuh and Kensen Shi and Sasha Tsvyashchenko and Joshua Maynez and Abhishek Rao and Parker Barnes and Yi Tay and Noam Shazeer and Vinodkumar Prabhakaran and Emily Reif and Nan Du and Ben Hutchinson and Reiner Pope and James Bradbury and Jacob Austin and Michael Isard and Guy Gur-Ari and Pengcheng Yin and Toju Duke and Anselm Levskaya and Sanjay Ghemawat and Sunipa Dev and Henryk Michalewski and Xavier Garcia and Vedant Misra and Kevin Robinson and Liam Fedus and Denny Zhou and Daphne Ippolito and David Luan and Hyeontaek Lim and Barret Zoph and Alexander Spiridonov and Ryan Sepassi and David Dohan and Shivani Agrawal and Mark Omernick and Andrew M. Dai and Thanumalayan Sankaranarayana Pillai and Marie Pellat and Aitor Lewkowycz and Erica Moreira and Rewon Child and Oleksandr Polozov and Katherine Lee and Zongwei Zhou and Xuezhi Wang and Brennan Saeta and Mark Diaz and Orhan Firat and Michele Catasta and Jason Wei and Kathy Meier-Hellstern and Douglas Eck and Jeff Dean and Slav Petrov and Noah Fiedel},
+ title = {Palm: Scaling language modeling with pathways},
+ year = {2022-04-05T16:11:45Z}
+}
+
+@article{dehghani_2021-10-25T12:48:07Z_the,
+ abstract = {Model efficiency is a critical aspect of developing and deploying machine
+learning models. Inference time and latency directly affect the user
+experience, and some applications have hard requirements. In addition to
+inference costs, model training also have direct financial and environmental
+impacts. Although there are numerous well-established metrics (cost indicators)
+for measuring model efficiency, researchers and practitioners often assume that
+these metrics are correlated with each other and report only few of them. In
+this paper, we thoroughly discuss common cost indicators, their advantages and
+disadvantages, and how they can contradict each other. We demonstrate how
+incomplete reporting of cost indicators can lead to partial conclusions and a
+blurred or incomplete picture of the practical considerations of different
+models. We further present suggestions to improve reporting of efficiency
+metrics.},
+ arxiv_url = {https://arxiv.org/pdf/2110.12894v2.pdf},
+ author = {Mostafa Dehghani and Anurag Arnab and Lucas Beyer and Ashish Vaswani and Yi Tay},
+ title = {The efﬁciency misnomer},
+ year = {2021-10-25T12:48:07Z}
+}
+
+@article{devlin_2018-10-11T00:50:01Z_bert,
+ abstract = {We introduce a new language representation model called BERT, which stands
+for Bidirectional Encoder Representations from Transformers. Unlike recent
+language representation models, BERT is designed to pre-train deep
+bidirectional representations from unlabeled text by jointly conditioning on
+both left and right context in all layers. As a result, the pre-trained BERT
+model can be fine-tuned with just one additional output layer to create
+state-of-the-art models for a wide range of tasks, such as question answering
+and language inference, without substantial task-specific architecture
+modifications.
+  BERT is conceptually simple and empirically powerful. It obtains new
+state-of-the-art results on eleven natural language processing tasks, including
+pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI
+accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering
+Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1
+(5.1 point absolute improvement).},
+ arxiv_url = {https://arxiv.org/pdf/1810.04805v2.pdf},
+ author = {Jacob Devlin and Ming-Wei Chang and Kenton Lee and Kristina Toutanova},
+ title = {Bert: Pre-training of deep bidirectional transformers for language understanding},
+ year = {2018-10-11T00:50:01Z}
+}
+
+@article{elbayad_2019-10-22T16:15:58Z_depth,
+ abstract = {State of the art sequence-to-sequence models for large scale tasks perform a
+fixed number of computations for each input sequence regardless of whether it
+is easy or hard to process. In this paper, we train Transformer models which
+can make output predictions at different stages of the network and we
+investigate different ways to predict how much computation is required for a
+particular sequence. Unlike dynamic computation in Universal Transformers,
+which applies the same set of layers iteratively, we apply different layers at
+every step to adjust both the amount of computation as well as the model
+capacity. On IWSLT German-English translation our approach matches the accuracy
+of a well tuned baseline Transformer while using less than a quarter of the
+decoder layers.},
+ arxiv_url = {https://arxiv.org/pdf/1910.10073v4.pdf},
+ author = {Maha Elbayad and Jiatao Gu and Edouard Grave and Michael Auli},
+ title = {Depth-adaptive transformer},
+ year = {2019-10-22T16:15:58Z}
+}
+
+@article{han_2021-02-09T16:02:00Z_dynamic,
+ abstract = {Dynamic neural network is an emerging research topic in deep learning.
+Compared to static models which have fixed computational graphs and parameters
+at the inference stage, dynamic networks can adapt their structures or
+parameters to different inputs, leading to notable advantages in terms of
+accuracy, computational efficiency, adaptiveness, etc. In this survey, we
+comprehensively review this rapidly developing area by dividing dynamic
+networks into three main categories: 1) instance-wise dynamic models that
+process each instance with data-dependent architectures or parameters; 2)
+spatial-wise dynamic networks that conduct adaptive computation with respect to
+different spatial locations of image data and 3) temporal-wise dynamic models
+that perform adaptive inference along the temporal dimension for sequential
+data such as videos and texts. The important research problems of dynamic
+networks, e.g., architecture design, decision making scheme, optimization
+technique and applications, are reviewed systematically. Finally, we discuss
+the open problems in this field together with interesting future research
+directions.},
+ arxiv_url = {https://arxiv.org/pdf/2102.04906v4.pdf},
+ author = {Yizeng Han and Gao Huang and Shiji Song and Le Yang and Honghui Wang and Yulin Wang},
+ title = {Dynamic neural networks: A survey},
+ year = {2021-02-09T16:02:00Z}
+}
