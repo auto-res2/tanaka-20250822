@@ -1,1 +1,12 @@
-# Please list the required python packages.
+# Python packages required for CAVES speculative decoding experiment
+torch>=2.2.0
+torchvision
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.4.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+transformers>=4.41.0
+accelerate>=0.30.0
