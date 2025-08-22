@@ -1,0 +1,10 @@
+{
+  "research_topic": "Self-RAG + FActScore optimization for consistent atomic-level referencing in long-answer generation",
+  "queries": [
+    "Self-RAG",
+    "FActScore optimization",
+    "atomic referencing",
+    "long-form RAG",
+    "reference consistency metrics"
+  ]
+}
