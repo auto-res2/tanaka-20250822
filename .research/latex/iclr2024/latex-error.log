@@ -1,0 +1,2859 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./iclr2024_conference.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(./fancyhdr.sty) (./natbib.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file paper.aux.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 58.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                   and adhere to careful eff...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  . An initial execution abo...
+
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `brown\T1\textunderscore2020-05-28T17:29:03Z\T
+1\textunderscorelanguage' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `chowdhery\T1\textunderscore2022-04-05T16:11:4
+5Z\T1\textunderscorepalm' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `devlin\T1\textunderscore2018-10-11T00:50:01Z\
+T1\textunderscorebert' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...ite{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  . Speculative sampling mod...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...{chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . These techniques address...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.82 ...rschevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  . It emphasizes throughput...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 2 undefined on input line 82.
+
+[2]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.85 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Because our focus is to ...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 3 undefined on input line 85.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...ite{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to subset selection f...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...cite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  . CAVES operationalizes th...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...rinciples \cite{author\_year\_trustworthy}
+                                                  . We also refer to related...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.102 ...ractices \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 102.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.105 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 3 undefined on input line 105.
+
+[3]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to selection problems...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.111 ...inciples \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 4 undefined on input line 111.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...\cite{hao\_2022-10-17T02:48:58Z\_teacher}
+                                                  , ranks candidates for dra...
+
+
+Package natbib Warning: Citation `hao\T1\textunderscore2022-10-17T02:48:58Z\T1\
+textunderscoreteacher' on page 4 undefined on input line 120.
+
+
+Underfull \vbox (badness 3471) has occurred while \output is active [4]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.134 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 134.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.140 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 5 undefined on input line 140.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.142 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 5 undefined on input line 142.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 144.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 5 undefined on input line 144.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [5]
+[6]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  , (ii) speculative samplin...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  , (iii) SpecExec-style tre...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...schevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  , and (iv) decode-time ali...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Metrics include \(\alpha...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+erecruitment' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.213 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 213.
+
+[7]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Calibration coverage wil...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 8 undefined on input line 226.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 8 undefined on input line 226.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/experiment_1_acceptance_estimator.pdf> <./images/experiment_2_cascaded_verif
+ication.pdf>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  , MoE-aware Stage-A gating...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 250.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 10 undefined on input line 250.
+
+
+Package natbib Warning: Citation `airas2025' on page 10 undefined on input line
+ 252.
+
+No file paper.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[10 <./images/experiment_3_alpha_sla_controller.pdf>] (./paper.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (10 pages, 258412 bytes).
+Transcript written on paper.log.
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+The top-level auxiliary file: paper.aux
+White space in argument---line 5 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast,chen\protect \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating,svirschevski\protect \T1\textunderscore 2024-06-04T17:53:36Z\protect \T1\textunderscore specexec,khanov\protect \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args,kumar\protect \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit,mehta\protect \T1\textunderscore 2020-12-14T20:53:39Z\protect \T1\textunderscore hitting}
+I'm skipping whatever remains of this command
+White space in argument---line 6 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast,chen\protect \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 7 of file paper.aux
+ : \citation{bapna\protect
+ :                         \T1\textunderscore 2020-02-17T17:54:27Z\protect \T1\textunderscore controlling,elbayad\protect \T1\textunderscore 2019-10-22T16:15:58Z\protect \T1\textunderscore depth,han\protect \T1\textunderscore 2021-02-09T16:02:00Z\protect \T1\textunderscore dynamic,kumar\protect \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit}
+I'm skipping whatever remains of this command
+White space in argument---line 8 of file paper.aux
+ : \citation{khanov\protect
+ :                          \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args}
+I'm skipping whatever remains of this command
+White space in argument---line 13 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast,chen\protect \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 14 of file paper.aux
+ : \citation{khanov\protect
+ :                          \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args}
+I'm skipping whatever remains of this command
+White space in argument---line 15 of file paper.aux
+ : \citation{dehghani\protect
+ :                            \T1\textunderscore 2021-10-25T12:48:07Z\protect \T1\textunderscore the}
+I'm skipping whatever remains of this command
+White space in argument---line 16 of file paper.aux
+ : \citation{brown\protect
+ :                         \T1\textunderscore 2020-05-28T17:29:03Z\protect \T1\textunderscore language,chowdhery\protect \T1\textunderscore 2022-04-05T16:11:45Z\protect \T1\textunderscore palm,devlin\protect \T1\textunderscore 2018-10-11T00:50:01Z\protect \T1\textunderscore bert}
+I'm skipping whatever remains of this command
+White space in argument---line 17 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast}
+I'm skipping whatever remains of this command
+White space in argument---line 18 of file paper.aux
+ : \citation{chen\protect
+ :                        \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 19 of file paper.aux
+ : \citation{svirschevski\protect
+ :                                \T1\textunderscore 2024-06-04T17:53:36Z\protect \T1\textunderscore specexec}
+I'm skipping whatever remains of this command
+White space in argument---line 28 of file paper.aux
+ : \citation{khanov\protect
+ :                          \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args}
+I'm skipping whatever remains of this command
+White space in argument---line 29 of file paper.aux
+ : \citation{bapna\protect
+ :                         \T1\textunderscore 2020-02-17T17:54:27Z\protect \T1\textunderscore controlling,elbayad\protect \T1\textunderscore 2019-10-22T16:15:58Z\protect \T1\textunderscore depth,han\protect \T1\textunderscore 2021-02-09T16:02:00Z\protect \T1\textunderscore dynamic}
+I'm skipping whatever remains of this command
+White space in argument---line 30 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit}
+I'm skipping whatever remains of this command
+White space in argument---line 31 of file paper.aux
+ : \citation{mehta\protect
+ :                         \T1\textunderscore 2020-12-14T20:53:39Z\protect \T1\textunderscore hitting}
+I'm skipping whatever remains of this command
+White space in argument---line 32 of file paper.aux
+ : \citation{author\protect
+ :                          \T1\textunderscore year\protect \T1\textunderscore trustworthy}
+I'm skipping whatever remains of this command
+White space in argument---line 33 of file paper.aux
+ : \citation{author\protect
+ :                          \T1\textunderscore year\protect \T1\textunderscore accelerated,author\protect \T1\textunderscore year\protect \T1\textunderscore decoding}
+I'm skipping whatever remains of this command
+White space in argument---line 34 of file paper.aux
+ : \citation{dehghani\protect
+ :                            \T1\textunderscore 2021-10-25T12:48:07Z\protect \T1\textunderscore the}
+I'm skipping whatever remains of this command
+White space in argument---line 35 of file paper.aux
+ : \citation{author\protect
+ :                          \T1\textunderscore year\protect \T1\textunderscore trustworthy}
+I'm skipping whatever remains of this command
+White space in argument---line 36 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast}
+I'm skipping whatever remains of this command
+White space in argument---line 47 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit}
+I'm skipping whatever remains of this command
+White space in argument---line 48 of file paper.aux
+ : \citation{mehta\protect
+ :                         \T1\textunderscore 2020-12-14T20:53:39Z\protect \T1\textunderscore hitting}
+I'm skipping whatever remains of this command
+White space in argument---line 49 of file paper.aux
+ : \citation{author\protect
+ :                          \T1\textunderscore year\protect \T1\textunderscore trustworthy}
+I'm skipping whatever remains of this command
+White space in argument---line 50 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast,chen\protect \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 51 of file paper.aux
+ : \citation{hao\protect
+ :                       \T1\textunderscore 2022-10-17T02:48:58Z\protect \T1\textunderscore teacher}
+I'm skipping whatever remains of this command
+White space in argument---line 58 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit}
+I'm skipping whatever remains of this command
+White space in argument---line 59 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast}
+I'm skipping whatever remains of this command
+White space in argument---line 60 of file paper.aux
+ : \citation{mehta\protect
+ :                         \T1\textunderscore 2020-12-14T20:53:39Z\protect \T1\textunderscore hitting}
+I'm skipping whatever remains of this command
+White space in argument---line 61 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit,author\protect \T1\textunderscore year\protect \T1\textunderscore trustworthy}
+I'm skipping whatever remains of this command
+White space in argument---line 74 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast}
+I'm skipping whatever remains of this command
+White space in argument---line 75 of file paper.aux
+ : \citation{chen\protect
+ :                        \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 76 of file paper.aux
+ : \citation{svirschevski\protect
+ :                                \T1\textunderscore 2024-06-04T17:53:36Z\protect \T1\textunderscore specexec}
+I'm skipping whatever remains of this command
+White space in argument---line 77 of file paper.aux
+ : \citation{khanov\protect
+ :                          \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args}
+I'm skipping whatever remains of this command
+White space in argument---line 78 of file paper.aux
+ : \citation{author\protect
+ :                          \T1\textunderscore year\protect \T1\textunderscore accelerated,author\protect \T1\textunderscore year\protect \T1\textunderscore decoding,author\protect \T1\textunderscore year\protect \T1\textunderscore recruitment}
+I'm skipping whatever remains of this command
+White space in argument---line 79 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast}
+I'm skipping whatever remains of this command
+White space in argument---line 89 of file paper.aux
+ : \citation{khanov\protect
+ :                          \T1\textunderscore 2024-01-23T23:42:41Z\protect \T1\textunderscore args}
+I'm skipping whatever remains of this command
+White space in argument---line 90 of file paper.aux
+ : \citation{dehghani\protect
+ :                            \T1\textunderscore 2021-10-25T12:48:07Z\protect \T1\textunderscore the}
+I'm skipping whatever remains of this command
+White space in argument---line 96 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit,mehta\protect \T1\textunderscore 2020-12-14T20:53:39Z\protect \T1\textunderscore hitting}
+I'm skipping whatever remains of this command
+White space in argument---line 97 of file paper.aux
+ : \citation{leviathan\protect
+ :                             \T1\textunderscore 2022-11-30T17:33:28Z\protect \T1\textunderscore fast,chen\protect \T1\textunderscore 2023-02-02T18:44:11Z\protect \T1\textunderscore accelerating}
+I'm skipping whatever remains of this command
+White space in argument---line 98 of file paper.aux
+ : \citation{kumar\protect
+ :                         \T1\textunderscore 2021-07-23T00:04:39Z\protect \T1\textunderscore implicit}
+I'm skipping whatever remains of this command
+White space in argument---line 99 of file paper.aux
+ : \citation{dehghani\protect
+ :                            \T1\textunderscore 2021-10-25T12:48:07Z\protect \T1\textunderscore the}
+I'm skipping whatever remains of this command
+The style file: iclr2024_conference.bst
+Database file #1: references.bib
+(There were 41 error messages)
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./iclr2024_conference.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(./fancyhdr.sty) (./natbib.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 58.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                   and adhere to careful eff...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  . An initial execution abo...
+
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `brown\T1\textunderscore2020-05-28T17:29:03Z\T
+1\textunderscorelanguage' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `chowdhery\T1\textunderscore2022-04-05T16:11:4
+5Z\T1\textunderscorepalm' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `devlin\T1\textunderscore2018-10-11T00:50:01Z\
+T1\textunderscorebert' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...ite{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  . Speculative sampling mod...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...{chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . These techniques address...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.82 ...rschevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  . It emphasizes throughput...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 2 undefined on input line 82.
+
+[2]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.85 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Because our focus is to ...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 3 undefined on input line 85.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...ite{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to subset selection f...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...cite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  . CAVES operationalizes th...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...rinciples \cite{author\_year\_trustworthy}
+                                                  . We also refer to related...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.102 ...ractices \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 102.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.105 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 3 undefined on input line 105.
+
+[3]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to selection problems...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.111 ...inciples \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 4 undefined on input line 111.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...\cite{hao\_2022-10-17T02:48:58Z\_teacher}
+                                                  , ranks candidates for dra...
+
+
+Package natbib Warning: Citation `hao\T1\textunderscore2022-10-17T02:48:58Z\T1\
+textunderscoreteacher' on page 4 undefined on input line 120.
+
+
+Underfull \vbox (badness 3471) has occurred while \output is active [4]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.134 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 134.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.140 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 5 undefined on input line 140.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.142 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 5 undefined on input line 142.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 144.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 5 undefined on input line 144.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [5]
+[6]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  , (ii) speculative samplin...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  , (iii) SpecExec-style tre...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...schevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  , and (iv) decode-time ali...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Metrics include \(\alpha...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+erecruitment' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.213 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 213.
+
+[7]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Calibration coverage wil...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 8 undefined on input line 226.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 8 undefined on input line 226.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/experiment_1_acceptance_estimator.pdf> <./images/experiment_2_cascaded_verif
+ication.pdf>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  , MoE-aware Stage-A gating...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 250.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 10 undefined on input line 250.
+
+
+Package natbib Warning: Citation `airas2025' on page 10 undefined on input line
+ 252.
+
+(./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
+
+Package natbib Warning: There were undefined citations.
+
+[10 <./images/experiment_3_alpha_sla_controller.pdf>] (./paper.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (10 pages, 271233 bytes).
+Transcript written on paper.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./paper.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(./iclr2024_conference.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(./fancyhdr.sty) (./natbib.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfutil-common-lists.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.co
+ntourlua.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex))) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(./paper.aux)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(./paper.out) (./paper.out)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.50 ...cit, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 1 undefined on input line 50.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.55 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . Despite its promise, pra...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 1 undefined on input line 55.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ...ic, kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  . Methods that alter logit...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 1 undefined on input line 58.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.58 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  .
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 1 undefined on input line 58.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}]
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . We discuss limitations o...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                   and adhere to careful eff...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  . An initial execution abo...
+
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `brown\T1\textunderscore2020-05-28T17:29:03Z\T
+1\textunderscorelanguage' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `chowdhery\T1\textunderscore2022-04-05T16:11:4
+5Z\T1\textunderscorepalm' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.74 ..._palm, devlin\_2018-10-11T00:50:01Z\_bert}
+                                                  .
+
+Package natbib Warning: Citation `devlin\T1\textunderscore2018-10-11T00:50:01Z\
+T1\textunderscorebert' on page 2 undefined on input line 74.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...ite{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  . Speculative sampling mod...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.79 ...{chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  . These techniques address...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 2 undefined on input line 79.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.82 ...rschevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  . It emphasizes throughput...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 2 undefined on input line 82.
+
+[2]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.85 ... \cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Because our focus is to ...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 3 undefined on input line 85.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `bapna\T1\textunderscore2020-02-17T17:54:27Z\T
+1\textunderscorecontrolling' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `elbayad\T1\textunderscore2019-10-22T16:15:58Z
+\T1\textunderscoredepth' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.88 ...depth, han\_2021-02-09T16:02:00Z\_dynamic}
+                                                  . CAVES applies analogous ...
+
+
+Package natbib Warning: Citation `han\T1\textunderscore2021-02-09T16:02:00Z\T1\
+textunderscoredynamic' on page 3 undefined on input line 88.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...ite{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to subset selection f...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.91 ...cite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  . CAVES operationalizes th...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 3 undefined on input line 91.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...rinciples \cite{author\_year\_trustworthy}
+                                                  . We also refer to related...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...year\_accelerated, author\_year\_decoding}
+                                                  . Finally, we follow guida...
+
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.94 ...\cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 3 undefined on input line 94.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.102 ...ractices \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 3 undefined on input line 102.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.105 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 3 undefined on input line 105.
+
+[3]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                   and to selection problems...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.108 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 4 undefined on input line 108.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.111 ...inciples \cite{author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 4 undefined on input line 111.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.115 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 4 undefined on input line 115.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.120 ...\cite{hao\_2022-10-17T02:48:58Z\_teacher}
+                                                  , ranks candidates for dra...
+
+
+Package natbib Warning: Citation `hao\T1\textunderscore2022-10-17T02:48:58Z\T1\
+textunderscoreteacher' on page 4 undefined on input line 120.
+
+
+Underfull \vbox (badness 3471) has occurred while \output is active [4]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.134 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 134.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.140 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 5 undefined on input line 140.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.142 ...ite{mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                  .
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 5 undefined on input line 142.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 5 undefined on input line 144.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.144 ...39Z\_implicit, author\_year\_trustworthy}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+etrustworthy' on page 5 undefined on input line 144.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [5]
+[6]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  , (ii) speculative samplin...
+
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  , (iii) SpecExec-style tre...
+
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...schevski\_2024-06-04T17:53:36Z\_specexec}
+                                                  , and (iv) decode-time ali...
+
+
+Package natbib Warning: Citation `svirschevski\T1\textunderscore2024-06-04T17:5
+3:36Z\T1\textunderscorespecexec' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.205 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Metrics include \(\alpha...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 7 undefined on input line 205.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+eaccelerated' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+edecoding' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.208 ...ear\_decoding, author\_year\_recruitment}
+                                                  .
+
+Package natbib Warning: Citation `author\T1\textunderscoreyear\T1\textunderscor
+erecruitment' on page 7 undefined on input line 208.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.213 ...te{leviathan\_2022-11-30T17:33:28Z\_fast}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 7 undefined on input line 213.
+
+[7]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...\cite{khanov\_2024-01-23T23:42:41Z\_args}
+                                                  . Calibration coverage wil...
+
+
+Package natbib Warning: Citation `khanov\T1\textunderscore2024-01-23T23:42:41Z\
+T1\textunderscoreargs' on page 8 undefined on input line 226.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.226 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 8 undefined on input line 226.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active [8]
+Underfull \vbox (badness 10000) has occurred while \output is active [9 <./imag
+es/experiment_1_acceptance_estimator.pdf> <./images/experiment_2_cascaded_verif
+ication.pdf>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...it, mehta\_2020-12-14T20:53:39Z\_hitting}
+                                                   and integrates cleanly wi...
+
+
+Package natbib Warning: Citation `mehta\T1\textunderscore2020-12-14T20:53:39Z\T
+1\textunderscorehitting' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `leviathan\T1\textunderscore2022-11-30T17:33:2
+8Z\T1\textunderscorefast' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.248 ...chen\_2023-02-02T18:44:11Z\_accelerating}
+                                                  .
+
+Package natbib Warning: Citation `chen\T1\textunderscore2023-02-02T18:44:11Z\T1
+\textunderscoreaccelerating' on page 10 undefined on input line 248.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...te{kumar\_2021-07-23T00:04:39Z\_implicit}
+                                                  , MoE-aware Stage-A gating...
+
+
+Package natbib Warning: Citation `kumar\T1\textunderscore2021-07-23T00:04:39Z\T
+1\textunderscoreimplicit' on page 10 undefined on input line 250.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.250 ...cite{dehghani\_2021-10-25T12:48:07Z\_the}
+                                                  .
+
+Package natbib Warning: Citation `dehghani\T1\textunderscore2021-10-25T12:48:07
+Z\T1\textunderscorethe' on page 10 undefined on input line 250.
+
+(./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
+
+Package natbib Warning: There were undefined citations.
+
+[10 <./images/experiment_3_alpha_sla_controller.pdf>] (./paper.aux) )
+(see the transcript file for additional information)</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (10 pages, 271293 bytes).
+Transcript written on paper.log.
