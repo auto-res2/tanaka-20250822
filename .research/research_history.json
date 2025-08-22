@@ -1,0 +1,10 @@
+{
+  "research_topic": "Task-sensitive KV eviction strategies (H2O/Q-Hitter/Scissorhands) for long-context generation efficiency",
+  "queries": [
+    "task-sensitive KV eviction",
+    "H2O KV eviction",
+    "Q-Hitter KV pruning",
+    "Scissorhands KV eviction",
+    "long-context KV pruning"
+  ]
+}
