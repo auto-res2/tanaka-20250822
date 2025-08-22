@@ -5,3 +5,591 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{anagnostidis_2023-05-25T07:39:41Z_dynamic,
+ abstract = {Autoregressive Transformers adopted in Large Language Models (LLMs) are hard
+to scale to long sequences. Despite several works trying to reduce their
+computational cost, most of LLMs still adopt attention layers between all pairs
+of tokens in the sequence, thus incurring a quadratic cost. In this study, we
+present a novel approach that dynamically prunes contextual information while
+preserving the model's expressiveness, resulting in reduced memory and
+computational requirements during inference. Our method employs a learnable
+mechanism that determines which uninformative tokens can be dropped from the
+context at any point across the generation process. By doing so, our approach
+not only addresses performance concerns but also enhances interpretability,
+providing valuable insight into the model's decision-making process. Our
+technique can be applied to existing pre-trained models through a
+straightforward fine-tuning process, and the pruning strength can be specified
+by a sparsity parameter. Notably, our empirical findings demonstrate that we
+can effectively prune up to 80\% of the context without significant performance
+degradation on downstream tasks, offering a valuable tool for mitigating
+inference costs. Our reference implementation achieves up to $2\times$ increase
+in inference throughput and even greater memory savings.},
+ arxiv_url = {https://arxiv.org/pdf/2305.15805v3.pdf},
+ author = {Sotiris Anagnostidis and Dario Pavllo and Luca Biggio and Lorenzo Noci and Aurelien Lucchi and Thomas Hofmann},
+ title = {Dynamic Context Pruning for Efficient and Interpretable Autoregressive Transformers},
+ year = {2023-05-25T07:39:41Z}
+}
+
+@article{author_year_arkvale,
+ title = {ArkVale: Efficient Generative LLM Inference with Recallable Key-Value Eviction}
+}
+
+@article{author_year_arkvale,
+ title = {ArkVale: Efficient Generative LLM Inference with Recallable Key-Value Eviction}
+}
+
+@article{author_year_arkvale,
+ title = {ArkVale: Efficient Generative LLM Inference with Recallable Key-Value Eviction}
+}
+
+@article{hooper_2024-01-31T18:58:14Z_kvquant,
+ abstract = {LLMs are seeing growing use for applications which require large context
+windows, and with these large context windows KV cache activations surface as
+the dominant contributor to memory consumption during inference. Quantization
+is a promising approach for compressing KV cache activations; however, existing
+solutions fail to represent activations accurately in sub-4-bit precision. Our
+work, KVQuant, facilitates low precision KV cache quantization by incorporating
+several novel methods: (i) Per-Channel Key Quantization, where we adjust the
+dimension along which we quantize the Key activations to better match the
+distribution; (ii) Pre-RoPE Key Quantization, where we quantize Key activations
+before the rotary positional embedding to mitigate its impact on quantization;
+(iii) Non-Uniform KV Cache Quantization, where we derive per-layer
+sensitivity-weighted non-uniform datatypes that better represent the
+distributions; and (iv) Per-Vector Dense-and-Sparse Quantization, where we
+isolate outliers separately for each vector to minimize skews in quantization
+ranges. By applying our method to the LLaMA, Llama-2, Llama-3, and Mistral
+models, we achieve < 0.1 perplexity degradation with 3-bit quantization on both
+Wikitext-2 and C4, outperforming existing approaches. Our method enables
+serving LLaMA-7B with a context length of up to 1 million on a single A100-80GB
+GPU and up to 10 million on an 8-GPU system. We develop custom CUDA kernels for
+KVQuant, showing that we can achieve up to ~1.7x speedups, compared to baseline
+fp16 matrix-vector multiplications, for the LLaMA-7B model.},
+ arxiv_url = {https://arxiv.org/pdf/2401.18079v6.pdf},
+ author = {Coleman Hooper and Sehoon Kim and Hiva Mohammadzadeh and Michael W. Mahoney and Yakun Sophia Shao and Kurt Keutzer and Amir Gholami},
+ github_url = {https://github.com/SqueezeAILab/KVQuant},
+ title = {KVQuant: Towards 10 Million Context Length LLM Inference with KV Cache Quantization},
+ year = {2024-01-31T18:58:14Z}
+}
+
+@article{li_2024-04-22T17:42:58Z_snapkv,
+ abstract = {Large Language Models (LLMs) have made remarkable progress in processing
+extensive contexts, with the Key-Value (KV) cache playing a vital role in
+enhancing their performance. However, the growth of the KV cache in response to
+increasing input length poses challenges to memory and time efficiency. To
+address this problem, this paper introduces SnapKV, an innovative and
+fine-tuning-free approach that efficiently minimizes KV cache size while still
+delivering comparable performance in real-world applications.
+  We discover that each attention head in the model consistently focuses on
+specific prompt attention features during generation. Meanwhile, this robust
+pattern can be obtained from an 'observation' window located at the end of the
+prompts. Drawing on this insight, SnapKV automatically compresses KV caches by
+selecting clustered important KV positions for each attention head. Our
+approach significantly reduces the growing computational overhead and memory
+footprint when processing long input sequences. Specifically, SnapKV achieves a
+consistent decoding speed with a 3.6x increase in generation speed and an 8.2x
+enhancement in memory efficiency compared to the baseline when processing
+inputs of 16K tokens. At the same time, it maintains comparable performance to
+the baseline models across 16 long sequence datasets. Moreover, SnapKV can
+process up to 380K context tokens on a single A100-80GB GPU using HuggingFace
+implementation with minor changes, exhibiting only a negligible accuracy drop
+in the Needle-in-a-Haystack test. Further comprehensive studies suggest
+SnapKV's potential for practical applications.},
+ arxiv_url = {https://arxiv.org/pdf/2404.14469v2.pdf},
+ author = {Yuhong Li and Yingbing Huang and Bowen Yang and Bharat Venkitesh and Acyr Locatelli and Hanchen Ye and Tianle Cai and Patrick Lewis and Deming Chen},
+ github_url = {https://github.com/mit-han-lab/streaming-llm},
+ title = {SnapKV: LLM Knows What You are Looking for Before Generation},
+ year = {2024-04-22T17:42:58Z}
+}
+
+@article{liu_2023-05-26T17:39:58Z_scissorhands,
+ abstract = {Large language models(LLMs) have sparked a new wave of exciting AI
+applications. Hosting these models at scale requires significant memory
+resources. One crucial memory bottleneck for the deployment stems from the
+context window. It is commonly recognized that model weights are memory hungry;
+however, the size of key-value embedding stored during the generation process
+(KV cache) can easily surpass the model size. The enormous size of the KV cache
+puts constraints on the inference batch size, which is crucial for high
+throughput inference workload. Inspired by an interesting observation of the
+attention scores, we hypothesize the persistence of importance: only pivotal
+tokens, which had a substantial influence at one step, will significantly
+influence future generations. Based on our empirical verification and
+theoretical analysis around this hypothesis, we propose Scissorhands, a system
+that maintains the memory usage of the KV cache at a fixed budget without
+finetuning the model. In essence, Scissorhands manages the KV cache by storing
+the pivotal tokens with a higher probability. We validate that Scissorhands
+reduces the inference memory usage of the KV cache by up to 5X without
+compromising model quality. We further demonstrate that Scissorhands can be
+combined with 4-bit quantization, traditionally used to compress model weights,
+to achieve up to 20X compression.},
+ arxiv_url = {https://arxiv.org/pdf/2305.17118v2.pdf},
+ author = {Zichang Liu and Aditya Desai and Fangshuo Liao and Weitao Wang and Victor Xie and Zhaozhuo Xu and Anastasios Kyrillidis and Anshumali Shrivastava},
+ title = {Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time},
+ year = {2023-05-26T17:39:58Z}
+}
+
+@article{liu_2024-02-05T06:06:47Z_kivi,
+ abstract = {Efficiently serving large language models (LLMs) requires batching of many
+requests to reduce the cost per request. Yet, with larger batch sizes and
+longer context lengths, the key-value (KV) cache, which stores attention keys
+and values to avoid re-computations, significantly increases memory demands and
+becomes the new bottleneck in speed and memory usage. Additionally, the loading
+of the KV cache causes the computational core to be idle, which limits the
+inference speed. A straightforward and effective solution to reduce KV cache
+size is quantization, which decreases the total bytes taken by KV cache.
+However, there is a lack of in-depth studies that explore the element
+distribution of KV cache to understand the hardness and limitation of KV cache
+quantization. To fill the gap, we conducted a comprehensive study on the
+element distribution in KV cache of popular LLMs. Our findings indicate that
+the key cache should be quantized per-channel, i.e., group elements along the
+channel dimension and quantize them together. In contrast, the value cache
+should be quantized per-token. From this analysis, we developed a tuning-free
+2bit KV cache quantization algorithm named KIVI. With hardware-friendly
+implementation, KIVI can enable Llama, Falcon, and Mistral models to maintain
+almost the same quality while using $\mathbf{2.6\times}$ less peak memory
+(including model weight). This reduction in memory usage enables up to
+$\mathbf{4\times}$ larger batch size, bringing $\mathbf{2.35\times \sim
+3.47\times}$ throughput on real LLM inference workload. The source code is
+available at https://github.com/jy-yuan/KIVI.},
+ arxiv_url = {https://arxiv.org/pdf/2402.02750v2.pdf},
+ author = {Zirui Liu and Jiayi Yuan and Hongye Jin and Shaochen Zhong and Zhaozhuo Xu and Vladimir Braverman and Beidi Chen and Xia Hu},
+ doi = {10.13140/RG.2.2.28167.37282},
+ title = {KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache},
+ year = {2024-02-05T06:06:47Z}
+}
+
+@article{liu_2024-02-05T06:06:47Z_kivi,
+ abstract = {Efficiently serving large language models (LLMs) requires batching of many
+requests to reduce the cost per request. Yet, with larger batch sizes and
+longer context lengths, the key-value (KV) cache, which stores attention keys
+and values to avoid re-computations, significantly increases memory demands and
+becomes the new bottleneck in speed and memory usage. Additionally, the loading
+of the KV cache causes the computational core to be idle, which limits the
+inference speed. A straightforward and effective solution to reduce KV cache
+size is quantization, which decreases the total bytes taken by KV cache.
+However, there is a lack of in-depth studies that explore the element
+distribution of KV cache to understand the hardness and limitation of KV cache
+quantization. To fill the gap, we conducted a comprehensive study on the
+element distribution in KV cache of popular LLMs. Our findings indicate that
+the key cache should be quantized per-channel, i.e., group elements along the
+channel dimension and quantize them together. In contrast, the value cache
+should be quantized per-token. From this analysis, we developed a tuning-free
+2bit KV cache quantization algorithm named KIVI. With hardware-friendly
+implementation, KIVI can enable Llama, Falcon, and Mistral models to maintain
+almost the same quality while using $\mathbf{2.6\times}$ less peak memory
+(including model weight). This reduction in memory usage enables up to
+$\mathbf{4\times}$ larger batch size, bringing $\mathbf{2.35\times \sim
+3.47\times}$ throughput on real LLM inference workload. The source code is
+available at https://github.com/jy-yuan/KIVI.},
+ arxiv_url = {https://arxiv.org/pdf/2402.02750v2.pdf},
+ author = {Zirui Liu and Jiayi Yuan and Hongye Jin and Shaochen Zhong and Zhaozhuo Xu and Vladimir Braverman and Beidi Chen and Xia Hu},
+ doi = {10.13140/RG.2.2.28167.37282},
+ github_url = {https://github.com/jy-yuan/KIVI},
+ title = {KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache},
+ year = {2024-02-05T06:06:47Z}
+}
+
+@article{liu_2024-02-05T06:06:47Z_kivi,
+ abstract = {Efficiently serving large language models (LLMs) requires batching of many
+requests to reduce the cost per request. Yet, with larger batch sizes and
+longer context lengths, the key-value (KV) cache, which stores attention keys
+and values to avoid re-computations, significantly increases memory demands and
+becomes the new bottleneck in speed and memory usage. Additionally, the loading
+of the KV cache causes the computational core to be idle, which limits the
+inference speed. A straightforward and effective solution to reduce KV cache
+size is quantization, which decreases the total bytes taken by KV cache.
+However, there is a lack of in-depth studies that explore the element
+distribution of KV cache to understand the hardness and limitation of KV cache
+quantization. To fill the gap, we conducted a comprehensive study on the
+element distribution in KV cache of popular LLMs. Our findings indicate that
+the key cache should be quantized per-channel, i.e., group elements along the
+channel dimension and quantize them together. In contrast, the value cache
+should be quantized per-token. From this analysis, we developed a tuning-free
+2bit KV cache quantization algorithm named KIVI. With hardware-friendly
+implementation, KIVI can enable Llama, Falcon, and Mistral models to maintain
+almost the same quality while using $\mathbf{2.6\times}$ less peak memory
+(including model weight). This reduction in memory usage enables up to
+$\mathbf{4\times}$ larger batch size, bringing $\mathbf{2.35\times \sim
+3.47\times}$ throughput on real LLM inference workload. The source code is
+available at https://github.com/jy-yuan/KIVI.},
+ arxiv_url = {https://arxiv.org/pdf/2402.02750v2.pdf},
+ author = {Zirui Liu and Jiayi Yuan and Hongye Jin and Shaochen Zhong and Zhaozhuo Xu and Vladimir Braverman and Beidi Chen and Xia Hu},
+ doi = {10.13140/RG.2.2.28167.37282},
+ github_url = {https://github.com/jy-yuan/KIVI},
+ title = {KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache},
+ year = {2024-02-05T06:06:47Z}
+}
+
+@article{liu_2024-02-05T06:06:47Z_kivi,
+ abstract = {Efficiently serving large language models (LLMs) requires batching of many
+requests to reduce the cost per request. Yet, with larger batch sizes and
+longer context lengths, the key-value (KV) cache, which stores attention keys
+and values to avoid re-computations, significantly increases memory demands and
+becomes the new bottleneck in speed and memory usage. Additionally, the loading
+of the KV cache causes the computational core to be idle, which limits the
+inference speed. A straightforward and effective solution to reduce KV cache
+size is quantization, which decreases the total bytes taken by KV cache.
+However, there is a lack of in-depth studies that explore the element
+distribution of KV cache to understand the hardness and limitation of KV cache
+quantization. To fill the gap, we conducted a comprehensive study on the
+element distribution in KV cache of popular LLMs. Our findings indicate that
+the key cache should be quantized per-channel, i.e., group elements along the
+channel dimension and quantize them together. In contrast, the value cache
+should be quantized per-token. From this analysis, we developed a tuning-free
+2bit KV cache quantization algorithm named KIVI. With hardware-friendly
+implementation, KIVI can enable Llama, Falcon, and Mistral models to maintain
+almost the same quality while using $\mathbf{2.6\times}$ less peak memory
+(including model weight). This reduction in memory usage enables up to
+$\mathbf{4\times}$ larger batch size, bringing $\mathbf{2.35\times \sim
+3.47\times}$ throughput on real LLM inference workload. The source code is
+available at https://github.com/jy-yuan/KIVI.},
+ arxiv_url = {https://arxiv.org/pdf/2402.02750v2.pdf},
+ author = {Zirui Liu and Jiayi Yuan and Hongye Jin and Shaochen Zhong and Zhaozhuo Xu and Vladimir Braverman and Beidi Chen and Xia Hu},
+ doi = {10.13140/RG.2.2.28167.37282},
+ github_url = {https://github.com/jy-yuan/KIVI},
+ title = {KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache},
+ year = {2024-02-05T06:06:47Z}
+}
+
+@article{zhang_2023-06-24T20:11:14Z_heavy,
+ abstract = {Large Language Models (LLMs), despite their recent impressive
+accomplishments, are notably cost-prohibitive to deploy, particularly for
+applications involving long-content generation, such as dialogue systems and
+story writing. Often, a large amount of transient state information, referred
+to as the KV cache, is stored in GPU memory in addition to model parameters,
+scaling linearly with the sequence length and batch size. In this paper, we
+introduce a novel approach for implementing the KV cache which significantly
+reduces its memory footprint. Our approach is based on the noteworthy
+observation that a small portion of tokens contributes most of the value when
+computing attention scores. We call these tokens Heavy Hitters (H$_2$). Through
+a comprehensive investigation, we find that (i) the emergence of H$_2$ is
+natural and strongly correlates with the frequent co-occurrence of tokens in
+the text, and (ii) removing them results in significant performance
+degradation. Based on these insights, we propose Heavy Hitter Oracle (H$_2$O),
+a KV cache eviction policy that dynamically retains a balance of recent and
+H$_2$ tokens. We formulate the KV cache eviction as a dynamic submodular
+problem and prove (under mild assumptions) a theoretical guarantee for our
+novel eviction algorithm which could help guide future work. We validate the
+accuracy of our algorithm with OPT, LLaMA, and GPT-NeoX across a wide range of
+tasks. Our implementation of H$_2$O with 20% heavy hitters improves the
+throughput over three leading inference systems DeepSpeed Zero-Inference,
+Hugging Face Accelerate, and FlexGen by up to 29$\times$, 29$\times$, and
+3$\times$ on OPT-6.7B and OPT-30B. With the same batch size, H2O can reduce the
+latency by up to 1.9$\times$. The code is available at
+https://github.com/FMInference/H2O.},
+ arxiv_url = {https://arxiv.org/pdf/2306.14048v3.pdf},
+ author = {Zhenyu Zhang and Ying Sheng and Tianyi Zhou and Tianlong Chen and Lianmin Zheng and Ruisi Cai and Zhao Song and Yuandong Tian and Christopher Ré and Clark Barrett and Zhangyang Wang and Beidi Chen},
+ title = {H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+ year = {2023-06-24T20:11:14Z}
+}
+
+@article{zhang_2023-06-24T20:11:14Z_heavy,
+ abstract = {Large Language Models (LLMs), despite their recent impressive
+accomplishments, are notably cost-prohibitive to deploy, particularly for
+applications involving long-content generation, such as dialogue systems and
+story writing. Often, a large amount of transient state information, referred
+to as the KV cache, is stored in GPU memory in addition to model parameters,
+scaling linearly with the sequence length and batch size. In this paper, we
+introduce a novel approach for implementing the KV cache which significantly
+reduces its memory footprint. Our approach is based on the noteworthy
+observation that a small portion of tokens contributes most of the value when
+computing attention scores. We call these tokens Heavy Hitters (H$_2$). Through
+a comprehensive investigation, we find that (i) the emergence of H$_2$ is
+natural and strongly correlates with the frequent co-occurrence of tokens in
+the text, and (ii) removing them results in significant performance
+degradation. Based on these insights, we propose Heavy Hitter Oracle (H$_2$O),
+a KV cache eviction policy that dynamically retains a balance of recent and
+H$_2$ tokens. We formulate the KV cache eviction as a dynamic submodular
+problem and prove (under mild assumptions) a theoretical guarantee for our
+novel eviction algorithm which could help guide future work. We validate the
+accuracy of our algorithm with OPT, LLaMA, and GPT-NeoX across a wide range of
+tasks. Our implementation of H$_2$O with 20% heavy hitters improves the
+throughput over three leading inference systems DeepSpeed Zero-Inference,
+Hugging Face Accelerate, and FlexGen by up to 29$\times$, 29$\times$, and
+3$\times$ on OPT-6.7B and OPT-30B. With the same batch size, H2O can reduce the
+latency by up to 1.9$\times$. The code is available at
+https://github.com/FMInference/H2O.},
+ arxiv_url = {https://arxiv.org/pdf/2306.14048v3.pdf},
+ author = {Zhenyu Zhang and Ying Sheng and Tianyi Zhou and Tianlong Chen and Lianmin Zheng and Ruisi Cai and Zhao Song and Yuandong Tian and Christopher Ré and Clark Barrett and Zhangyang Wang and Beidi Chen},
+ title = {H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+ year = {2023-06-24T20:11:14Z}
+}
+
+@article{zhang_2023-06-24T20:11:14Z_heavy,
+ abstract = {Large Language Models (LLMs), despite their recent impressive
+accomplishments, are notably cost-prohibitive to deploy, particularly for
+applications involving long-content generation, such as dialogue systems and
+story writing. Often, a large amount of transient state information, referred
+to as the KV cache, is stored in GPU memory in addition to model parameters,
+scaling linearly with the sequence length and batch size. In this paper, we
+introduce a novel approach for implementing the KV cache which significantly
+reduces its memory footprint. Our approach is based on the noteworthy
+observation that a small portion of tokens contributes most of the value when
+computing attention scores. We call these tokens Heavy Hitters (H$_2$). Through
+a comprehensive investigation, we find that (i) the emergence of H$_2$ is
+natural and strongly correlates with the frequent co-occurrence of tokens in
+the text, and (ii) removing them results in significant performance
+degradation. Based on these insights, we propose Heavy Hitter Oracle (H$_2$O),
+a KV cache eviction policy that dynamically retains a balance of recent and
+H$_2$ tokens. We formulate the KV cache eviction as a dynamic submodular
+problem and prove (under mild assumptions) a theoretical guarantee for our
+novel eviction algorithm which could help guide future work. We validate the
+accuracy of our algorithm with OPT, LLaMA, and GPT-NeoX across a wide range of
+tasks. Our implementation of H$_2$O with 20% heavy hitters improves the
+throughput over three leading inference systems DeepSpeed Zero-Inference,
+Hugging Face Accelerate, and FlexGen by up to 29$\times$, 29$\times$, and
+3$\times$ on OPT-6.7B and OPT-30B. With the same batch size, H2O can reduce the
+latency by up to 1.9$\times$. The code is available at
+https://github.com/FMInference/H2O.},
+ arxiv_url = {https://arxiv.org/pdf/2306.14048v3.pdf},
+ author = {Zhenyu Zhang and Ying Sheng and Tianyi Zhou and Tianlong Chen and Lianmin Zheng and Ruisi Cai and Zhao Song and Yuandong Tian and Christopher Ré and Clark Barrett and Zhangyang Wang and Beidi Chen},
+ title = {H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+ year = {2023-06-24T20:11:14Z}
+}
+
+@article{zhang_2023-06-24T20:11:14Z_heavy,
+ abstract = {Large Language Models (LLMs), despite their recent impressive
+accomplishments, are notably cost-prohibitive to deploy, particularly for
+applications involving long-content generation, such as dialogue systems and
+story writing. Often, a large amount of transient state information, referred
+to as the KV cache, is stored in GPU memory in addition to model parameters,
+scaling linearly with the sequence length and batch size. In this paper, we
+introduce a novel approach for implementing the KV cache which significantly
+reduces its memory footprint. Our approach is based on the noteworthy
+observation that a small portion of tokens contributes most of the value when
+computing attention scores. We call these tokens Heavy Hitters (H$_2$). Through
+a comprehensive investigation, we find that (i) the emergence of H$_2$ is
+natural and strongly correlates with the frequent co-occurrence of tokens in
+the text, and (ii) removing them results in significant performance
+degradation. Based on these insights, we propose Heavy Hitter Oracle (H$_2$O),
+a KV cache eviction policy that dynamically retains a balance of recent and
+H$_2$ tokens. We formulate the KV cache eviction as a dynamic submodular
+problem and prove (under mild assumptions) a theoretical guarantee for our
+novel eviction algorithm which could help guide future work. We validate the
+accuracy of our algorithm with OPT, LLaMA, and GPT-NeoX across a wide range of
+tasks. Our implementation of H$_2$O with 20% heavy hitters improves the
+throughput over three leading inference systems DeepSpeed Zero-Inference,
+Hugging Face Accelerate, and FlexGen by up to 29$\times$, 29$\times$, and
+3$\times$ on OPT-6.7B and OPT-30B. With the same batch size, H2O can reduce the
+latency by up to 1.9$\times$. The code is available at
+https://github.com/FMInference/H2O.},
+ arxiv_url = {https://arxiv.org/pdf/2306.14048v3.pdf},
+ author = {Zhenyu Zhang and Ying Sheng and Tianyi Zhou and Tianlong Chen and Lianmin Zheng and Ruisi Cai and Zhao Song and Yuandong Tian and Christopher Ré and Clark Barrett and Zhangyang Wang and Beidi Chen},
+ title = {H2O: Heavy-Hitter Oracle for Efficient Generative Inference of Large Language Models},
+ year = {2023-06-24T20:11:14Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{ainslie_2023-05-22T17:16:38Z_gqa,
+ abstract = {Multi-query attention (MQA), which only uses a single key-value head,
+drastically speeds up decoder inference. However, MQA can lead to quality
+degradation, and moreover it may not be desirable to train a separate model
+just for faster inference. We (1) propose a recipe for uptraining existing
+multi-head language model checkpoints into models with MQA using 5% of original
+pre-training compute, and (2) introduce grouped-query attention (GQA), a
+generalization of multi-query attention which uses an intermediate (more than
+one, less than number of query heads) number of key-value heads. We show that
+uptrained GQA achieves quality close to multi-head attention with comparable
+speed to MQA.},
+ arxiv_url = {https://arxiv.org/pdf/2305.13245v3.pdf},
+ author = {Joshua Ainslie and James Lee-Thorp and Michiel de Jong and Yury Zemlyanskiy and Federico Lebrón and Sumit Sanghai},
+ title = {Gqa: Training generalized multi-query transformer models from multi-head checkpoints},
+ year = {2023-05-22T17:16:38Z}
+}
+
+@article{author_year_framework,
+ title = {A framework for few-shot language model evaluation}
+}
+
+@article{bai_2023-08-28T11:53:40Z_longbench,
+ abstract = {Although large language models (LLMs) demonstrate impressive performance for
+many language tasks, most of them can only handle texts a few thousand tokens
+long, limiting their applications on longer sequence inputs, such as books,
+reports, and codebases. Recent works have proposed methods to improve LLMs'
+long context capabilities by extending context windows and more sophisticated
+memory mechanisms. However, comprehensive benchmarks tailored for evaluating
+long context understanding are lacking. In this paper, we introduce LongBench,
+the first bilingual, multi-task benchmark for long context understanding,
+enabling a more rigorous evaluation of long context understanding. LongBench
+comprises 21 datasets across 6 task categories in both English and Chinese,
+with an average length of 6,711 words (English) and 13,386 characters
+(Chinese). These tasks cover key long-text application areas including
+single-doc QA, multi-doc QA, summarization, few-shot learning, synthetic tasks,
+and code completion. All datasets in LongBench are standardized into a unified
+format, allowing for effortless automatic evaluation of LLMs. Upon
+comprehensive evaluation of 8 LLMs on LongBench, we find that: (1) Commercial
+model (GPT-3.5-Turbo-16k) outperforms other open-sourced models, but still
+struggles on longer contexts. (2) Scaled position embedding and fine-tuning on
+longer sequences lead to substantial improvement on long context understanding.
+(3) Context compression technique such as retrieval brings improvement for
+model with weak ability on long contexts, but the performance still lags behind
+models that have strong long context understanding capability. The code and
+datasets are available at https://github.com/THUDM/LongBench.},
+ arxiv_url = {https://arxiv.org/pdf/2308.14508v2.pdf},
+ author = {Yushi Bai and Xin Lv and Jiajie Zhang and Hongchang Lyu and Jiankai Tang and Zhidian Huang and Zhengxiao Du and Xiao Liu and Aohan Zeng and Lei Hou and Yuxiao Dong and Jie Tang and Juanzi Li},
+ title = {Longbench: A bilingual, multitask benchmark for long context understanding},
+ year = {2023-08-28T11:53:40Z}
+}
+
+@article{brown_2020-05-28T17:29:03Z_language,
+ abstract = {Recent work has demonstrated substantial gains on many NLP tasks and
+benchmarks by pre-training on a large corpus of text followed by fine-tuning on
+a specific task. While typically task-agnostic in architecture, this method
+still requires task-specific fine-tuning datasets of thousands or tens of
+thousands of examples. By contrast, humans can generally perform a new language
+task from only a few examples or from simple instructions - something which
+current NLP systems still largely struggle to do. Here we show that scaling up
+language models greatly improves task-agnostic, few-shot performance, sometimes
+even reaching competitiveness with prior state-of-the-art fine-tuning
+approaches. Specifically, we train GPT-3, an autoregressive language model with
+175 billion parameters, 10x more than any previous non-sparse language model,
+and test its performance in the few-shot setting. For all tasks, GPT-3 is
+applied without any gradient updates or fine-tuning, with tasks and few-shot
+demonstrations specified purely via text interaction with the model. GPT-3
+achieves strong performance on many NLP datasets, including translation,
+question-answering, and cloze tasks, as well as several tasks that require
+on-the-fly reasoning or domain adaptation, such as unscrambling words, using a
+novel word in a sentence, or performing 3-digit arithmetic. At the same time,
+we also identify some datasets where GPT-3's few-shot learning still struggles,
+as well as some datasets where GPT-3 faces methodological issues related to
+training on large web corpora. Finally, we find that GPT-3 can generate samples
+of news articles which human evaluators have difficulty distinguishing from
+articles written by humans. We discuss broader societal impacts of this finding
+and of GPT-3 in general.},
+ arxiv_url = {https://arxiv.org/pdf/2005.14165v4.pdf},
+ author = {Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+ title = {Language models are few-shot learners},
+ year = {2020-05-28T17:29:03Z}
+}
+
+@article{dettmers_2022-08-15T17:08:50Z_llm,
+ abstract = {Large language models have been widely adopted but require significant GPU
+memory for inference. We develop a procedure for Int8 matrix multiplication for
+feed-forward and attention projection layers in transformers, which cut the
+memory needed for inference by half while retaining full precision performance.
+With our method, a 175B parameter 16/32-bit checkpoint can be loaded, converted
+to Int8, and used immediately without performance degradation. This is made
+possible by understanding and working around properties of highly systematic
+emergent features in transformer language models that dominate attention and
+transformer predictive performance. To cope with these features, we develop a
+two-part quantization procedure, LLM.int8(). We first use vector-wise
+quantization with separate normalization constants for each inner product in
+the matrix multiplication, to quantize most of the features. However, for the
+emergent outliers, we also include a new mixed-precision decomposition scheme,
+which isolates the outlier feature dimensions into a 16-bit matrix
+multiplication while still more than 99.9% of values are multiplied in 8-bit.
+Using LLM.int8(), we show empirically it is possible to perform inference in
+LLMs with up to 175B parameters without any performance degradation. This
+result makes such models much more accessible, for example making it possible
+to use OPT-175B/BLOOM on a single server with consumer GPUs. We open-source our
+software.},
+ arxiv_url = {https://arxiv.org/pdf/2208.07339v2.pdf},
+ author = {Tim Dettmers and Mike Lewis and Younes Belkada and Luke Zettlemoyer},
+ title = {Llm. int8 (): 8-bit matrix multiplication for transformers at scale},
+ year = {2022-08-15T17:08:50Z}
+}
+
+@article{frantar_2022-10-31T13:42:40Z_gptq,
+ abstract = {Generative Pre-trained Transformer models, known as GPT or OPT, set
+themselves apart through breakthrough performance across complex language
+modelling tasks, but also by their extremely high computational and storage
+costs. Specifically, due to their massive size, even inference for large,
+highly-accurate GPT models may require multiple performant GPUs, which limits
+the usability of such models. While there is emerging work on relieving this
+pressure via model compression, the applicability and performance of existing
+compression techniques is limited by the scale and complexity of GPT models. In
+this paper, we address this challenge, and propose GPTQ, a new one-shot weight
+quantization method based on approximate second-order information, that is both
+highly-accurate and highly-efficient. Specifically, GPTQ can quantize GPT
+models with 175 billion parameters in approximately four GPU hours, reducing
+the bitwidth down to 3 or 4 bits per weight, with negligible accuracy
+degradation relative to the uncompressed baseline. Our method more than doubles
+the compression gains relative to previously-proposed one-shot quantization
+methods, preserving accuracy, allowing us for the first time to execute an 175
+billion-parameter model inside a single GPU for generative inference. Moreover,
+we also show that our method can still provide reasonable accuracy in the
+extreme quantization regime, in which weights are quantized to 2-bit or even
+ternary quantization levels. We show experimentally that these improvements can
+be leveraged for end-to-end inference speedups over FP16, of around 3.25x when
+using high-end GPUs (NVIDIA A100) and 4.5x when using more cost-effective ones
+(NVIDIA A6000). The implementation is available at
+https://github.com/IST-DASLab/gptq.},
+ arxiv_url = {https://arxiv.org/pdf/2210.17323v2.pdf},
+ author = {Elias Frantar and Saleh Ashkboos and Torsten Hoefler and Dan Alistarh},
+ title = {Gptq: Accurate post-training quantization for generative pre-trained transformers},
+ year = {2022-10-31T13:42:40Z}
+}
+
+@article{hooper_2024-01-31T18:58:14Z_kvquant,
+ abstract = {LLMs are seeing growing use for applications which require large context
+windows, and with these large context windows KV cache activations surface as
+the dominant contributor to memory consumption during inference. Quantization
+is a promising approach for compressing KV cache activations; however, existing
+solutions fail to represent activations accurately in sub-4-bit precision. Our
+work, KVQuant, facilitates low precision KV cache quantization by incorporating
+several novel methods: (i) Per-Channel Key Quantization, where we adjust the
+dimension along which we quantize the Key activations to better match the
+distribution; (ii) Pre-RoPE Key Quantization, where we quantize Key activations
+before the rotary positional embedding to mitigate its impact on quantization;
+(iii) Non-Uniform KV Cache Quantization, where we derive per-layer
+sensitivity-weighted non-uniform datatypes that better represent the
+distributions; and (iv) Per-Vector Dense-and-Sparse Quantization, where we
+isolate outliers separately for each vector to minimize skews in quantization
+ranges. By applying our method to the LLaMA, Llama-2, Llama-3, and Mistral
+models, we achieve < 0.1 perplexity degradation with 3-bit quantization on both
+Wikitext-2 and C4, outperforming existing approaches. Our method enables
+serving LLaMA-7B with a context length of up to 1 million on a single A100-80GB
+GPU and up to 10 million on an 8-GPU system. We develop custom CUDA kernels for
+KVQuant, showing that we can achieve up to ~1.7x speedups, compared to baseline
+fp16 matrix-vector multiplications, for the LLaMA-7B model.},
+ arxiv_url = {https://arxiv.org/pdf/2401.18079v6.pdf},
+ author = {Coleman Hooper and Sehoon Kim and Hiva Mohammadzadeh and Michael W. Mahoney and Yakun Sophia Shao and Kurt Keutzer and Amir Gholami},
+ title = {Kvquant: Towards 10 million context length llm inference with kv cache quantization},
+ year = {2024-01-31T18:58:14Z}
+}
+
+@article{jiang_2023-10-10T17:54:58Z_mistral,
+ abstract = {We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered
+for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B
+across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and
+code generation. Our model leverages grouped-query attention (GQA) for faster
+inference, coupled with sliding window attention (SWA) to effectively handle
+sequences of arbitrary length with a reduced inference cost. We also provide a
+model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses
+the Llama 2 13B -- Chat model both on human and automated benchmarks. Our
+models are released under the Apache 2.0 license.},
+ arxiv_url = {https://arxiv.org/pdf/2310.06825v1.pdf},
+ author = {Albert Q. Jiang and Alexandre Sablayrolles and Arthur Mensch and Chris Bamford and Devendra Singh Chaplot and Diego de las Casas and Florian Bressand and Gianna Lengyel and Guillaume Lample and Lucile Saulnier and Lélio Renard Lavaud and Marie-Anne Lachaux and Pierre Stock and Teven Le Scao and Thibaut Lavril and Thomas Wang and Timothée Lacroix and William El Sayed},
+ title = {Mistral 7b},
+ year = {2023-10-10T17:54:58Z}
+}
+
+@article{jin_2023-06-09T16:13:43Z_increasing,
+ abstract = {Generating texts with a large language model (LLM) consumes massive amounts
+of memory. Apart from the already-large model parameters, the key/value (KV)
+cache that holds information about previous tokens in a sequence can grow to be
+even larger than the model itself. This problem is exacerbated in one of the
+current LLM serving frameworks which reserves the maximum sequence length of
+memory for the KV cache to guarantee generating a complete sequence as they do
+not know the output sequence length. This restricts us to use a smaller batch
+size leading to lower GPU utilization and above all, lower throughput. We argue
+that designing a system with a priori knowledge of the output sequence can
+mitigate this problem. To this end, we propose S$^{3}$, which predicts the
+output sequence length, schedules generation queries based on the prediction to
+increase device resource utilization and throughput, and handle mispredictions.
+Our proposed method achieves 6.49$\times$ throughput over those systems that
+assume the worst case for the output sequence length.},
+ arxiv_url = {https://arxiv.org/pdf/2306.06000v1.pdf},
+ author = {Yunho Jin and Chun-Feng Wu and David Brooks and Gu-Yeon Wei},
+ title = {S3: Increasing gpu utilization during generative inference for higher throughput},
+ year = {2023-06-09T16:13:43Z}
+}
