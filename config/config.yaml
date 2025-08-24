@@ -1,0 +1,56 @@
+seed: 0
+device: auto  # 'auto' picks CUDA if available; otherwise CPU
+
+dirs:
+  images_dir: .research/iteration1/images
+  data_dir: data
+  models_dir: models
+
+# StarStrideWindow (SSW) configuration
+ssw:
+  window: 512
+  strides: [97, 223]
+  star_hubs_per_seg: 4
+  segment_len: 256
+  pad_to: 64
+
+# KV-Pyramid (KVP) configuration
+kvp:
+  window: 512
+  levels: 2
+  anchors_per_seg: 4
+  segment_len: 256
+  recent_bits: 8
+  anchor_bits: 6
+  ema_alpha: 0.1
+
+# Cascaded Group Attention (CGA) dimensions for toy demo
+cga:
+  d_model: 256
+  groups: 4
+  c_per_group: 64
+  d_kv: 128
+  ffn_ratio_small: 1.0
+  ffn_ratio_large: 2.0
+
+# Experiment 1: Throughput & KV scaling
+e1:
+  seqlens: [256, 512, 1024]
+  runs: 2
+
+# Experiment 2: Synthetic long-range retrieval (needle-in-haystack)
+e2:
+  train_seqlen: 512
+  eval_seqlen: 1024
+  train_steps: 10
+  batch_size: 1
+  min_dist: 64
+  max_dist: 256
+  eval_distances: [64, 128, 256, 512]
+  eval_trials: 20
+  vocab: 2000  # base vocab for training (embedding adds +4000)
+
+# Experiment 3: Quantization and early-exit
+e3:
+  q_seqlen: 512
+  target_ms: 20.0

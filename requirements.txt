@@ -1,1 +1,5 @@
-# Please list the required python packages.
+torch>=2.1
+numpy>=1.20
+matplotlib>=3.5
+PyYAML>=6.0
+tqdm>=4.66
