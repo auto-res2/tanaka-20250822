@@ -5,3 +5,512 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{author_year_compressing,
+ title = {Compressing Large Language Models by Joint Sparsification and Quantization}
+}
+
+@article{author_year_low,
+ title = {Low-Rank Approximation for Sparse Attention in Multi-Modal LLMs}
+}
+
+@article{edelman_2021_inductive,
+ abstract = {Self-attention, an architectural motif designed to model long-range
+interactions in sequential data, has driven numerous recent breakthroughs in
+natural language processing and beyond. This work provides a theoretical
+analysis of the inductive biases of self-attention modules. Our focus is to
+rigorously establish which functions and long-range dependencies self-attention
+blocks prefer to represent. Our main result shows that bounded-norm Transformer
+networks "create sparse variables": a single self-attention head can represent
+a sparse function of the input sequence, with sample complexity scaling only
+logarithmically with the context length. To support our analysis, we present
+synthetic experiments to probe the sample complexity of learning sparse Boolean
+functions with Transformers.},
+ arxiv_url = {https://arxiv.org/pdf/2110.10090v2.pdf},
+ author = {Benjamin L. Edelman and Surbhi Goel and Sham Kakade and Cyril Zhang},
+ title = {Inductive Biases and Variable Creation in Self-Attention Mechanisms},
+ year = {2021}
+}
+
+@article{gu_2023_minillm,
+ abstract = {Knowledge Distillation (KD) is a promising technique for reducing the high
+computational demand of large language models (LLMs). However, previous KD
+methods are primarily applied to white-box classification models or training
+small models to imitate black-box model APIs like ChatGPT. How to effectively
+distill the knowledge of white-box LLMs into small models is still
+under-explored, which becomes more important with the prosperity of open-source
+LLMs. In this work, we propose a KD approach that distills LLMs into smaller
+language models. We first replace the forward Kullback-Leibler divergence (KLD)
+objective in the standard KD approaches with reverse KLD, which is more
+suitable for KD on generative language models, to prevent the student model
+from overestimating the low-probability regions of the teacher distribution.
+Then, we derive an effective optimization approach to learn this objective. The
+student models are named MiniLLM. Extensive experiments in the
+instruction-following setting show that MiniLLM generates more precise
+responses with higher overall quality, lower exposure bias, better calibration,
+and higher long-text generation performance than the baselines. Our method is
+scalable for different model families with 120M to 13B parameters. Our code,
+data, and model checkpoints can be found in
+https://github.com/microsoft/LMOps/tree/main/minillm.},
+ arxiv_url = {https://arxiv.org/pdf/2306.08543v4.pdf},
+ author = {Yuxian Gu and Li Dong and Furu Wei and Minlie Huang},
+ title = {MiniLLM: Knowledge Distillation of Large Language Models},
+ year = {2023}
+}
+
+@article{han_2024_sltrain,
+ abstract = {Large language models (LLMs) have shown impressive capabilities across
+various tasks. However, training LLMs from scratch requires significant
+computational power and extensive memory capacity. Recent studies have explored
+low-rank structures on weights for efficient fine-tuning in terms of parameters
+and memory, either through low-rank adaptation or factorization. While
+effective for fine-tuning, low-rank structures are generally less suitable for
+pretraining because they restrict parameters to a low-dimensional subspace. In
+this work, we propose to parameterize the weights as a sum of low-rank and
+sparse matrices for pretraining, which we call SLTrain. The low-rank component
+is learned via matrix factorization, while for the sparse component, we employ
+a simple strategy of uniformly selecting the sparsity support at random and
+learning only the non-zero entries with the fixed support. While being simple,
+the random fixed-support sparse learning strategy significantly enhances
+pretraining when combined with low-rank learning. Our results show that SLTrain
+adds minimal extra parameters and memory costs compared to pretraining with
+low-rank parameterization, yet achieves substantially better performance, which
+is comparable to full-rank training. Remarkably, when combined with
+quantization and per-layer updates, SLTrain can reduce memory requirements by
+up to 73% when pretraining the LLaMA 7B model.},
+ arxiv_url = {https://arxiv.org/pdf/2406.02214v2.pdf},
+ author = {Andi Han and Jiaxiang Li and Wei Huang and Mingyi Hong and Akiko Takeda and Pratik Jawanpuria and Bamdev Mishra},
+ github_url = {https://github.com/andyjm3/SLTrain},
+ title = {SLTrain: a sparse plus low rank approach for parameter and memory efficient pretraining},
+ year = {2024}
+}
+
+@article{kitaev_2020_reformer,
+ abstract = {Large Transformer models routinely achieve state-of-the-art results on a
+number of tasks but training these models can be prohibitively costly,
+especially on long sequences. We introduce two techniques to improve the
+efficiency of Transformers. For one, we replace dot-product attention by one
+that uses locality-sensitive hashing, changing its complexity from O($L^2$) to
+O($L\log L$), where $L$ is the length of the sequence. Furthermore, we use
+reversible residual layers instead of the standard residuals, which allows
+storing activations only once in the training process instead of $N$ times,
+where $N$ is the number of layers. The resulting model, the Reformer, performs
+on par with Transformer models while being much more memory-efficient and much
+faster on long sequences.},
+ arxiv_url = {https://arxiv.org/pdf/2001.04451v2.pdf},
+ author = {Nikita Kitaev and Łukasz Kaiser and Anselm Levskaya},
+ github_url = {https://github.com/google/trax},
+ title = {Reformer: The Efficient Transformer},
+ year = {2020}
+}
+
+@article{ko_2024_distillm,
+ abstract = {Knowledge distillation (KD) is widely used for compressing a teacher model to
+a smaller student model, reducing its inference cost and memory footprint while
+preserving model capabilities. However, current KD methods for auto-regressive
+sequence models (e.g., large language models) suffer from missing a
+standardized objective function. Moreover, the recent use of student-generated
+outputs to address training-inference mismatches has significantly escalated
+computational costs. To tackle these issues, we introduce DistiLLM, a more
+effective and efficient KD framework for auto-regressive language models.
+DistiLLM comprises two components: (1) a novel skew Kullback-Leibler divergence
+loss, where we unveil and leverage its theoretical properties, and (2) an
+adaptive off-policy approach designed to enhance the efficiency in utilizing
+student-generated outputs. Extensive experiments, including
+instruction-following tasks, demonstrate the effectiveness of DistiLLM in
+building high-performing student models while achieving up to 4.3$\times$
+speedup compared to recent KD methods.},
+ arxiv_url = {https://arxiv.org/pdf/2402.03898v2.pdf},
+ author = {Jongwoo Ko and Sungnyun Kim and Tianyi Chen and Se-Young Yun},
+ github_url = {https://github.com/jongwooko/distillm},
+ title = {DistiLLM: Towards Streamlined Distillation for Large Language Models},
+ year = {2024}
+}
+
+@article{li_2022_efficientformer,
+ abstract = {Vision Transformers (ViT) have shown rapid progress in computer vision tasks,
+achieving promising results on various benchmarks. However, due to the massive
+number of parameters and model design, \textit{e.g.}, attention mechanism,
+ViT-based models are generally times slower than lightweight convolutional
+networks. Therefore, the deployment of ViT for real-time applications is
+particularly challenging, especially on resource-constrained hardware such as
+mobile devices. Recent efforts try to reduce the computation complexity of ViT
+through network architecture search or hybrid design with MobileNet block, yet
+the inference speed is still unsatisfactory. This leads to an important
+question: can transformers run as fast as MobileNet while obtaining high
+performance? To answer this, we first revisit the network architecture and
+operators used in ViT-based models and identify inefficient designs. Then we
+introduce a dimension-consistent pure transformer (without MobileNet blocks) as
+a design paradigm. Finally, we perform latency-driven slimming to get a series
+of final models dubbed EfficientFormer. Extensive experiments show the
+superiority of EfficientFormer in performance and speed on mobile devices. Our
+fastest model, EfficientFormer-L1, achieves $79.2\%$ top-1 accuracy on
+ImageNet-1K with only $1.6$ ms inference latency on iPhone 12 (compiled with
+CoreML), which runs as fast as MobileNetV2$\times 1.4$ ($1.6$ ms, $74.7\%$
+top-1), and our largest model, EfficientFormer-L7, obtains $83.3\%$ accuracy
+with only $7.0$ ms latency. Our work proves that properly designed transformers
+can reach extremely low latency on mobile devices while maintaining high
+performance.},
+ arxiv_url = {https://arxiv.org/pdf/2206.01191v5.pdf},
+ author = {Yanyu Li and Geng Yuan and Yang Wen and Ju Hu and Georgios Evangelidis and Sergey Tulyakov and Yanzhi Wang and Jian Ren},
+ title = {EfficientFormer: Vision Transformers at MobileNet Speed},
+ year = {2022}
+}
+
+@article{li_2024_evaluating,
+ abstract = {Post-training quantization (PTQ) has emerged as a promising technique to
+reduce the cost of large language models (LLMs). Specifically, PTQ can
+effectively mitigate memory consumption and reduce computational overhead in
+LLMs. To meet the requirements of both high efficiency and performance across
+diverse scenarios, a comprehensive evaluation of quantized LLMs is essential to
+guide the selection of quantization methods. This paper presents a thorough
+evaluation of these factors by evaluating the effect of PTQ on Weight,
+Activation, and KV Cache on 11 model families, including OPT, LLaMA2, Falcon,
+Bloomz, Mistral, ChatGLM, Vicuna, LongChat, StableLM, Gemma, and Mamba, with
+parameters ranging from 125M to 180B. The evaluation encompasses five types of
+tasks: basic NLP, emergent ability, trustworthiness, dialogue, and long-context
+tasks. Moreover, we also evaluate the state-of-the-art (SOTA) quantization
+methods to demonstrate their applicability. Based on the extensive experiments,
+we systematically summarize the effect of quantization, provide recommendations
+to apply quantization techniques, and point out future directions. The code can
+be found in https://github.com/thu-nics/qllm-eval.},
+ arxiv_url = {https://arxiv.org/pdf/2402.18158v2.pdf},
+ author = {Shiyao Li and Xuefei Ning and Luning Wang and Tengxuan Liu and Xiangsheng Shi and Shengen Yan and Guohao Dai and Huazhong Yang and Yu Wang},
+ title = {Evaluating Quantized Large Language Models},
+ year = {2024}
+}
+
+@article{lialin_2023_relora,
+ abstract = {Despite the dominance and effectiveness of scaling, resulting in large
+networks with hundreds of billions of parameters, the necessity to train
+overparameterized models remains poorly understood, while training costs grow
+exponentially. In this paper, we explore parameter-efficient training
+techniques as an approach to training large neural networks. We introduce a
+novel method called ReLoRA, which utilizes low-rank updates to train high-rank
+networks. We apply ReLoRA to training transformer language models with up to
+1.3B parameters and demonstrate comparable performance to regular neural
+network training. ReLoRA saves up to 5.5Gb of RAM per GPU and improves training
+speed by 9-40% depending on the model size and hardware setup. Our findings
+show the potential of parameter-efficient techniques for large-scale
+pre-training.},
+ arxiv_url = {https://arxiv.org/pdf/2307.05695v4.pdf},
+ author = {Vladislav Lialin and Namrata Shivagunde and Sherin Muckatira and Anna Rumshisky},
+ title = {ReLoRA: High-Rank Training Through Low-Rank Updates},
+ year = {2023}
+}
+
+@article{liu_2023_efficientvit,
+ abstract = {Vision transformers have shown great success due to their high model
+capabilities. However, their remarkable performance is accompanied by heavy
+computation costs, which makes them unsuitable for real-time applications. In
+this paper, we propose a family of high-speed vision transformers named
+EfficientViT. We find that the speed of existing transformer models is commonly
+bounded by memory inefficient operations, especially the tensor reshaping and
+element-wise functions in MHSA. Therefore, we design a new building block with
+a sandwich layout, i.e., using a single memory-bound MHSA between efficient FFN
+layers, which improves memory efficiency while enhancing channel communication.
+Moreover, we discover that the attention maps share high similarities across
+heads, leading to computational redundancy. To address this, we present a
+cascaded group attention module feeding attention heads with different splits
+of the full feature, which not only saves computation cost but also improves
+attention diversity. Comprehensive experiments demonstrate EfficientViT
+outperforms existing efficient models, striking a good trade-off between speed
+and accuracy. For instance, our EfficientViT-M5 surpasses MobileNetV3-Large by
+1.9% in accuracy, while getting 40.4% and 45.2% higher throughput on Nvidia
+V100 GPU and Intel Xeon CPU, respectively. Compared to the recent efficient
+model MobileViT-XXS, EfficientViT-M2 achieves 1.8% superior accuracy, while
+running 5.8x/3.7x faster on the GPU/CPU, and 7.4x faster when converted to ONNX
+format. Code and models are available at
+https://github.com/microsoft/Cream/tree/main/EfficientViT.},
+ arxiv_url = {https://arxiv.org/pdf/2305.07027v1.pdf},
+ author = {Xinyu Liu and Houwen Peng and Ningxin Zheng and Yuqing Yang and Han Hu and Yixuan Yuan},
+ title = {EfficientViT: Memory Efficient Vision Transformer With Cascaded Group Attention},
+ year = {2023}
+}
+
+@article{liu_2023_qllm,
+ abstract = {Large Language Models (LLMs) excel in NLP, but their demands hinder their
+widespread deployment. While Quantization-Aware Training (QAT) offers a
+solution, its extensive training costs make Post-Training Quantization (PTQ) a
+more practical approach for LLMs. In existing studies, activation outliers in
+particular channels are identified as the bottleneck to PTQ accuracy. They
+propose to transform the magnitudes from activations to weights, which however
+offers limited alleviation or suffers from unstable gradients, resulting in a
+severe performance drop at low-bitwidth. In this paper, we propose QLLM, an
+accurate and efficient low-bitwidth PTQ method designed for LLMs. QLLM
+introduces an adaptive channel reassembly technique that reallocates the
+magnitude of outliers to other channels, thereby mitigating their impact on the
+quantization range. This is achieved by channel disassembly and channel
+assembly, which first breaks down the outlier channels into several
+sub-channels to ensure a more balanced distribution of activation magnitudes.
+Then similar channels are merged to maintain the original channel number for
+efficiency. Additionally, an adaptive strategy is designed to autonomously
+determine the optimal number of sub-channels for channel disassembly. To
+further compensate for the performance loss caused by quantization, we propose
+an efficient tuning method that only learns a small number of low-rank weights
+while freezing the pre-trained quantized model. After training, these low-rank
+parameters can be fused into the frozen weights without affecting inference.
+Extensive experiments on LLaMA-1 and LLaMA-2 show that QLLM can obtain accurate
+quantized models efficiently. For example, QLLM quantizes the 4-bit LLaMA-2-70B
+within 10 hours on a single A100-80G GPU, outperforming the previous
+state-of-the-art method by 7.89% on the average accuracy across five zero-shot
+tasks.},
+ arxiv_url = {https://arxiv.org/pdf/2310.08041v3.pdf},
+ author = {Jing Liu and Ruihao Gong and Xiuying Wei and Zhiwei Dong and Jianfei Cai and Bohan Zhuang},
+ title = {QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models},
+ year = {2023}
+}
+
+@article{liu_2024_ddk,
+ abstract = {Despite the advanced intelligence abilities of large language models (LLMs)
+in various applications, they still face significant computational and storage
+demands. Knowledge Distillation (KD) has emerged as an effective strategy to
+improve the performance of a smaller LLM (i.e., the student model) by
+transferring knowledge from a high-performing LLM (i.e., the teacher model).
+Prevailing techniques in LLM distillation typically use a black-box model API
+to generate high-quality pretrained and aligned datasets, or utilize white-box
+distillation by altering the loss function to better transfer knowledge from
+the teacher LLM. However, these methods ignore the knowledge differences
+between the student and teacher LLMs across domains. This results in excessive
+focus on domains with minimal performance gaps and insufficient attention to
+domains with large gaps, reducing overall performance. In this paper, we
+introduce a new LLM distillation framework called DDK, which dynamically
+adjusts the composition of the distillation dataset in a smooth manner
+according to the domain performance differences between the teacher and student
+models, making the distillation process more stable and effective. Extensive
+evaluations show that DDK significantly improves the performance of student
+models, outperforming both continuously pretrained baselines and existing
+knowledge distillation methods by a large margin.},
+ arxiv_url = {https://arxiv.org/pdf/2407.16154v1.pdf},
+ author = {Jiaheng Liu and Chenchen Zhang and Jinyang Guo and Yuanxing Zhang and Haoran Que and Ken Deng and Zhiqi Bai and Jie Liu and Ge Zhang and Jiakai Wang and Yanan Wu and Congnan Liu and Wenbo Su and Jiamang Wang and Lin Qu and Bo Zheng},
+ title = {DDK: Distilling Domain Knowledge for Efficient Large Language Models},
+ year = {2024}
+}
+
+@article{miles_2024_velora,
+ abstract = {Large language models (LLMs) have recently emerged as powerful tools for
+tackling many language-processing tasks. Despite their success, training and
+fine-tuning these models is still far too computationally and memory intensive.
+In this paper, we identify and characterise the important components needed for
+effective model convergence using gradient descent. In doing so we find that
+the intermediate activations used to implement backpropagation can be
+excessively compressed without incurring any degradation in performance. This
+result leads us to a cheap and memory-efficient algorithm for both fine-tuning
+and pre-training LLMs. The proposed algorithm simply divides the tokens up into
+smaller sub-tokens before projecting them onto a fixed 1-dimensional subspace
+during the forward pass. These features are then coarsely reconstructed during
+the backward pass to implement the update rules. We confirm the effectiveness
+of our algorithm as being complimentary to many state-of-the-art PEFT methods
+on the VTAB-1k fine-tuning benchmark. Furthermore, we outperform QLoRA for
+fine-tuning LLaMA and show competitive performance against other
+memory-efficient pre-training methods on the large-scale C4 dataset.},
+ arxiv_url = {https://arxiv.org/pdf/2405.17991v2.pdf},
+ author = {Roy Miles and Pradyumna Reddy and Ismail Elezi and Jiankang Deng},
+ github_url = {https://github.com/roymiles/VeLoRA},
+ title = {VeLoRA: Memory Efficient Training using Rank-1 Sub-Token Projections},
+ year = {2024}
+}
+
+@article{yun_2020_connections,
+ abstract = {Recently, Transformer networks have redefined the state of the art in many
+NLP tasks. However, these models suffer from quadratic computational cost in
+the input sequence length $n$ to compute pairwise attention in each layer. This
+has prompted recent research into sparse Transformers that sparsify the
+connections in the attention layers. While empirically promising for long
+sequences, fundamental questions remain unanswered: Can sparse Transformers
+approximate any arbitrary sequence-to-sequence function, similar to their dense
+counterparts? How does the sparsity pattern and the sparsity level affect their
+performance? In this paper, we address these questions and provide a unifying
+framework that captures existing sparse attention models. We propose sufficient
+conditions under which we prove that a sparse attention model can universally
+approximate any sequence-to-sequence function. Surprisingly, our results show
+that sparse Transformers with only $O(n)$ connections per attention layer can
+approximate the same function class as the dense model with $n^2$ connections.
+Lastly, we present experiments comparing different patterns/levels of sparsity
+on standard NLP tasks.},
+ arxiv_url = {https://arxiv.org/pdf/2006.04862v2.pdf},
+ author = {Chulhee Yun and Yin-Wen Chang and Srinadh Bhojanapalli and Ankit Singh Rawat and Sashank J. Reddi and Sanjiv Kumar},
+ title = {O(n) Connections are Expressive Enough: Universal Approximability of Sparse Transformers},
+ year = {2020}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{author_year_coremltools,
+ title = {Coremltools: Use coremltools to convert machine learning models from third-party libraries to the core ml for- mat}
+}
+
+@article{author_year_onnx,
+ title = {Onnx: Open neural net- work exchange}
+}
+
+@article{ba_2016_layer,
+ abstract = {Training state-of-the-art, deep neural networks is computationally expensive.
+One way to reduce the training time is to normalize the activities of the
+neurons. A recently introduced technique called batch normalization uses the
+distribution of the summed input to a neuron over a mini-batch of training
+cases to compute a mean and variance which are then used to normalize the
+summed input to that neuron on each training case. This significantly reduces
+the training time in feed-forward neural networks. However, the effect of batch
+normalization is dependent on the mini-batch size and it is not obvious how to
+apply it to recurrent neural networks. In this paper, we transpose batch
+normalization into layer normalization by computing the mean and variance used
+for normalization from all of the summed inputs to the neurons in a layer on a
+single training case. Like batch normalization, we also give each neuron its
+own adaptive bias and gain which are applied after the normalization but before
+the non-linearity. Unlike batch normalization, layer normalization performs
+exactly the same computation at training and test times. It is also
+straightforward to apply to recurrent neural networks by computing the
+normalization statistics separately at each time step. Layer normalization is
+very effective at stabilizing the hidden state dynamics in recurrent networks.
+Empirically, we show that layer normalization can substantially reduce the
+training time compared with previously published techniques.},
+ arxiv_url = {https://arxiv.org/pdf/1607.06450v1.pdf},
+ author = {Jimmy Lei Ba and Jamie Ryan Kiros and Geoffrey E. Hinton},
+ title = {Layer normalization},
+ year = {2016}
+}
+
+@article{beyer_2020_are,
+ abstract = {Yes, and no. We ask whether recent progress on the ImageNet classification
+benchmark continues to represent meaningful generalization, or whether the
+community has started to overfit to the idiosyncrasies of its labeling
+procedure. We therefore develop a significantly more robust procedure for
+collecting human annotations of the ImageNet validation set. Using these new
+labels, we reassess the accuracy of recently proposed ImageNet classifiers, and
+find their gains to be substantially smaller than those reported on the
+original labels. Furthermore, we find the original ImageNet labels to no longer
+be the best predictors of this independently-collected set, indicating that
+their usefulness in evaluating vision models may be nearing an end.
+Nevertheless, we find our annotation procedure to have largely remedied the
+errors in the original labels, reinforcing ImageNet as a powerful benchmark for
+future research in visual recognition.},
+ arxiv_url = {https://arxiv.org/pdf/2006.07159v1.pdf},
+ author = {Lucas Beyer and Olivier J. Hénaff and Alexander Kolesnikov and Xiaohua Zhai and Aäron van den Oord},
+ title = {Are we done with imagenet?},
+ year = {2020}
+}
+
+@article{chen_2019_mmdetection,
+ abstract = {We present MMDetection, an object detection toolbox that contains a rich set
+of object detection and instance segmentation methods as well as related
+components and modules. The toolbox started from a codebase of MMDet team who
+won the detection track of COCO Challenge 2018. It gradually evolves into a
+unified platform that covers many popular detection methods and contemporary
+modules. It not only includes training and inference codes, but also provides
+weights for more than 200 network models. We believe this toolbox is by far the
+most complete detection toolbox. In this paper, we introduce the various
+features of this toolbox. In addition, we also conduct a benchmarking study on
+different methods, components, and their hyper-parameters. We wish that the
+toolbox and benchmark could serve the growing research community by providing a
+flexible toolkit to reimplement existing methods and develop their own new
+detectors. Code and models are available at
+https://github.com/open-mmlab/mmdetection. The project is under active
+development and we will keep this document updated.},
+ arxiv_url = {https://arxiv.org/pdf/1906.07155v1.pdf},
+ author = {Kai Chen and Jiaqi Wang and Jiangmiao Pang and Yuhang Cao and Yu Xiong and Xiaoxiao Li and Shuyang Sun and Wansen Feng and Ziwei Liu and Jiarui Xu and Zheng Zhang and Dazhi Cheng and Chenchen Zhu and Tianheng Cheng and Qijie Zhao and Buyu Li and Xin Lu and Rui Zhu and Yue Wu and Jifeng Dai and Jingdong Wang and Jianping Shi and Wanli Ouyang and Chen Change Loy and Dahua Lin},
+ title = {Mmdetection: Open mmlab detection tool- box and benchmark},
+ year = {2019}
+}
+
+@article{chen_2021_autoformer,
+ abstract = {Recently, pure transformer-based models have shown great potentials for
+vision tasks such as image classification and detection. However, the design of
+transformer networks is challenging. It has been observed that the depth,
+embedding dimension, and number of heads can largely affect the performance of
+vision transformers. Previous models configure these dimensions based upon
+manual crafting. In this work, we propose a new one-shot architecture search
+framework, namely AutoFormer, dedicated to vision transformer search.
+AutoFormer entangles the weights of different blocks in the same layers during
+supernet training. Benefiting from the strategy, the trained supernet allows
+thousands of subnets to be very well-trained. Specifically, the performance of
+these subnets with weights inherited from the supernet is comparable to those
+retrained from scratch. Besides, the searched models, which we refer to
+AutoFormers, surpass the recent state-of-the-arts such as ViT and DeiT. In
+particular, AutoFormer-tiny/small/base achieve 74.7%/81.7%/82.4% top-1 accuracy
+on ImageNet with 5.7M/22.9M/53.7M parameters, respectively. Lastly, we verify
+the transferability of AutoFormer by providing the performance on downstream
+benchmarks and distillation experiments. Code and models are available at
+https://github.com/microsoft/AutoML.},
+ arxiv_url = {https://arxiv.org/pdf/2107.00651v1.pdf},
+ author = {Minghao Chen and Houwen Peng and Jianlong Fu and Haibin Ling},
+ title = {Autoformer: Searching transformers for visual recog- nition},
+ year = {2021}
+}
+
+@article{chen_2021_glit,
+ abstract = {We introduce the first Neural Architecture Search (NAS) method to find a
+better transformer architecture for image recognition. Recently, transformers
+without CNN-based backbones are found to achieve impressive performance for
+image recognition. However, the transformer is designed for NLP tasks and thus
+could be sub-optimal when directly used for image recognition. In order to
+improve the visual representation ability for transformers, we propose a new
+search space and searching algorithm. Specifically, we introduce a locality
+module that models the local correlations in images explicitly with fewer
+computational cost. With the locality module, our search space is defined to
+let the search algorithm freely trade off between global and local information
+as well as optimizing the low-level design choice in each module. To tackle the
+problem caused by huge search space, a hierarchical neural architecture search
+method is proposed to search the optimal vision transformer from two levels
+separately with the evolutionary algorithm. Extensive experiments on the
+ImageNet dataset demonstrate that our method can find more discriminative and
+efficient transformer variants than the ResNet family (e.g., ResNet101) and the
+baseline ViT for image classification.},
+ arxiv_url = {https://arxiv.org/pdf/2107.02960v3.pdf},
+ author = {Boyu Chen and Peixia Li and Chuming Li and Baopu Li and Lei Bai and Chen Lin and Ming Sun and Junjie yan and Wanli Ouyang},
+ title = {Glit: Neural architecture search for global and local image transformer},
+ year = {2021}
+}
+
+@article{chen_2021_mobile,
+ abstract = {We present Mobile-Former, a parallel design of MobileNet and transformer with
+a two-way bridge in between. This structure leverages the advantages of
+MobileNet at local processing and transformer at global interaction. And the
+bridge enables bidirectional fusion of local and global features. Different
+from recent works on vision transformer, the transformer in Mobile-Former
+contains very few tokens (e.g. 6 or fewer tokens) that are randomly initialized
+to learn global priors, resulting in low computational cost. Combining with the
+proposed light-weight cross attention to model the bridge, Mobile-Former is not
+only computationally efficient, but also has more representation power. It
+outperforms MobileNetV3 at low FLOP regime from 25M to 500M FLOPs on ImageNet
+classification. For instance, Mobile-Former achieves 77.9\% top-1 accuracy at
+294M FLOPs, gaining 1.3\% over MobileNetV3 but saving 17\% of computations.
+When transferring to object detection, Mobile-Former outperforms MobileNetV3 by
+8.6 AP in RetinaNet framework. Furthermore, we build an efficient end-to-end
+detector by replacing backbone, encoder and decoder in DETR with Mobile-Former,
+which outperforms DETR by 1.1 AP but saves 52\% of computational cost and 36\%
+of parameters.},
+ arxiv_url = {https://arxiv.org/pdf/2108.05895v3.pdf},
+ author = {Yinpeng Chen and Xiyang Dai and Dongdong Chen and Mengchen Liu and Xiaoyi Dong and Lu Yuan and Zicheng Liu},
+ title = {Mobile- former: Bridging mobilenet and transformer},
+ year = {2021}
+}
+
+@article{chollet_2016_xception,
+ abstract = {We present an interpretation of Inception modules in convolutional neural
+networks as being an intermediate step in-between regular convolution and the
+depthwise separable convolution operation (a depthwise convolution followed by
+a pointwise convolution). In this light, a depthwise separable convolution can
+be understood as an Inception module with a maximally large number of towers.
+This observation leads us to propose a novel deep convolutional neural network
+architecture inspired by Inception, where Inception modules have been replaced
+with depthwise separable convolutions. We show that this architecture, dubbed
+Xception, slightly outperforms Inception V3 on the ImageNet dataset (which
+Inception V3 was designed for), and significantly outperforms Inception V3 on a
+larger image classification dataset comprising 350 million images and 17,000
+classes. Since the Xception architecture has the same number of parameters as
+Inception V3, the performance gains are not due to increased capacity but
+rather to a more efficient use of model parameters.},
+ arxiv_url = {https://arxiv.org/pdf/1610.02357v3.pdf},
+ author = {François Chollet},
+ title = {Xception: Deep learning with depthwise separable convolutions},
+ year = {2016}
+}
