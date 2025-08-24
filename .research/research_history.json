@@ -1,147 +1,57 @@
 {
-  "research_topic": "Speed-optimized diffusion inference: improve step/second while minimizing quality loss via hybrid LCM-LoRA + high-order samplers",
+  "research_topic": "New architecture of small language model",
   "queries": [
-    "fast diffusion sampling",
-    "high-order samplers",
-    "hybrid LCM LoRA",
-    "step-efficient inference",
-    "LoRA diffusion acceleration"
+    "efficient transformer",
+    "parameter-efficient LLM",
+    "sparse attention architectures",
+    "knowledge distillation LLM",
+    "quantization pruning LLM"
   ],
   "research_study_list": [
     {
-      "title": "Multistep Distillation of Diffusion Models via Moment Matching",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
     },
     {
-      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
     },
     {
-      "title": "Reverse Transition Kernel: A Flexible Framework to Accelerate Diffusion Inference",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Reverse Transition Kernel: A Flexible Framework to Accelerate Diffusion Inference"
     },
     {
-      "title": "Accelerating Convergence of Score-Based Diffusion Models, Provably",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Accelerating Convergence of Score-Based Diffusion Models, Provably"
     },
     {
-      "title": "Any-scale Balanced Samplers for Discrete Space",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Any-scale Balanced Samplers for Discrete Space"
     },
     {
-      "title": "On Scalable Testing of Samplers ",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "On Scalable Testing of Samplers "
     },
     {
-      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning"
     },
     {
-      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning"
     },
     {
-      "title": "Mixture of LoRA Experts",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Mixture of LoRA Experts"
     },
     {
-      "title": "Multistep Distillation of Diffusion Models via Moment Matching",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
     },
     {
-      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
     },
     {
-      "title": "Efficient Denoising Diffusion via Probabilistic Masking",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Efficient Denoising Diffusion via Probabilistic Masking"
     },
     {
-      "title": "Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference"
     },
     {
-      "title": "Leveraging Early-Stage Robustness in Diffusion Models for Efficient and High-Quality Image Synthesis",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "Leveraging Early-Stage Robustness in Diffusion Models for Efficient and High-Quality Image Synthesis"
     },
     {
-      "title": "DeepCache: Accelerating Diffusion Models for Free",
-      "abstract": null,
-      "full_text": null,
-      "image_data": null,
-      "references": null,
-      "meta_data": null,
-      "llm_extracted_info": null
+      "title": "DeepCache: Accelerating Diffusion Models for Free"
     }
   ]
 }
