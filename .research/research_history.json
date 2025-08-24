@@ -9,49 +9,49 @@
   ],
   "research_study_list": [
     {
-      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+      "title": "EfficientFormer: Vision Transformers at MobileNet Speed"
     },
     {
-      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
+      "title": "Reformer: The Efficient Transformer"
     },
     {
-      "title": "Reverse Transition Kernel: A Flexible Framework to Accelerate Diffusion Inference"
+      "title": "EfficientViT: Memory Efficient Vision Transformer With Cascaded Group Attention"
     },
     {
-      "title": "Accelerating Convergence of Score-Based Diffusion Models, Provably"
+      "title": "VeLoRA: Memory Efficient Training using Rank-1 Sub-Token Projections"
     },
     {
-      "title": "Any-scale Balanced Samplers for Discrete Space"
+      "title": "ReLoRA: High-Rank Training Through Low-Rank Updates"
     },
     {
-      "title": "On Scalable Testing of Samplers "
+      "title": "SLTrain: a sparse plus low rank approach for parameter and memory efficient pretraining"
     },
     {
-      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning"
+      "title": "O(n) Connections are Expressive Enough: Universal Approximability of Sparse Transformers"
     },
     {
-      "title": "HydraLoRA: An Asymmetric LoRA Architecture for Efficient Fine-Tuning"
+      "title": "Low-Rank Approximation for Sparse Attention in Multi-Modal LLMs"
     },
     {
-      "title": "Mixture of LoRA Experts"
+      "title": "Inductive Biases and Variable Creation in Self-Attention Mechanisms"
     },
     {
-      "title": "Multistep Distillation of Diffusion Models via Moment Matching"
+      "title": "DDK: Distilling Domain Knowledge for Efficient Large Language Models"
     },
     {
-      "title": "A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models"
+      "title": "DistiLLM: Towards Streamlined Distillation for Large Language Models"
     },
     {
-      "title": "Efficient Denoising Diffusion via Probabilistic Masking"
+      "title": "MiniLLM: Knowledge Distillation of Large Language Models"
     },
     {
-      "title": "Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference"
+      "title": "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models"
     },
     {
-      "title": "Leveraging Early-Stage Robustness in Diffusion Models for Efficient and High-Quality Image Synthesis"
+      "title": "Evaluating Quantized Large Language Models"
     },
     {
-      "title": "DeepCache: Accelerating Diffusion Models for Free"
+      "title": "Compressing Large Language Models by Joint Sparsification and Quantization"
     }
   ]
 }
